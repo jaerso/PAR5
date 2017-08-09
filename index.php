@@ -11,7 +11,7 @@ require ("frontendHandler.php")
 <html lang="de">
 	<head>
 		<meta charset="UTF-8">
-		<title>Par5 - Minigolfsimulation</title>
+		<title>Par5 - Minigolfsimulation ich will nicht mehr</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
