@@ -51,7 +51,8 @@ require ("frontendHandler.php")
 				<!--<div id="content">-->
 		<?php getContent();?>
 	<!--</div>-->
-
+    <div>
+    </div>
 
 
 		<!--</main>-->
