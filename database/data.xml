@@ -157,28 +157,65 @@
             <author><![CDATA[par5]]></author>
             <keywords><![CDATA[editor]]></keywords>
             <content>
-            <![CDATA[<section id="main" class="wrapper">
-              <div class="container">
+            <![CDATA[
+			<canvas id='canvas'  style='border: 1px solid; width: 800px; height: 600px;'>
+			Sorry, your browser does not support the canvas tag.
+			</canvas>
 
-                <header class="major">
-                  <h2>Editor</h2>
-              	<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-                </header>
-                <canvas id='canvas' style='border: 1px solid; width: 800px; height: 600px;'>
-                  Sorry, your browser does not support the canvas tag.
-                </canvas>
+			<script>
 
-<script>
-var canvas = document.getElementById('canvas');
-canvas.width= canvas.scrollWidth;
-canvas.height= canvas.scrollHeight;
-var ctx=canvas.getContext('2d');
-ctx.fillRect(10,10,100,100);
+			//Cache a reference to the html element
+			var canvas = document.getElementById('canvas');
 
-</script>
+			canvas.width = canvas.scrollWidth;
+			canvas.height=canvas.scrollHeight;
+			var ctx=canvas.getContext('2d');
+			
+			/*ctx.fillStyle='green';
+			ctx.fillRect(10, 10, 100, 100);
 
-              </div>
-            </section>]]>
+			ctx.strokeStyle='red';
+			ctx.strokeRect(200,50,100,100);
+
+			
+			ctx.fillStyle='blue';
+			ctx.beginPath();
+			ctx.arc(400, 100, 50, 0, Math.PI*2);
+			ctx.fill();
+
+			ctx.fillStyle='purple';
+			ctx.beginPath();
+			ctx.arc(550, 100, 50, 0, Math.PI*2);
+			ctx.stroke();
+
+			ctx.fillStyle='pink';
+			ctx.beginPath();
+			ctx.arc(700, 100, 50, 0, Math.PI/2);
+			ctx.lineTo(700,100);
+			ctx.fill();*/
+
+			//Draw a path which is outlined
+			ctx.beginPath();
+			ctx.moveTo(100,100);
+			ctx.lineTo(200,100);
+			ctx.moveTo(100,200);
+			ctx.lineTo(50,100);
+
+			ctx.strokeStyle= 'green';
+			ctx.stroke();
+
+			//Draw a path which is filled
+			ctx.beginPath();
+			ctx.moveTo(400,100);
+			ctx.lineTo(500,100);
+			ctx.lineTo(400,200);
+			ctx.lineTo(350,100);
+
+			ctx.fillStyle= 'blue';
+			ctx.fill();
+
+			</script>
+			]]>
         </content>
 </page>
 </pages>
