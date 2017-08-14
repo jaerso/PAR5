@@ -24,7 +24,7 @@ require ("frontendHandler.php")
 	<!--	<link rel="shortcut icon" href="favicon.ico">-->
 
 	</head>
-	<body <class="landing">
+	<body class="landing">
 
 		<!-- Header -->
 			<header id="header" class="header-home">
