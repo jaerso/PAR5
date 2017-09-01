@@ -26,14 +26,13 @@ require ("frontendHandler.php")
 	</head>
 	<body class="landing">
 		<!-- Header -->
-        <div class="container">
         <header id="header" class="header-home">
 				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
 					<nav id="" >
 						<ul id="" class="nav">
 							<?= getNavigation()?>
-				
+
 						</ul>
 					</nav>
 			</header>

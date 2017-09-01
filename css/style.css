@@ -931,7 +931,7 @@
 	body.landing #header {
 		background-color: transparent;
 		left: 0;
-		/*position: absolute;*/
+		position: absolute;
 		top: 0;
 	}
 
@@ -1079,6 +1079,11 @@
 
 
 ende*/
+
+#baukasten {
+	margin-top: 140px;
+	margin-bottom: 30px;
+}
 
 
 
