@@ -929,8 +929,6 @@
 /* Header */
 
 	body.landing #header {
-		background-color:lightgrey;
-
 		left: 0;
 		top: 0;
 	}
@@ -953,8 +951,7 @@
 		line-height: 6em;
 		width: 100%;
 		z-index: 10000;
-		background-color:grey;
-		opacity:0.9;
+
 	}
 
 	.header-background {
@@ -994,6 +991,7 @@
 				list-style: none;
 				margin: 0;
 				padding-left: 0;
+				margin-top: 0.6em;
 			}
 
 				#header nav > ul > li {
