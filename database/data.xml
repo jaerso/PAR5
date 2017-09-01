@@ -160,13 +160,16 @@
             <![CDATA[
 
             <div class="container">
-            <div class="row">
-            <div class="col-lg-4">
-            <div class="col-lg-8">
-			<canvas id='canvas'  style='border: 1px solid; width: 800px; height: 600px;'>
-			Sorry, your browser does not support the canvas tag.
-			</canvas>
-                 </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="col-lg-8">
+                            <canvas id='canvas'  style='border: 1px solid; width: 800px; height: 600px;'>
+                            Sorry, your browser does not support the canvas tag.
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 			<script>
 
 			//Cache a reference to the html element
