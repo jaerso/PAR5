@@ -36,7 +36,7 @@
 	}
 
 	a {
-		color: #383b42;
+		color: #383b43;
 		text-decoration: none;
 	}
 
@@ -936,12 +936,15 @@
 	}
 
 		body.landing #header nav a {
-			color: rgba(255, 255, 255, 0.5);
+
+			color:#3AAA35;
+			font-family: "Raleway";
+			font-weight:bold;
+			font-size: 1em;
 		}
 
 	#header {
-		background-color: ;
-		color: #ffffff;
+
 		cursor: default;
 		font-size: 1.1em;
 		height: 6em;
@@ -973,6 +976,8 @@
 				font-size: 1.25em;
 			}
 
+/*navi orginal*/
+
 		#header nav {
 			height: inherit;
 			line-height: inherit;
@@ -988,34 +993,39 @@
 			}
 
 				#header nav > ul > li {
-					border-radius: 4px;
+					border-radius: 1em;
 					display: inline-block;
 					margin-left: 2em;
 					padding-left: 0;
+
 				}
 
 					#header nav > ul > li a {
-						-moz-transition: color 0.2s ease-in-out;
-						-webkit-transition: color 0.2s ease-in-out;
-						-o-transition: color 0.2s ease-in-out;
-						-ms-transition: color 0.2s ease-in-out;
-						transition: color 0.2s ease-in-out;
-						color: #cdced0;
+
 						display: inline-block;
 						text-decoration: none;
 					}
 
 						#header nav > ul > li a:active, #header nav > ul > li a:hover {
-							color: #ffffff;
+
+							-moz-transition: 0.6s ease-in-out;
+							-webkit-transition: 0.6s ease-in-out;
+							-o-transition: 0.6s ease-in-out;
+							-ms-transition: 0.6s ease-in-out;
+							transition: 0.6s ease-in-out;
+							color: white;
+							background-color: grey;
 						}
 
-					#header nav > ul > li:first-child {
+
+
+#header nav > ul > li:first-child {
 						margin-left: 0;
 					}
 
 					#header nav > ul > li .button {
-						background: #fff;
-						color: #444 !important;
+						background: yellow;
+						color: blueviolet !important;
 						height: 2.25em;
 						line-height: 2.25em;
 						margin-bottom: 0;
@@ -1024,6 +1034,74 @@
 						top: -0.075em;
 						vertical-align: middle;
 					}
+
+/*navi orginal ende*/
+
+
+
+/* test nav
+
+
+#header nav ul li a {
+	position:relative;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+
+#header nav ul li a:after {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 1px;
+	color: transparent;
+	background: #3AA935;
+	visibility: none;
+	opacity: 0;
+
+}
+
+#header nav ul li a:hover {
+	 color: black;}
+
+
+#header nav ul li a:hover:after {
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
+}
+
+
+ende*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		#header .container {
 			position: relative;

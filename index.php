@@ -28,23 +28,14 @@ require ("frontendHandler.php")
 
 		<!-- Header -->
 			<header id="header" class="header-home">
-			<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-				<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
-				<!--<nav id="nav">
-					<ul>
-						<li><a href="index.html">Start</a></li>
-						<li><a href="function.html">Funktionen</a></li>
-						<li><a href="gallery.html">Gallerie</a></li>
-						<li><a href="editor.html">Editor</a></li>
-						<li><a href="#" class="button special">Login</a></li>
-					</ul>
-				</nav>-->
-				<nav id="nav">
-        <ul id="nav" class="clearLeft">
-            <?= getNavigation()?>
-
-        </ul>
-            </nav>
+				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
+					<nav id="" >
+						<ul id="" class="nav">
+							<?= getNavigation()?>
+				
+						</ul>
+					</nav>
 			</header>
 
 		<!-- Banner -->
