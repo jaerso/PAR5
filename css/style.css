@@ -497,7 +497,7 @@
 			}
 
 			.icon.rounded.color9 {
-				background-color: #add43c;
+				background-color: #3AAA35;
 			}
 
 			.icon.rounded.color10 {
@@ -929,9 +929,9 @@
 /* Header */
 
 	body.landing #header {
-		background-color: transparent;
+		background-color:lightgrey;
+
 		left: 0;
-		position: absolute;
 		top: 0;
 	}
 
@@ -941,16 +941,20 @@
 			font-family: "Raleway";
 			font-weight:bold;
 			font-size: 1em;
+
+			
 		}
 
 	#header {
 
 		cursor: default;
 		font-size: 1.1em;
-		height: 6em;
+		height: 5.3em;
 		line-height: 6em;
 		width: 100%;
 		z-index: 10000;
+		background-color:grey;
+		opacity:0.9;
 	}
 
 	.header-background {
@@ -979,8 +983,8 @@
 /*navi orginal*/
 
 		#header nav {
-			height: inherit;
-			line-height: inherit;
+			height: 3em;
+			line-height: 3em;
 			position: absolute;
 			right: 3em;
 			vertical-align: middle;
@@ -995,7 +999,7 @@
 				#header nav > ul > li {
 					border-radius: 1em;
 					display: inline-block;
-					margin-left: 2em;
+					margin-left: 0.5em;
 					padding-left: 0;
 
 				}
@@ -1015,6 +1019,8 @@
 							transition: 0.6s ease-in-out;
 							color: white;
 							background-color: grey;
+
+
 						}
 
 
@@ -1024,8 +1030,7 @@
 					}
 
 					#header nav > ul > li .button {
-						background: yellow;
-						color: blueviolet !important;
+
 						height: 2.25em;
 						line-height: 2.25em;
 						margin-bottom: 0;
@@ -1080,29 +1085,6 @@
 
 ende*/
 
-#baukasten {
-	margin-top: 140px;
-	margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1124,6 +1106,7 @@ ende*/
 
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
+		opacity:0.9;
 		background-position: center center;
 		background-size: cover;
 		color: #ffffff;
