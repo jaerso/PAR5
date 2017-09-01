@@ -25,9 +25,9 @@ require ("frontendHandler.php")
 
 	</head>
 	<body class="landing">
-
 		<!-- Header -->
-			<header id="header" class="header-home">
+        <div class="container">
+        <header id="header" class="header-home">
 				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
 					<nav id="" >
@@ -37,20 +37,10 @@ require ("frontendHandler.php")
 						</ul>
 					</nav>
 			</header>
-
-		<!-- Banner -->
-	<!--	<main id="inhaltsbereich">-->
-				<!--<div id="content">-->
-		<?php getContent();?>
-	<!--</div>-->
-    <div>
-    </div>
-
-
 		<!--</main>-->
-
+        <?php getContent();?>
 		<!-- Footer -->
-			<footer id="footer">
+        <footer id="footer">
 				<div class="container">
 					<section class="links">
 						<div class="row">
@@ -102,12 +92,9 @@ require ("frontendHandler.php")
 					</div>
 				</div>
 			</footer>
-
 	</body>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
 	<script src="js/init.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </html>
