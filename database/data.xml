@@ -42,7 +42,7 @@ include_once("./registrieren.php");
       						<div class="col-lg-4 col-md-4 col-xs-12">
       							<section class="box">
       								<i class="icon big rounded color9 fa fa-linode"></i>
-      								<h3>Baukasten</h3>
+      								<h3>Bahneditor</h3>
       								<p>Sie haben eine Minigolf-Anlage? Fügen Sie ihre Bahnen hinzu und lassen Sie von anderen Spielern bewerten!</p>
       							</section>
       						</div>
@@ -156,9 +156,9 @@ include_once("./registrieren.php");
             <content>
             <![CDATA[
             <div class="container">
-                <div id="baukasten" class="row">
+                <div id="bahneditor" class="row">
                     <div class="col-lg-4 col-md-4 col-xs-4">
-                        <h1> Baukasten </h1>
+                        <h1> Bahneditor </h1>
                         <ul>
                             <a href="javascript:bahn1()"><li>Bahn 1</li></a>
                             <a href="javascript:bahn2()"><li>Bahn 2</li></a>
