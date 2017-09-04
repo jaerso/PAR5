@@ -176,6 +176,7 @@ include_once("./registrieren.php");
 			canvas.height=canvas.scrollHeight;
 			var ctx=canvas.getContext('2d');
 
+
 				//Massstabsgetreue Bahn
 				/*ctx.strokestyle='black'
 				ctx.beginPath();
@@ -194,8 +195,28 @@ include_once("./registrieren.php");
 				ctx.arc(131.25, 300, 3, 0, Math.PI * 2, false);
 				ctx.stroke();*/
 
-				//Dickere Bahn
-				ctx.strokestyle='black'
+
+				//Dickere Bahn 1
+				/*ctx.strokestyle='black'
+				ctx.beginPath();
+				ctx.moveTo(533, 250);
+				ctx.lineTo(80, 250);
+				ctx.lineTo(80,350);
+				ctx.lineTo(533,350);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(620, 300, 100, 28.8, 15.2, false);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(620, 300, 6, 0, Math.PI * 2, false);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
+				ctx.stroke();*/
+
+
+				//Dickere Bahn 2
+				/*ctx.strokestyle='black'
 				ctx.beginPath();
 				ctx.moveTo(533, 250);
 				ctx.lineTo(80, 250);
@@ -212,6 +233,56 @@ include_once("./registrieren.php");
 				ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
 				ctx.stroke();
 
+				ctx.beginPath();
+				ctx.moveTo(644, 308);
+				ctx.lineTo(628, 324);
+				ctx.lineTo(632, 328);
+				ctx.lineTo(648, 312);
+				ctx.lineTo(644, 308);			
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.moveTo(608, 272);
+				ctx.lineTo(592, 288);
+				ctx.lineTo(596, 292);
+				ctx.lineTo(612, 276);
+				ctx.lineTo(608, 272);			
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.moveTo(632, 272);
+				ctx.lineTo(628, 276);
+				ctx.lineTo(644, 292);
+				ctx.lineTo(648, 288);
+				ctx.lineTo(632, 272);			
+				ctx.stroke();
+
+				ctx.beginPath();
+				ctx.moveTo(592, 312);
+				ctx.lineTo(608, 328);
+				ctx.lineTo(612, 324);
+				ctx.lineTo(596, 308);
+				ctx.lineTo(592, 312);			
+				ctx.stroke();*/
+
+
+				//Dickere Bahn 3
+				ctx.strokestyle='black'
+				ctx.beginPath();
+				ctx.moveTo(533, 250);
+				ctx.lineTo(80, 250);
+				ctx.lineTo(80,350);
+				ctx.lineTo(533,350);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(620, 300, 100, 28.8, 15.2, false);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(620, 300, 6, 0, Math.PI * 2, false);
+				ctx.stroke();
+				ctx.beginPath();
+				ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
+				ctx.stroke();
 
 
 			</script>
