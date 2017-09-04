@@ -4,33 +4,44 @@
 
 //mouse-draw Funktion für Schlagempfehlungen ***WIP***
 var canvas,
-    context,
+    ctx,
     dragging = false,
     dragStartLocation,
-    snapshot;
+    snapshot,
+    clearCanvas;
 
+    //clear Canvas + set background again
+    function clearCan(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var pic = new Image();
+    pic.src = "images/bahn1.jpg";
+    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+}
 
 function getCanvasCoordinates(event) {
     var x = event.clientX - canvas.getBoundingClientRect().left,
         y = event.clientY - canvas.getBoundingClientRect().top;
 
-    return {x: x, y: y};
+    return {
+        x: x,
+        y: y
+    };
 }
 
 function takeSnapshot() {
-    snapshot = context.getImageData(0, 0, canvas.width, canvas.height);
+    snapshot = ctx.getImageData(0, 0, canvas.width, canvas.height);
 }
 
 function restoreSnapshot() {
-    context.putImageData(snapshot, 0, 0);
+    ctx.putImageData(snapshot, 0, 0);
 }
 
 
 function drawLine(position) {
-    context.beginPath();
-    context.moveTo(dragStartLocation.x, dragStartLocation.y);
-    context.lineTo(position.x, position.y);
-    context.stroke();
+    ctx.beginPath();
+    ctx.moveTo(dragStartLocation.x, dragStartLocation.y);
+    ctx.lineTo(position.x, position.y);
+    ctx.stroke();
 }
 
 function dragStart(event) {
@@ -57,16 +68,24 @@ function dragStop(event) {
 
 function init() {
     canvas = document.getElementById("canvas");
-	canvas.width = canvas.scrollWidth;
-	canvas.height = canvas.scrollHeight;
-    context = canvas.getContext('2d');
-    context.strokeStyle = 'red';
-    context.lineWidth = 6;
-    context.lineCap = 'round';
+    clearCanvas = document.getElementById('clearCanvas'),
+    canvas.width = canvas.scrollWidth;
+    canvas.height = canvas.scrollHeight;
+    ctx = canvas.getContext('2d');
+
+    //background image
+    var pic = new Image();
+    pic.src = "images/bahn1.jpg";
+    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+
+    ctx.strokeStyle = 'yellow';
+    ctx.lineWidth = 6;
+    ctx.lineCap = 'round';
 
     canvas.addEventListener('mousedown', dragStart, false);
     canvas.addEventListener('mousemove', drag, false);
     canvas.addEventListener('mouseup', dragStop, false);
+    clearCanvas.addEventListener('click', clearCan, false);
 }
 
 window.addEventListener('load', init, false);
