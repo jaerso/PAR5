@@ -3,11 +3,6 @@ error_reporting(E_ALL);
 require ("frontendHandler.php")
 ?>
 <!DOCTYPE html>
-<!--
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html lang="de">
 	<head>
 		<meta charset="UTF-8">
@@ -59,7 +54,7 @@ require ("frontendHandler.php")
 									<li><a href="www.minigolf-hessen.de/">Minigolf Hessen</a></li>
 								</ul>
 							</section>
-							<section class="col-lg-4 col-lg-push-1 col-md-4 col-md-push-1 col-xs-12">
+							<section class="col-lg-3 col-lg-push-1 col-md-3 col-md-push-1 col-xs-12">
 								<h3>THM</h3>
 								<ul class="unstyled">
 									<li><a href="thm.de">TH Mittelhessen</a></li>
@@ -94,6 +89,5 @@ require ("frontendHandler.php")
 	</body>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/init.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </html>
