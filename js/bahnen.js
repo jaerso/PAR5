@@ -1,10 +1,8 @@
-/**
- * Created by Lukas on 04.09.2017.
- */
-
 //Cache a reference to the html element
 
 
+
+//mouse-draw Funktion für Schlagempfehlungen ***WIP***
 var canvas,
     context,
     dragging = false,
@@ -72,6 +70,11 @@ function init() {
 }
 
 window.addEventListener('load', init, false);
+//mouse-draw Funktion ENDE
+
+
+
+
 
 
 
