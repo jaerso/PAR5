@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?php
+include_once("./registrieren.php");
+?>
 
 <database version="1.0">
-
 
 <pages>
 <page path="home" lang="de">
@@ -12,7 +14,7 @@
             <author><![CDATA[par5]]></author>
             <keywords><![CDATA[start]]></keywords>
             <content>
-            <![CDATA[<section id="banner">
+            <![CDATA[<div id="banner">
       				<h2>Willkommen</h2>
       				<p>par5 - Für alle Minigolf Spieler und solche, die es werden wollen</p>
       				<ul class="actions">
@@ -115,16 +117,14 @@
             <author><![CDATA[par5]]></author>
             <keywords><![CDATA[galerie]]></keywords>
             <content>
-            <![CDATA[<section id="main" class="wrapper">
-        				<div class="container">
+            <![CDATA[
 
         					<header class="major">
         						<h2>Gallerie</h2>
         						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
         					</header>
 
-                </div>
-        			</section>]]>
+                ]]>
         </content>
 </page>
 <page path="function" lang="de">
@@ -135,18 +135,15 @@
             <author><![CDATA[par5]]></author>
             <keywords><![CDATA[function]]></keywords>
             <content>
-            <![CDATA[<section id="main" class="wrapper">
-              <div class="container">
-
-                <header class="major">
+            <![CDATA[
+				<header class="major">
                   <h2>Funktionen</h2>
                   <p>Was kann die Minigolf Webanwendung</p>
                 </header>
 
 
 
-              </div>
-            </section>]]>
+              ]]>
         </content>
 </page>
 <page path="editor" lang="de">
@@ -218,7 +215,27 @@
 
 
 			</script>
-			]]>
+			 ]]>
+        </content>
+</page>
+
+
+<page path="registration" lang="de">
+			<description> <![CDATA[Registrierung]]></description>
+            <title><![CDATA[Registrierung]]></title>
+            <author><![CDATA[par5]]></author>
+            <keywords><![CDATA[registrierung]]></keywords>
+            <content><![CDATA[
+				<h2>Registrierung</h2>
+		<form class="signup-form" action="includes/signup.inc.php" method="POST">
+			<input type="text" name="first" placeholder="Vorname">
+			<input type="text" name="last" placeholder="Nachname">
+			<input type="text" name="email" placeholder="E-mail">
+			<input type="text" name="uid" placeholder="Benutzername">
+			<input type="password" name="pwd" placeholder="Passwort">
+			<button type="submit" name="submit">Und los!</button>
+		</form>
+			  ]]>
         </content>
 </page>
 </pages>

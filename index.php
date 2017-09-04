@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 require ("frontendHandler.php")
 ?>
@@ -26,13 +27,35 @@ require ("frontendHandler.php")
 					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
 					<nav id="" >
 						<ul id="" class="nav">
+				
 							<?= getNavigation()?>
-
+							<div class="nav-login">
+				<?php
+					if (isset($_SESSION['u_id'])) {
+						echo "<form action='includes/logout.inc.php' method='POST'>";
+						if (isset($_SESSION['u_id'])) {
+							echo "Du bist eingeloggt!";
+						}	echo "<button type='submit' name='submit'>Ausloggen</button>
+						</form>";
+					} else {
+						echo '<form action="includes/login.inc.php" method="POST">
+							<input type="text" name="uid" placeholder="Benutzername/E-mail">
+							<input type="password" name="pwd" placeholder="Passwort">
+							<button type="submit" name="submit">Einloggen</button>
+						</form>
+						<a href="index.php?page=registration">Registrieren</a>';
+					}
+				?>
+			</div>
 						</ul>
 					</nav>
 			</header>
 		<!--</main>-->
-        <?php getContent();?>
+		<section id="main" class="wrapper">
+			<div class="container">
+		<?php getContent();?>
+		</div>
+            </section>
 		<!-- Footer -->
         <footer id="footer">
 				<div class="container">
