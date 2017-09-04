@@ -159,62 +159,35 @@ include_once("./registrieren.php");
                 <div id="baukasten" class="row">
                     <div class="col-lg-4 col-md-4 col-xs-4">
                         <h1> Baukasten </h1>
+                        <ul>
+                            <a href="javascript:bahn1()"><li>Bahn 1</li>
+                            <a href="javascript:bahn2()"><li>Bahn 2</li>
+                            <a href="javascript:bahn3()"><li>Bahn 3</li>
+                            <a href="javascript:bahn4()"><li>Bahn 4</li>
+                            <a href="javascript:bahn5()"><li>Bahn 5</li>
+                            <a href="javascript:bahn6()"><li>Bahn 6</li>
+                            <a href="javascript:bahn7()"><li>Bahn 7</li>
+                            <a href="javascript:bahn8()"><li>Bahn 8</li>
+                            <a href="javascript:bahn9()"><li>Bahn 9</li>
+                            <a href="javascript:bahn10()"><li>Bahn 10</li>
+                            <a href="javascript:bahn11()"><li>Bahn 11</li>
+                            <a href="javascript:bahn12()"><li>Bahn 12</li>
+                            <a href="javascript:bahn13()"><li>Bahn 13</li>
+                            <a href="javascript:bahn14()"><li>Bahn 14</li>
+                            <a href="javascript:bahn15()"><li>Bahn 15</li>
+                            <a href="javascript:bahn16()"><li>Bahn 16</li>
+                            <a href="javascript:bahn17()"><li>Bahn 17</li>
+                            <a href="javascript:bahn18()"><li>Bahn 18</li>
+                        </ul>
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-8">
-                            <canvas id='canvas'  style='border: 1px solid; width: 800px; height: 600px;'>
+                            <canvas id='canvas'  style='border: 1px solid; width: 100%; height: 600px;'>
                             Sorry, your browser does not support the canvas tag.
                             </canvas>
                     </div>
                 </div>
             </div>
-			<script>
 
-			//Cache a reference to the html element
-			var canvas = document.getElementById('canvas');
-
-			canvas.width = canvas.scrollWidth;
-			canvas.height=canvas.scrollHeight;
-			var ctx=canvas.getContext('2d');
-
-				//Massstabsgetreue Bahn
-				/*ctx.strokestyle='black'
-				ctx.beginPath();
-				ctx.moveTo(583, 268.75);
-				ctx.lineTo(100, 268.75);
-				ctx.lineTo(100,331.25);
-				ctx.lineTo(583,331.25);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(637.5, 300, 62.5, 28.8, 15.2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(637.5, 300, 5, 0, Math.PI * 2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(131.25, 300, 3, 0, Math.PI * 2, false);
-				ctx.stroke();*/
-
-				//Dickere Bahn
-				ctx.strokestyle='black'
-				ctx.beginPath();
-				ctx.moveTo(533, 250);
-				ctx.lineTo(80, 250);
-				ctx.lineTo(80,350);
-				ctx.lineTo(533,350);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(620, 300, 100, 28.8, 15.2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(620, 300, 6, 0, Math.PI * 2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
-				ctx.stroke();
-
-
-
-			</script>
 			 ]]>
         </content>
 </page>

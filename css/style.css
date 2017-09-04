@@ -1209,8 +1209,8 @@ ende*/
 /* Footer */
 
 	#footer {
-		/*background: #383b43;*/
-		background-image: url("../images/pic07.jpg");
+		background: #383b43;
+		/*background-image: url("../images/pic07.jpg");*/
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
