@@ -238,7 +238,7 @@ function init() {
 
 window.addEventListener('load', init, false);
 
-
+/*
 
 				//Massstabsgetreue Bahn
 				/*ctx.strokestyle='black'
@@ -259,7 +259,7 @@ window.addEventListener('load', init, false);
 				ctx.stroke();*/
 
 				//Dickere Bahn
-				/*ctx.strokestyle='black'
+				ctx.strokestyle='black'
 				ctx.beginPath();
 				ctx.moveTo(533, 250);
 				ctx.lineTo(80, 250);
