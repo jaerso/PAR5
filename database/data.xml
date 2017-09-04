@@ -178,14 +178,50 @@
 			canvas.width = canvas.scrollWidth;
 			canvas.height=canvas.scrollHeight;
 			var ctx=canvas.getContext('2d');
-			
+
+      //Massstabsgetreue Bahn
+      /*ctx.strokestyle='black'
+      ctx.beginPath();
+      ctx.moveTo(583, 268.75);
+      ctx.lineTo(100, 268.75);
+      ctx.lineTo(100,331.25);
+      ctx.lineTo(583,331.25);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(637.5, 300, 62.5, 28.8, 15.2, false);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(637.5, 300, 5, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(131.25, 300, 3, 0, Math.PI * 2, false);
+      ctx.stroke();*/
+
+      //Dickere Bahn
+      ctx.strokestyle='black'
+      ctx.beginPath();
+      ctx.moveTo(533, 250);
+      ctx.lineTo(80, 250);
+      ctx.lineTo(80,350);
+      ctx.lineTo(533,350);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(620, 300, 100, 28.8, 15.2, false);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(620, 300, 6, 0, Math.PI * 2, false);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
+      ctx.stroke();
+
 			/*ctx.fillStyle='green';
 			ctx.fillRect(10, 10, 100, 100);
 
 			ctx.strokeStyle='red';
 			ctx.strokeRect(200,50,100,100);
 
-			
+
 			ctx.fillStyle='blue';
 			ctx.beginPath();
 			ctx.arc(400, 100, 50, 0, Math.PI*2);
