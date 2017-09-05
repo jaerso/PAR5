@@ -8,15 +8,24 @@ var canvas,
     dragging = false,
     dragStartLocation,
     snapshot,
-    clearCanvas;
+    clearCanvas,
+    pic = new Image();
+    bahnNummer = null;
+
+
+function bahn($bahntyp){
+    pic.id = "img-back"
+    pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
+    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    bahnNummer = $bahntyp;
+}
 
     //clear Canvas + set background again
     function clearCan(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var pic = new Image();
-    pic.src = "images/minigolfbahnen/bahn1.jpg";
-    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
-}
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pic.src = "images/minigolfbahnen/bahn"+bahnNummer+".jpg";
+        pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    }
 
 function getCanvasCoordinates(event) {
     var x = event.clientX - canvas.getBoundingClientRect().left,
@@ -90,9 +99,3 @@ function init() {
 
 window.addEventListener('load', init, false);
 //mouse-draw Funktion ENDE
-
-function bahn($bahntyp){
-    var pic = new Image();
-    pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
-    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
-}
