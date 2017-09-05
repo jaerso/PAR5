@@ -1388,8 +1388,13 @@ ende*/
     background-color: #111;
 }
 
-.dropdown{
+.dropdown,
+#bahn-title{
 	margin: 20px;
+}
+
+#bahn-title {
+	color: #ddd;
 }
 
 .dropdown ul>a>li,

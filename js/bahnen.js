@@ -9,14 +9,34 @@ var canvas,
     dragStartLocation,
     snapshot,
     clearCanvas,
-    pic = new Image();
+    pic = new Image(),
+    bahnNamen = [
+        "Freischlag",
+        "Brücke",
+        "Direktschlag",
+        "Doppelwelle",
+        "Hügel",
+        "Labyrinth",
+        "Liegende Schleife",
+        "Netz",
+        "Passagen",
+        "Pramiden",
+        "Salto",
+        "Sandschlüssel",
+        "Springer",
+        "Tunnel",
+        "Vulkan",
+        "Wahlschlag",
+        "Winkel",
+        "NULL",
+    ];
     bahnNummer = null;
 
 
 function bahn($bahntyp){
-    pic.id = "img-back"
     pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    document.getElementById("bahn-title").innerHTML = "Bahn "+$bahntyp+" - "+bahnNamen[$bahntyp-1];
     bahnNummer = $bahntyp;
 }
 

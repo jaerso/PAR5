@@ -182,7 +182,9 @@ include_once("./registrieren.php");
                             <a href="javascript:bahn(17)"><li>Bahn 17</li></a>
                             <a href="javascript:bahn(18)"><li>Bahn 18</li></a>
                         </ul>
+                        <h2 id="bahn-title"></h2>
                     </div>
+
                     <div class="col-lg-8 col-md-8 col-xs-8">
                             <canvas id='canvas'  style='border: 1px solid; width: 1200; height: 600px;'>
                             Sorry, your browser does not support the canvas tag.
