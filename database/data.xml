@@ -19,7 +19,7 @@ include_once("./registrieren.php");
       				<p>par5 - Für alle Minigolf Spieler und solche, die es werden wollen</p>
       				<ul class="actions">
       					<li>
-      						<a href="index.php?page=editor" class="button big">Jetzt starten</a>
+      						<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
       					</li>
       				</ul>
       			</section>
