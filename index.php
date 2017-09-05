@@ -59,10 +59,10 @@ require ("frontendHandler.php")
 		<section id="main" class="wrapper">
 
 
+            <?php if($_GET['page'] != 'home'){ echo "<div class=\"container\">";} ?>
+            <?php getContent();?>
+            <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
 
-			<div class="container">
-		<?php getContent();?>
-		</div>
             </section>
 		<!-- Footer -->
         <footer id="footer">
