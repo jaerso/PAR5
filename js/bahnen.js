@@ -93,6 +93,6 @@ window.addEventListener('load', init, false);
 
 function bahn($bahntyp){
     var pic = new Image();
-    pic.src = "images/bahn"+$bahntyp+".jpg";
+    pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
 }
