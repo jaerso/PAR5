@@ -163,24 +163,24 @@ include_once("./registrieren.php");
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bahntyp
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <a href="javascript:bahn1()"><li>Bahn 1</li></a>
-                            <a href="javascript:bahn2()"><li>Bahn 2</li></a>
-                            <a href="javascript:bahn3()"><li>Bahn 3</li></a>
-                            <a href="javascript:bahn4()"><li>Bahn 4</li></a>
-                            <a href="javascript:bahn5()"><li>Bahn 5</li></a>
-                            <a href="javascript:bahn6()"><li>Bahn 6</li></a>
-                            <a href="javascript:bahn7()"><li>Bahn 7</li></a>
-                            <a href="javascript:bahn8()"><li>Bahn 8</li></a>
-                            <a href="javascript:bahn9()"><li>Bahn 9</li></a>
-                            <a href="javascript:bahn10()"><li>Bahn 10</li></a>
-                            <a href="javascript:bahn11()"><li>Bahn 11</li></a>
-                            <a href="javascript:bahn12()"><li>Bahn 12</li></a>
-                            <a href="javascript:bahn13()"><li>Bahn 13</li></a>
-                            <a href="javascript:bahn14()"><li>Bahn 14</li></a>
-                            <a href="javascript:bahn15()"><li>Bahn 15</li></a>
-                            <a href="javascript:bahn16()"><li>Bahn 16</li></a>
-                            <a href="javascript:bahn17()"><li>Bahn 17</li></a>
-                            <a href="javascript:bahn18()"><li>Bahn 18</li></a>
+                            <a href="javascript:bahn(1)"><li>Bahn 1</li></a>
+                            <a href="javascript:bahn(2)"><li>Bahn 2</li></a>
+                            <a href="javascript:bahn(3)"><li>Bahn 3</li></a>
+                            <a href="javascript:bahn(4)"><li>Bahn 4</li></a>
+                            <a href="javascript:bahn(5)"><li>Bahn 5</li></a>
+                            <a href="javascript:bahn(6)"><li>Bahn 6</li></a>
+                            <a href="javascript:bahn(7)"><li>Bahn 7</li></a>
+                            <a href="javascript:bahn(8)"><li>Bahn 8</li></a>
+                            <a href="javascript:bahn(9)"><li>Bahn 9</li></a>
+                            <a href="javascript:bahn(10)"><li>Bahn 10</li></a>
+                            <a href="javascript:bahn(11)"><li>Bahn 11</li></a>
+                            <a href="javascript:bahn(12)"><li>Bahn 12</li></a>
+                            <a href="javascript:bahn(13)"><li>Bahn 13</li></a>
+                            <a href="javascript:bahn(14)"><li>Bahn 14</li></a>
+                            <a href="javascript:bahn(15)"><li>Bahn 15</li></a>
+                            <a href="javascript:bahn(16)"><li>Bahn 16</li></a>
+                            <a href="javascript:bahn(17)"><li>Bahn 17</li></a>
+                            <a href="javascript:bahn(18)"><li>Bahn 18</li></a>
                         </ul>
                     </div>
                     <div class="col-lg-8 col-md-8 col-xs-8">
