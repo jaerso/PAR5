@@ -43,7 +43,7 @@ require ("frontendHandler.php")
                     echo '<form action="includes/login.inc.php" method="POST">
 							<input type="text" name="uid" placeholder="Benutzername">
 							<input type="password" name="pwd" placeholder="Passwort">
-							<button type="submit" name="submit">Einloggen</button>
+							<button class="btn btn-default" type="submit" name="submit">Einloggen</button>
 						</form>';
                 }
 

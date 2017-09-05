@@ -191,6 +191,7 @@ include_once("./registrieren.php");
                             </canvas>
                     </div>
 					<p><input id="clearCanvas" type="button" value="Clear Editor"></p>
+					<p><input id="exportCanvas" type="button" value="Save" onClick="exportPNG();"></p>
                 </div>
             </div>
 			 ]]>

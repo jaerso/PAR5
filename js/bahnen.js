@@ -95,6 +95,13 @@ function dragStop(event) {
     drawLine(position);
 }
 
+function exportPNG(){
+    var c=document.getElementById("canvas");
+    var d=c.toDataURL("image/png");
+    var w=window.open('about:blank','image from canvas');
+    w.document.write("<img src='"+d+"' alt='from canvas'/>");
+}
+
 function init() {
     canvas = document.getElementById("canvas");
     clearCanvas = document.getElementById('clearCanvas'),
@@ -119,3 +126,5 @@ function init() {
 
 window.addEventListener('load', init, false);
 //mouse-draw Funktion ENDE
+
+
