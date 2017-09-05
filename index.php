@@ -20,7 +20,7 @@ require ("frontendHandler.php")
 	<!--	<link rel="shortcut icon" href="favicon.ico">-->
 
 	</head>
-	<body class="landing">
+	<body class="landing" onload="init()">
 		<!-- Header -->
         <header id="header" class="header-home">
 				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">

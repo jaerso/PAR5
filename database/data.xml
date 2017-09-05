@@ -159,7 +159,10 @@ include_once("./registrieren.php");
                 <div id="bahneditor" class="row">
                     <div class="col-lg-4 col-md-4 col-xs-4">
                         <h1> Bahneditor </h1>
-                        <ul>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bahntyp
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
                             <a href="javascript:bahn1()"><li>Bahn 1</li></a>
                             <a href="javascript:bahn2()"><li>Bahn 2</li></a>
                             <a href="javascript:bahn3()"><li>Bahn 3</li></a>
