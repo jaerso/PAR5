@@ -14,7 +14,7 @@ var canvas,
     function clearCan(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     var pic = new Image();
-    pic.src = "images/bahn1.jpg";
+    pic.src = "images/minigolfbahnen/bahn1.jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
 }
 
