@@ -66,17 +66,14 @@ function dragStop(event) {
     drawLine(position);
 }
 
+
+
 function init() {
     canvas = document.getElementById("canvas");
     clearCanvas = document.getElementById('clearCanvas'),
     canvas.width = canvas.scrollWidth;
     canvas.height = canvas.scrollHeight;
     ctx = canvas.getContext('2d');
-
-    //background image
-    /*var pic = new Image();
-    pic.src = "images/bahn1.jpg";
-    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);*/
 
     ctx.strokeStyle = 'yellow';
     ctx.lineWidth = 6;
@@ -86,13 +83,22 @@ function init() {
     canvas.addEventListener('mousemove', drag, false);
     canvas.addEventListener('mouseup', dragStop, false);
     clearCanvas.addEventListener('click', clearCan, false);
+    
 }
-
 window.addEventListener('load', init, false);
 //mouse-draw Funktion ENDE
 
+var pic = new Image();
+
 function bahn($bahntyp){
-    var pic = new Image();
     pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    
 }
+/*
+pic.onload = function(){
+    canvas.width = pic.naturalWidth;
+    canvas.height = pic.naturalHeight;
+    ctx.drawImage(pic, 0, 0);
+    }
+    */
