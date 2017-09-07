@@ -5,8 +5,8 @@
  * Date: 04.07.2016
  * Time: 15:07
  */
-if (file_exists('./database/data.xml')) {
-    $xml = simplexml_load_file('./database/data.xml');
+if (file_exists('./includes/database/data.xml')) {
+    $xml = simplexml_load_file('./includes/database/data.xml');
   }//Ende der Abrufung der Funktionen
 
   else {

@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?php
-include_once("./registrieren.php");
-?>
 
 <database version="1.0">
 
@@ -115,13 +112,15 @@ include_once("./registrieren.php");
             <description> <![CDATA[Galerie]]></description>
             <title><![CDATA[Galerie]]></title>
             <author><![CDATA[par5]]></author>
-            <keywords><![CDATA[galerie]]></keywords>
+            <keywords><![CDATA[gallery]]></keywords>
             <content>
             <![CDATA[
 
         					<header class="major">
-        						<h2>Gallerie</h2>
-        						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+        						<h2>Galerie</h2>
+        						<div class=comment>
+								<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+								</div>
         					</header>
 
                 ]]>
