@@ -20,41 +20,49 @@ require ("includes/frontendHandler.inc.php")
 	<!--	<link rel="shortcut icon" href="favicon.ico">-->
 
 	</head>
-	<body class="landing">
+	<body class="landing" onload="init()">
 		<!-- Header -->
         <header id="header" class="header-home">
 				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
-					<nav id="" >
-						<ul id="" class="nav">
-				
-							<?= getNavigation()?>
-							<div class="nav-login">
-				<?php
-					if (isset($_SESSION['u_id'])) {
-						echo "<form action='includes/logout.inc.php' method='POST'>";
-						if (isset($_SESSION['u_id'])) {
-							echo "Du bist eingeloggt!";
-						}	echo "<button type='submit' name='submit'>Ausloggen</button>
+
+			<nav id="" >
+				<ul id="" class="nav">
+
+					<?= getNavigation()?>
+
+            <div class="nav-login">
+                <?php
+                if (isset($_SESSION['u_id'])) {
+                    echo "<form action='includes/logout.inc.php' method='POST'>";
+                    if (isset($_SESSION['u_id'])) {
+                        echo "Du bist eingeloggt!";
+                    }	echo "<button type='submit' name='submit'>Ausloggen</button>
 						</form>";
-					} else {
-						echo '<form action="includes/login.inc.php" method="POST">
-							<input type="text" name="uid" placeholder="Benutzername/E-mail">
+                } else {
+                    echo '<form action="includes/login.inc.php" method="POST">
+							<input type="text" name="uid" placeholder="Benutzername">
 							<input type="password" name="pwd" placeholder="Passwort">
-							<button type="submit" name="submit">Einloggen</button>
-						</form>
-						<a href="index.php?page=registration">Registrieren</a>';
-					}
-				?>
+							<button class="btn btn-default" type="submit" name="submit">Einloggen</button>
+						</form>';
+                }
+
+
+                ?>
 			</div>
-						</ul>
-					</nav>
-			</header>
+				</ul>
+			</nav>
+
+
+        </header>
 		<!--</main>-->
 		<section id="main" class="wrapper">
-			<div class="container">
-		<?php getContent();?>
-		</div>
+
+
+            <?php if($_GET['page'] != 'home'){ echo "<div class=\"container\">";} ?>
+            <?php getContent();?>
+            <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
+
             </section>
 		<!-- Footer -->
         <footer id="footer">
@@ -113,4 +121,5 @@ require ("includes/frontendHandler.inc.php")
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bahnen.js"></script>
 </html>

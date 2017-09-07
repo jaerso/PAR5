@@ -16,7 +16,7 @@
       				<p>par5 - Für alle Minigolf Spieler und solche, die es werden wollen</p>
       				<ul class="actions">
       					<li>
-      						<a href="index.php?page=editor" class="button big">Jetzt starten</a>
+      						<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
       					</li>
       				</ul>
       			</section>
@@ -39,7 +39,7 @@
       						<div class="col-lg-4 col-md-4 col-xs-12">
       							<section class="box">
       								<i class="icon big rounded color9 fa fa-linode"></i>
-      								<h3>Baukasten</h3>
+      								<h3>Bahneditor</h3>
       								<p>Sie haben eine Minigolf-Anlage? Fügen Sie ihre Bahnen hinzu und lassen Sie von anderen Spielern bewerten!</p>
       							</section>
       						</div>
@@ -154,66 +154,43 @@
             <keywords><![CDATA[editor]]></keywords>
             <content>
             <![CDATA[
-            <div class="container">
-                <div id="baukasten" class="row">
-                    <div class="col-lg-4 col-md-4 col-xs-4">
-                        <h1> Baukasten </h1>
+                        <h1> Bahneditor </h1>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bahntyp
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <a href="javascript:bahn(1)"><li>Bahn 1</li></a>
+                            <a href="javascript:bahn(2)"><li>Bahn 2</li></a>
+                            <a href="javascript:bahn(3)"><li>Bahn 3</li></a>
+                            <a href="javascript:bahn(4)"><li>Bahn 4</li></a>
+                            <a href="javascript:bahn(5)"><li>Bahn 5</li></a>
+                            <a href="javascript:bahn(6)"><li>Bahn 6</li></a>
+                            <a href="javascript:bahn(7)"><li>Bahn 7</li></a>
+                            <a href="javascript:bahn(8)"><li>Bahn 8</li></a>
+                            <a href="javascript:bahn(9)"><li>Bahn 9</li></a>
+                            <a href="javascript:bahn(10)"><li>Bahn 10</li></a>
+                            <a href="javascript:bahn(11)"><li>Bahn 11</li></a>
+                            <a href="javascript:bahn(12)"><li>Bahn 12</li></a>
+                            <a href="javascript:bahn(13)"><li>Bahn 13</li></a>
+                            <a href="javascript:bahn(14)"><li>Bahn 14</li></a>
+                            <a href="javascript:bahn(15)"><li>Bahn 15</li></a>
+                            <a href="javascript:bahn(16)"><li>Bahn 16</li></a>
+                            <a href="javascript:bahn(17)"><li>Bahn 17</li></a>
+                            <a href="javascript:bahn(18)"><li>Bahn 18</li></a>
+                        </ul>
+                        <h2 id="bahn-title"></h2>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-xs-8">
-                            <canvas id='canvas'  style='border: 1px solid; width: 800px; height: 600px;'>
+
+                    
+                            <canvas id='canvas'  style='border: 1px solid; width: 1200; height: 600px;'>
                             Sorry, your browser does not support the canvas tag.
                             </canvas>
-                    </div>
+                    
+					<p><input id="clearCanvas" type="button" value="Clear Editor"></p>
+					<p><input id="exportCanvas" type="button" value="Save" onClick="exportPNG();"></p>
+					</div>
                 </div>
             </div>
-			<script>
-
-			//Cache a reference to the html element
-			var canvas = document.getElementById('canvas');
-
-			canvas.width = canvas.scrollWidth;
-			canvas.height=canvas.scrollHeight;
-			var ctx=canvas.getContext('2d');
-
-				//Massstabsgetreue Bahn
-				/*ctx.strokestyle='black'
-				ctx.beginPath();
-				ctx.moveTo(583, 268.75);
-				ctx.lineTo(100, 268.75);
-				ctx.lineTo(100,331.25);
-				ctx.lineTo(583,331.25);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(637.5, 300, 62.5, 28.8, 15.2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(637.5, 300, 5, 0, Math.PI * 2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(131.25, 300, 3, 0, Math.PI * 2, false);
-				ctx.stroke();*/
-
-				//Dickere Bahn
-				ctx.strokestyle='black'
-				ctx.beginPath();
-				ctx.moveTo(533, 250);
-				ctx.lineTo(80, 250);
-				ctx.lineTo(80,350);
-				ctx.lineTo(533,350);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(620, 300, 100, 28.8, 15.2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(620, 300, 6, 0, Math.PI * 2, false);
-				ctx.stroke();
-				ctx.beginPath();
-				ctx.arc(120, 300, 5, 0, Math.PI * 2, false);
-				ctx.stroke();
-
-
-
-			</script>
 			 ]]>
         </content>
 </page>

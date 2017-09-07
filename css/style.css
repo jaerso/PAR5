@@ -208,7 +208,8 @@
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+
+		margin: 0 0 6em 0;
 	}
 
 	label {
@@ -1018,7 +1019,7 @@
 							-ms-transition: 0.6s ease-in-out;
 							transition: 0.6s ease-in-out;
 							color: white;
-							background-color: grey;
+							background-color: black;
 
 
 						}
@@ -1133,7 +1134,7 @@ ende*/
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0em 4em;
+		padding: 0em 0em 0em;
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 		/* Style 3 Wrapper */
@@ -1209,8 +1210,8 @@ ende*/
 /* Footer */
 
 	#footer {
-		/*background: #383b43;*/
-		background-image: url("../images/pic07.jpg");
+		background: #383b43;
+		/*background-image: url("../images/pic07.jpg");*/
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -1363,17 +1364,16 @@ ende*/
     height: 40px;
     padding: 0px 5%;
     margin-bottom: 4px;
-    border: none;
-    background-color: #fff;
+    background-color: lightgrey;
     font-family: arial;
     font-size: 16px;
-    color: #111;
+    color: green;
     line-height: 40px;
 }
 
 .signup-form button {
     display: block;
-    margin: 0 auto;
+
     width: 30%;
     height: 40px;
     border: none;
@@ -1386,4 +1386,18 @@ ende*/
 
 .signup-form button:hover {
     background-color: #111;
+}
+
+.dropdown,
+#bahn-title{
+	margin: 20px;
+}
+
+#bahn-title {
+	color: #ddd;
+}
+
+.dropdown ul>a>li,
+.dropdown button{
+	font-size: 16px;
 }
