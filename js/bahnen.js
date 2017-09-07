@@ -8,15 +8,44 @@ var canvas,
     dragging = false,
     dragStartLocation,
     snapshot,
-    clearCanvas;
+    clearCanvas,
+    pic = new Image(),
+    bahnNamen = [
+        "Freischlag",
+        "Brücke",
+        "Direktschlag",
+        "Doppelwelle",
+        "Hügel",
+        "Labyrinth",
+        "Liegende Schleife",
+        "Netz",
+        "Passagen",
+        "Pramiden",
+        "Salto",
+        "Sandschlüssel",
+        "Springer",
+        "Tunnel",
+        "Vulkan",
+        "Wahlschlag",
+        "Winkel",
+        "NULL",
+    ];
+    bahnNummer = null;
+
+
+function bahn($bahntyp){
+    pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
+    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    document.getElementById("bahn-title").innerHTML = "Bahn "+$bahntyp+" - "+bahnNamen[$bahntyp-1];
+    bahnNummer = $bahntyp;
+}
 
     //clear Canvas + set background again
     function clearCan(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var pic = new Image();
-    pic.src = "images/minigolfbahnen/bahn1.jpg";
-    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
-}
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pic.src = "images/minigolfbahnen/bahn"+bahnNummer+".jpg";
+        pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+    }
 
 function getCanvasCoordinates(event) {
     var x = event.clientX - canvas.getBoundingClientRect().left,
@@ -66,7 +95,12 @@ function dragStop(event) {
     drawLine(position);
 }
 
-
+function exportPNG(){
+    var c=document.getElementById("canvas");
+    var d=c.toDataURL("image/png");
+    var w=window.open('about:blank','image from canvas');
+    w.document.write("<img src='"+d+"' alt='from canvas'/>");
+}
 
 function init() {
     canvas = document.getElementById("canvas");
@@ -95,6 +129,8 @@ function bahn($bahntyp){
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
     
 }
+
+//Image responsive anpassen
 /*
 pic.onload = function(){
     canvas.width = pic.naturalWidth;
@@ -102,3 +138,4 @@ pic.onload = function(){
     ctx.drawImage(pic, 0, 0);
     }
     */
+
