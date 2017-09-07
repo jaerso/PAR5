@@ -182,13 +182,14 @@ include_once("./registrieren.php");
                         <h2 id="bahn-title"></h2>
                     </div>
 
-                    <div class="col-lg-8 col-md-8 col-xs-8">
+                    
                             <canvas id='canvas'  style='border: 1px solid; width: 1200; height: 600px;'>
                             Sorry, your browser does not support the canvas tag.
                             </canvas>
-                    </div>
+                    
 					<p><input id="clearCanvas" type="button" value="Clear Editor"></p>
 					<p><input id="exportCanvas" type="button" value="Save" onClick="exportPNG();"></p>
+					</div>
                 </div>
             </div>
 			 ]]>
