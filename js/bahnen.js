@@ -10,6 +10,12 @@ var canvas,
     snapshot,
     clearCanvas,
     pic = new Image(),
+    coordinates =[
+        {x: 156,y:187},
+        {x: 454,y:73},
+        {x: 454,y:73},
+        {x: 661,y:139},
+    ],
     bahnNamen = [
         "Freischlag",
         "Brücke",
@@ -29,15 +35,16 @@ var canvas,
         "Wahlschlag",
         "Winkel",
         "NULL",
-    ];
+    ],
     bahnNummer = null;
 
 
 function bahn($bahntyp){
+    bahnNummer = $bahntyp;
+    drawLineCoordinates();
     pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
     document.getElementById("bahn-title").innerHTML = "Bahn "+$bahntyp+" - "+bahnNamen[$bahntyp-1];
-    bahnNummer = $bahntyp;
 }
 
     //clear Canvas + set background again
@@ -76,6 +83,8 @@ function drawLine(position) {
 function dragStart(event) {
     dragging = true;
     dragStartLocation = getCanvasCoordinates(event);
+    coordinates.push(dragStartLocation);
+    console.log(coordinates);
     takeSnapshot();
 }
 
@@ -92,14 +101,53 @@ function dragStop(event) {
     dragging = false;
     restoreSnapshot();
     var position = getCanvasCoordinates(event);
+    coordinates.push(position);
+    console.log(coordinates);
     drawLine(position);
 }
+/*
+ *   Exportiert Canvas in den Image-Ordner
+ */
+function exportCanvas(){
+    var canvas = document.getElementById("canvas");
+    var dataURL = canvas.toDataURL("image/png");
+    document.getElementById('hidden_data').value = dataURL;
+    var fd = new FormData(document.forms["form1"]);
+    fd.append('bahn', bahnNummer);
 
-function exportPNG(){
-    var c=document.getElementById("canvas");
-    var d=c.toDataURL("image/png");
-    var w=window.open('about:blank','image from canvas');
-    w.document.write("<img src='"+d+"' alt='from canvas'/>");
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'saveCanvasDataUrl.php', true);
+
+    xhr.upload.onprogress = function(e) {
+        if (e.lengthComputable) {
+            var percentComplete = (e.loaded / e.total) * 100;
+            console.log(percentComplete + '% uploaded');
+            alert('Upload erfolgreich abgeschlossen!');
+        }
+    };
+
+
+    xhr.onload = function() {
+
+    };
+    xhr.send(fd);
+}
+
+/*
+*   Koordinaten in Array speichern
+*
+*/
+function drawLineCoordinates() {
+    if (coordinates.length >= 1){
+        for (var i = 0; i < coordinates.length; i++) {
+            if(i != coordinates.length-1) {
+                ctx.beginPath();
+                ctx.moveTo(coordinates[i].x, coordinates[i].y);
+                ctx.lineTo(coordinates[i + 1].x, coordinates[i + 1].y);
+                ctx.stroke();
+            }
+        }
+    }
 }
 
 function init() {
@@ -122,13 +170,6 @@ function init() {
 window.addEventListener('load', init, false);
 //mouse-draw Funktion ENDE
 
-var pic = new Image();
-
-function bahn($bahntyp){
-    pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
-    pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
-    
-}
 
 //Image responsive anpassen
 /*
@@ -138,4 +179,3 @@ pic.onload = function(){
     ctx.drawImage(pic, 0, 0);
     }
     */
-

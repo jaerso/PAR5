@@ -186,9 +186,18 @@ include_once("./registrieren.php");
                             <canvas id='canvas'  style='border: 1px solid; width: 1200; height: 600px;'>
                             Sorry, your browser does not support the canvas tag.
                             </canvas>
-                    
-					<p><input id="clearCanvas" type="button" value="Clear Editor"></p>
-					<p><input id="exportCanvas" type="button" value="Save" onClick="exportPNG();"></p>
+                    <div class="col-lg-2">
+					    <input id="clearCanvas" type="button" value="Clear Editor">
+					</div>
+
+					<div class="col-lg-2">
+                        <input type="button" onclick="exportCanvas()" value="Upload" />
+                    </div>
+
+                    <form method="post" accept-charset="utf-8" name="form1">
+                        <input name="hidden_data" id='hidden_data' type="hidden"/>
+                        <input name="bahn" id='bahn' type="hidden"/>
+                    </form>
 					</div>
                 </div>
             </div>

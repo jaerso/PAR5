@@ -57,12 +57,12 @@ require ("frontendHandler.php")
         </header>
 		<!--</main>-->
 		<section id="main" class="wrapper">
-
-
-            <?php if($_GET['page'] != 'home'){ echo "<div class=\"container\">";} ?>
+            <?php if(isset($_GET['page'])){}
+                    else{ $_GET['page'] = 'home';}
+            ?>
+            <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <?php getContent();?>
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
-
             </section>
 		<!-- Footer -->
         <footer id="footer">
