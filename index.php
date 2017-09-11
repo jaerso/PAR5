@@ -34,9 +34,10 @@ require ("includes/frontendHandler.inc.php")
             <div class="nav-login">
                 <?php
                 if (isset($_SESSION['u_id'])) {
-                    echo "<form action='includes/logout.inc.php' method='POST'>";
+					echo "<form action='includes/logout.inc.php' method='POST'>";
                     if (isset($_SESSION['u_id'])) {
-                        echo "Du bist eingeloggt!";
+						$username = $_SESSION['u_uid'];
+						echo "<a href='index.php?page='profile'>$username</a>";
                     }	echo "<button type='submit' name='submit'>Ausloggen</button>
 						</form>";
                 } else {
@@ -45,7 +46,8 @@ require ("includes/frontendHandler.inc.php")
 							<input type="password" name="pwd" placeholder="Passwort">
 							<button class="btn btn-default" type="submit" name="submit">Einloggen</button>
 						</form>';
-                }
+				}
+			
 
 
                 ?>

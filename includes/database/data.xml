@@ -214,6 +214,18 @@
 			  ]]>
         </content>
 </page>
+
+<!--<pageprofile path="profile" lang="de">
+			<description> <![CDATA[Profil]]></description>
+            <title><![CDATA[Profil]]></title>
+            <author><![CDATA[par5]]></author>
+            <keywords><![CDATA[profile]]></keywords>
+            <content><![CDATA[
+				<h2>Profil</h2>
+		
+			  ]]>
+        </content>
+</pageprofil>-->
 </pages>
 
 </database>
