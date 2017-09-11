@@ -14,6 +14,7 @@ require ("frontendHandler.php")
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/sweetalert2.min.css" />
 		<!--<link rel="stylesheet" href="css/skel.css" />-->
 		<link rel="stylesheet" href="css/style.css" />
 		<!--<link rel="stylesheet" href="css/style-xlarge.css" />-->
@@ -121,5 +122,6 @@ require ("frontendHandler.php")
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script src="js/bahnen.js"></script>
 </html>

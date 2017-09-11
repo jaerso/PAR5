@@ -109,28 +109,7 @@ function dragStop(event) {
  *   Exportiert Canvas in den Image-Ordner
  */
 function exportCanvas(){
-    var canvas = document.getElementById("canvas");
-    var dataURL = canvas.toDataURL("image/png");
-    document.getElementById('hidden_data').value = dataURL;
-    var fd = new FormData(document.forms["form1"]);
-    fd.append('bahn', bahnNummer);
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'saveCanvasDataUrl.php', true);
-
-    xhr.upload.onprogress = function(e) {
-        if (e.lengthComputable) {
-            var percentComplete = (e.loaded / e.total) * 100;
-            console.log(percentComplete + '% uploaded');
-            alert('Upload erfolgreich abgeschlossen!');
-        }
-    };
-
-
-    xhr.onload = function() {
-
-    };
-    xhr.send(fd);
 }
 
 /*
@@ -179,3 +158,61 @@ pic.onload = function(){
     ctx.drawImage(pic, 0, 0);
     }
     */
+
+$(document).ready(function () {
+    document.querySelector('#export').onclick = function () {
+        var canvas = document.getElementById("canvas");
+        var dataURL = canvas.toDataURL("image/png");
+        document.getElementById('hidden_data').value = dataURL;
+        var fd = new FormData(document.forms["form1"]);
+        fd.append('bahn', bahnNummer);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'saveCanvasDataUrl.php', true);
+
+        xhr.upload.onprogress = function(e) {
+            if (e.lengthComputable) {
+                var percentComplete = (e.loaded / e.total) * 100;
+                console.log(percentComplete + '% uploaded');
+                swal({
+                    title: 'Bist du sicher?',
+                    text: "Die Schlagempfehlung kann nicht mehr bearbeitet werden!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ja, hochladen!',
+                    cancelButtonText: 'Nein, abbrechen!',
+                    confirmButtonClass: 'btn btn-success',
+                    cancelButtonClass: 'btn btn-danger',
+                    buttonsStyling: false
+                }).then(function () {
+                    swal(
+                        'Hochgeladen!',
+                        'Die Schlagempfehlung wurde hochgeladen.',
+                        'success'
+                    )
+                }, function (dismiss) {
+                    // dismiss can be 'cancel', 'overlay',
+                    // 'close', and 'timer'
+                    if (dismiss === 'cancel') {
+                        swal(
+                            'Abgebrochen',
+                            'Du kannst weiterarbeiten :)',
+                            'error'
+                        )
+                    }
+                })
+            }
+        };
+
+
+        xhr.onload = function() {
+
+        };
+        xhr.send(fd);
+
+
+    };
+
+});
