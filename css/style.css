@@ -842,6 +842,10 @@
 				font-size: 1.25em;
 			}
 
+#editor {
+	margin: 20px 0;
+}
+
 /* Header Login*/
 	header .nav-login {
 		float: right;
@@ -1182,10 +1186,41 @@
 }
 
 #bahn-title {
-	color: #ddd;
+
+	color: white;
+	text-align: center;
+	font-size: 22px;
+	padding: 6px 12px;
 }
 
 	.dropdown ul>a>li,
 	.dropdown button{
-		font-size: 16px;
+		font-size: 22px;
+	}
+
+.btn-default{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
+	.btn-default:hover{
+		background-color: #3e8e41;
+		color: white;
+		border: none;
+		border-radius: 0;
+	}
+
+.dropdown-menu{
+	border-radius: 0;
+	border: none;
+	background-color: #eee;
+}
+
+	.dropdown-menu > a:hover,
+	.dropdown-menu > a > li:hover {
+		text-decoration: none;
+		color: whitesmoke;
+		background-color: #4CAF50;
 	}

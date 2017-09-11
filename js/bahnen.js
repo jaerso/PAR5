@@ -44,7 +44,8 @@ function bahn($bahntyp){
     drawLineCoordinates();
     pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
-    document.getElementById("bahn-title").innerHTML = "Bahn "+$bahntyp+" - "+bahnNamen[$bahntyp-1];
+    document.getElementById("bahn-title").innerHTML = bahnNamen[$bahntyp-1];
+    document.getElementById("bahn-title").style.backgroundColor = "#474747";
 }
 
     //clear Canvas + set background again
@@ -105,12 +106,6 @@ function dragStop(event) {
     console.log(coordinates);
     drawLine(position);
 }
-/*
- *   Exportiert Canvas in den Image-Ordner
- */
-function exportCanvas(){
-
-}
 
 /*
 *   Koordinaten in Array speichern
@@ -160,6 +155,10 @@ pic.onload = function(){
     */
 
 $(document).ready(function () {
+
+    /*
+     *   Exportiert Canvas in den Image-Ordner
+     */
     document.querySelector('#export').onclick = function () {
         var canvas = document.getElementById("canvas");
         var dataURL = canvas.toDataURL("image/png");
@@ -215,5 +214,10 @@ $(document).ready(function () {
 
 
     };
+
+    $(".dropdown-menu a li").click(function(){
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + '&nbsp&nbsp<i class="fa fa-plus-square" aria-hidden="true"></i>');
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+    });
 
 });
