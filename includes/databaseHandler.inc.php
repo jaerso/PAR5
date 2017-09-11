@@ -12,6 +12,7 @@ if (file_exists('./includes/database/data.xml')) {
   else {
       exit("Datei kann nicht geöffnet werden.");
   }
+  
 
   function readNavigation(){
      global $xml;
@@ -20,9 +21,12 @@ if (file_exists('./includes/database/data.xml')) {
       $arr = $xml->pages->page;
       foreach($arr as $meineSeite) {
 
-          $navi = "<a href='index.php?page=" . $meineSeite->attributes()->path . "'>" . $meineSeite->navigation . "</a>";
+        if(isset($meineSeite->navigation)){
 
-          $realnavi .= "<li>" . $navi ."</li>";
+          $navi = "<a href='index.php?page=" . $meineSeite->attributes()->path . "'>" . $meineSeite->navigation. "</a>";
+        
+
+          $realnavi .= "<li>" . $navi ."</li>";}
       }
 
       return $realnavi;
@@ -36,9 +40,6 @@ if (file_exists('./includes/database/data.xml')) {
           if($meineSeite->attributes()->path==$page){
               return $meineSeite->content;
           }
-        /*  else{
-            return '';
-          }*/
       }
 
   }//Ende von readContent
