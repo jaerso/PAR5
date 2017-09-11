@@ -1134,7 +1134,7 @@ ende*/
 /* Wrapper */
 
 	.wrapper {
-		padding: 0em 0em 0em;
+		padding: 1em 0em 0em;
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 		/* Style 3 Wrapper */
@@ -1206,6 +1206,10 @@ ende*/
 				background-color: #fff;
 				color: #444;
 			}
+
+	.container{
+		margin-bottom: 4em;
+	}
 
 /* Footer */
 

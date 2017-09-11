@@ -14,6 +14,7 @@ require ("includes/frontendHandler.inc.php")
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/sweetalert2.min.css" />
 		<!--<link rel="stylesheet" href="css/skel.css" />-->
 		<link rel="stylesheet" href="css/style.css" />
 		<!--<link rel="stylesheet" href="css/style-xlarge.css" />-->
@@ -59,12 +60,12 @@ require ("includes/frontendHandler.inc.php")
         </header>
 		<!--</main>-->
 		<section id="main" class="wrapper">
-
-
-            <?php if($_GET['page'] != 'home'){ echo "<div class=\"container\">";} ?>
+            <?php if(isset($_GET['page'])){}
+                    else{ $_GET['page'] = 'home';}
+            ?>
+            <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <?php getContent();?>
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
-
             </section>
 		<!-- Footer -->
         <footer id="footer">
@@ -123,5 +124,6 @@ require ("includes/frontendHandler.inc.php")
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script src="js/bahnen.js"></script>
 </html>
