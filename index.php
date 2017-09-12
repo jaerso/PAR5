@@ -36,10 +36,9 @@ require ("includes/frontendHandler.inc.php")
                 <?php
                 if (isset($_SESSION['u_id'])) {
 					echo "<form action='includes/logout.inc.php' method='POST'>";
-                    if (isset($_SESSION['u_id'])) {
 						$username = $_SESSION['u_uid'];
 						echo "<a href='index.php?page=profile'>$username</a>";
-                    }	echo "<button type='submit' name='submit'>Ausloggen</button>
+                    	echo "<button type='submit' name='submit'>Ausloggen</button>
 						</form>";
                 } else {
                     echo '<form action="includes/login.inc.php" method="POST">

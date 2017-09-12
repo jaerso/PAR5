@@ -37,12 +37,18 @@ if (file_exists('./includes/database/data.xml')) {
       global $xml;
       $arr = $xml->pages->page;
       foreach ($arr as $meineSeite) {
-          if($meineSeite->attributes()->path==$page){
-              return $meineSeite->content;
-          }
-      }
+        if($meineSeite->attributes()->path==$page){
+            return $meineSeite->content;
+           }
+          /*if($meineSeite->attributes()->path==$page && $page="profile"){
+              fopen("./includes/profile.inc.php","r+");
+          }*/
+       
+        }
 
-  }//Ende von readContent
+      
+
+    }//Ende von readContent
 
 
   ?>
