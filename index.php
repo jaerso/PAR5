@@ -73,12 +73,10 @@ else{
 	  <div class="nav-login">
 	 
 	 
-	 <?php
+	  <?php
 	  if (isset($_SESSION['u_id'])) {
 		  echo "<form action='includes/logout.inc.php' method='POST'>";
-		  if (isset($_SESSION['u_id'])) {
-			  echo "Du bist eingeloggt!";
-		  }	echo "<button type='submit' name='submit'>Ausloggen</button>
+		  echo "<button type='submit' name='submit'>Ausloggen</button>
 			  </form>";
 	  } else {
 		  echo '<form action="includes/login.inc.php" method="POST">
