@@ -3,7 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 /* Basic */
-<<<<<<< HEAD
 
 
 
@@ -27,8 +26,6 @@
 
 
 
-=======
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
 	body {
 		background: #fff;
 	}
@@ -863,9 +860,6 @@
 				font-size: 1.25em;
 			}
 
-<<<<<<< HEAD
-/*navi*/
-=======
 #editor {
 	margin: 20px 0;
 }
@@ -963,7 +957,6 @@
 
 
 /*navi orginal*/
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
 
 		#header nav {
 			height: 3em;
@@ -1023,22 +1016,7 @@
 						vertical-align: middle;
 					}
 
-<<<<<<< HEAD
-
-
-
-
-/*navi ende*/
-
-
-
-
-
-
-
-=======
 /*navi orginal ende*/
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
 
 		#header .container {
 			position: relative;
@@ -1082,11 +1060,7 @@
 
 /* Wrapper */
 	.wrapper {
-<<<<<<< HEAD
-		padding: 1em 0em 4em;
-=======
 		padding: 1em 0em 0em;
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 		/* Style 3 Wrapper */
@@ -1224,7 +1198,6 @@
 			cursor: pointer;
 		}
 
-<<<<<<< HEAD
 /* Grid Demo */
 
 	.grid-demo {
@@ -1338,12 +1311,10 @@ padding-bottom:40px;
     margin: 0 auto;
 	padding-top: 30px;
 	line-height:2em;
-=======
 /* Bahn-Editor */
 .dropdown,
 #bahn-title{
 	margin: 20px;
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
 }
 
 #bahn-title {
@@ -1379,17 +1350,9 @@ padding-bottom:40px;
 	background-color: #eee;
 }
 
-<<<<<<< HEAD
-.dropdown ul>a>li,
-.dropdown button{
-	font-size: 16px;
-}
-
-=======
 	.dropdown-menu > a:hover,
 	.dropdown-menu > a > li:hover {
 		text-decoration: none;
 		color: whitesmoke;
 		background-color: #4CAF50;
 	}
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
