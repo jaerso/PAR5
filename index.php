@@ -1,8 +1,9 @@
 <?php
-session_start();
-error_reporting(E_ALL);
-require ("includes/frontendHandler.inc.php")
+	session_start();
+	error_reporting(E_ALL);
+	require ("includes/frontendHandler.inc.php")
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
 	<head>
@@ -21,6 +22,7 @@ require ("includes/frontendHandler.inc.php")
 	<!--	<link rel="shortcut icon" href="favicon.ico">-->
 
 	</head>
+
 	<body class="landing" onload="init()">
 		<!-- Header -->
         <header id="header" class="header-home">
@@ -57,6 +59,7 @@ require ("includes/frontendHandler.inc.php")
 
 
         </header>
+		
 		<!--</main>-->
 		<section id="main" class="wrapper">
             <?php if(isset($_GET['page'])){}
@@ -66,8 +69,9 @@ require ("includes/frontendHandler.inc.php")
             <?php getContent();?>
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
             </section>
-		<!-- Footer -->
-        <footer id="footer">
+			</body>
+			<!-- Footer -->
+<footer id="footer">
 				<div class="container">
 					<section class="links">
 						<div class="row">
