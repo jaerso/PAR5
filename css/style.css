@@ -82,7 +82,8 @@
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
-		margin-left: 8em;
+		
+	
 	}
 
 	h6 {
@@ -183,7 +184,7 @@
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
-		margin-left: 5em;
+		
 	}
 
 	header.major {
@@ -576,7 +577,7 @@
 					cursor: default;
 					list-style: none;
 					padding-left: 0;
-					margin-left: 5em;
+					
 				}
 
 			ul.actions li {
@@ -1287,8 +1288,12 @@
 		}
 
 		.modal-title {
-			margin-left: 9em;
+			margin: 0;
+			line-height: 1.42857143;
+			margin-left: 55px;
 		}
+
+		
 
 		.strich{
 
