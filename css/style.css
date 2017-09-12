@@ -76,11 +76,13 @@
 	h4 {
 		font-size: 1.1em;
 		line-height: 1.5em;
+		
 	}
 
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
+		margin-left: 8em;
 	}
 
 	h6 {
@@ -177,12 +179,11 @@
 		line-height: 1.5em;
 	}
 
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
+	header h4 + p, header h5 + p, header h6 + p {
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
+		margin-left: 5em;
 	}
 
 	header.major {
@@ -571,12 +572,12 @@
 				ul.icons li .icon:before {
 					font-size: 2em;
 				}
-
-		ul.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
+				ul.actions {
+					cursor: default;
+					list-style: none;
+					padding-left: 0;
+					margin-left: 5em;
+				}
 
 			ul.actions li {
 				display: inline-block;
@@ -934,6 +935,19 @@
 }
 
 
+
+.close{
+
+
+	float: right;
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .3;
+}
+
 /*navi orginal*/
 
 		#header nav {
@@ -1270,6 +1284,10 @@
 		#closeModal{
 			margin-left: 400px;
 			background-color: #EF5350;
+		}
+
+		.modal-title {
+			margin-left: 9em;
 		}
 
 		.strich{
