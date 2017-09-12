@@ -21,6 +21,13 @@
 		<!--<link rel="stylesheet" href="css/style-xlarge.css" />-->
 	<!--	<link rel="shortcut icon" href="favicon.ico">-->
 
+
+
+
+
+
+
+
 	</head>
 
 	<body class="landing" onload="init()">
@@ -29,9 +36,86 @@
 				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
 
+
 			<nav id="" >
 				<ul id="" class="nav">
 
+
+<?php 
+
+
+if (isset($_SESSION['u_id'])) {
+
+
+	echo "<form action='includes/logout.inc.php' method='POST'>";
+	if (isset($_SESSION['u_id'])) {
+		//echo "Du bist eingeloggt!";
+	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
+		</form>";
+}	
+else{
+?>				
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		<h4 class="modal-title">Hier anmelden!</h4>
+
+      </div>
+   
+	  <div class="modal-footer">
+
+	  <div class="nav-login">
+	 
+	 
+	 <?php
+	  if (isset($_SESSION['u_id'])) {
+		  echo "<form action='includes/logout.inc.php' method='POST'>";
+		  if (isset($_SESSION['u_id'])) {
+			  echo "Du bist eingeloggt!";
+		  }	echo "<button type='submit' name='submit'>Ausloggen</button>
+			  </form>";
+	  } else {
+		  echo '<form action="includes/login.inc.php" method="POST">
+				  <input type="text" name="uid" placeholder="Benutzername"> </br>
+				  <input type="password" name="pwd" placeholder="Passwort"> </br>
+				  <button class="btn btn-default" type="submit" name="submit">Einloggen</button>
+				 </form>';
+	  }
+	  
+	
+	
+?>
+
+</div>
+</div>
+<p class="strich"> ___________________________________________________________</p>
+<div class="regKasten">
+<h5>Noch kein Konto?</h5>
+<p>Dann registriere dich noch heute!</p>
+<ul class="actions">
+	<li>
+		<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
+	</li>
+</ul>
+</div>
+	
+<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+</div>
+
+</div>
+
+</div>
+
+<?php
+}
+?>
 					<?= getNavigation()?>
 
             <div class="nav-login">
