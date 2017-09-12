@@ -64,7 +64,7 @@ else{
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-		<h4 class="modal-title">Hier anmelden!</h4>
+		<h4 class="modal-title">        Hier anmelden!</h4>
 
       </div>
    
@@ -101,7 +101,7 @@ else{
 		<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
 	</li>
 </ul>
-    <button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+
 </div>
 </div>
 
