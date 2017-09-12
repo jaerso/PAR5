@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?php
+include_once("./registrieren.php");
+?>
 
 <database version="1.0">
 
@@ -112,15 +115,13 @@
             <description> <![CDATA[Galerie]]></description>
             <title><![CDATA[Galerie]]></title>
             <author><![CDATA[par5]]></author>
-            <keywords><![CDATA[gallery]]></keywords>
+            <keywords><![CDATA[galerie]]></keywords>
             <content>
             <![CDATA[
 
         					<header class="major">
-        						<h2>Galerie</h2>
-        						<div class=comment>
-								<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-								</div>
+        						<h2>Gallerie</h2>
+        						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
         					</header>
 
                 ]]>
@@ -160,7 +161,7 @@
                             </div>
                             <div class="col-lg-3">
                                 <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bahntyp&nbsp;
+                                    <button id="dropBahn" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Bahntyp&nbsp;
                                     <i class="fa fa-plus-square" aria-hidden="true"></i></button>
                                     <ul class="dropdown-menu">
                                         <a href="javascript:bahn(1)"><li>Bahn 1</li></a>
@@ -190,15 +191,15 @@
                         </div>
 
                     
-                            <canvas id='canvas'  style='border: 1px solid; width: 1200; height: 600px;'>
+                            <canvas id='canvas'>
                             Sorry, your browser does not support the canvas tag.
                             </canvas>
-                    <div class="col-lg-2">
-					    <input id="clearCanvas" type="button" value="Clear Editor">
+                    <div class="col-lg-2 col-lg-push-1">
+					    <button id="clearCanvas" class="btn btn-default">Zurücksetzten</button>
 					</div>
 
-					<div class="col-lg-2">
-                        <input id="export" type="button" value="Upload" />
+					<div class="col-lg-2 col-lg-push-1">
+                        <button id="export" class="btn btn-default">Upload</button>
                     </div>
 
                     <form method="post" accept-charset="utf-8" name="form1">
@@ -228,68 +229,6 @@
 			<input type="password" name="pwd" placeholder="Passwort">
 			<button type="submit" name="submit">Und los!</button>
 		</form>
-			  ]]>
-        </content>
-</page>
-
-<page path="profile" php="true" lang="de">
-			<description> <![CDATA[Profil]]></description>
-            <title><![CDATA[Profil]]></title>
-            <author><![CDATA[par5]]></author>
-            <keywords><![CDATA[profile]]></keywords>
-            <content><![CDATA[
-				<h2>Profil</h2>
-<?php
-	include_once 'dbh.php';
-
-	$sql = "SELECT * FROM user";
-	$result = mysqli_query($conn, $sql);
-	if (mysqli_num_rows($result) > 0) {
-		while ($row = mysqli_fetch_assoc($result)) {
-			$id = $row['id'];
-			$sqlImg = "SELECT * FROM profileimg WHERE userid='$id'";
-			$resultImg = mysqli_query($conn, $sqlImg);
-			while ($rowImg = mysqli_fetch_assoc($resultImg)) {
-				echo "<div class='user-container'>";
-					if ($rowImg['status'] == 0) {
-						$filename = "uploads/profile".$id."*";
-						$fileinfo=glob($filename);
-						$fileext=explode(".",$fileinfo[0]);
-						$fileactualext= $fileext[1];
-						echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand().">";
-					} else {
-						echo "<img src='uploads/profiledefault.jpg'>";
-					}
-					echo "<p>".$row['username']."</p>";
-				echo "</div>";
-			}
-		}
-	} else {
-		echo "There are no users yet!";
-	}
-
-	if (isset($_SESSION['id'])) {
-		if ($_SESSION['id'] == 1) {
-			echo "You are logged in as user #1";
-		}
-		echo "<form action='upload.php' method='POST' enctype='multipart/form-data'>
-			<input type='file' name='file'>
-			<button type='submit' name='submit'>UPLOAD</button>
-		</form>";
-		echo "<form action='deleteprofile.php' method='POST'>
-		<button type='submit' name='submit'>Delete profile image</button>
-	</form>";
-	} else {
-		echo "You are not logged in!";
-		echo "<form action='signup.php' method='POST'>
-			<input type='text' name='first' placeholder='First name'>
-			<input type='text' name='last' placeholder='Last name'>
-			<input type='text' name='uid' placeholder='Username'>
-			<input type='password' name='pwd' placeholder='Password'>
-			<button type='submit' name='submitSignup'>Signup</button>
-		</form>";
-	}
-?>
 			  ]]>
         </content>
 </page>
