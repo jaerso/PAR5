@@ -124,21 +124,12 @@ else{
         </header>
 		<!--</main>-->
 		<section id="main" class="wrapper">
-<<<<<<< HEAD
-
-
-
-			<div class="container">
-		<?php getContent();?>
-		</div>
-=======
             <?php if(isset($_GET['page'])){}
                     else{ $_GET['page'] = 'home';}
             ?>
             <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <?php getContent();?>
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
->>>>>>> fc88da3d6163b3ce676bfabf7af8747612835f95
             </section>
 		<!-- Footer -->
         <footer id="footer">
