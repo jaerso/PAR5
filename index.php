@@ -1,9 +1,8 @@
 <?php
-	session_start();
-	error_reporting(E_ALL);
-	require ("includes/frontendHandler.inc.php")
+session_start();
+error_reporting(E_ALL);
+require ("frontendHandler.php")
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 	<head>
@@ -29,7 +28,6 @@
 
 
 	</head>
-
 	<body class="landing" onload="init()">
 		<!-- Header -->
         <header id="header" class="header-home">
@@ -104,9 +102,8 @@ else{
 		<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
 	</li>
 </ul>
+    <button id="closeModal" type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
 </div>
-	
-<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
 </div>
 
 </div>
@@ -118,32 +115,12 @@ else{
 ?>
 					<?= getNavigation()?>
 
-            <div class="nav-login">
-                <?php
-                if (isset($_SESSION['u_id'])) {
-					echo "<form action='includes/logout.inc.php' method='POST'>";
-						$username = $_SESSION['u_uid'];
-						echo "<a href='index.php?page=profile'>$username</a>";
-                    	echo "<button type='submit' name='submit'>Ausloggen</button>
-						</form>";
-                } else {
-                    echo '<form action="includes/login.inc.php" method="POST">
-							<input type="text" name="uid" placeholder="Benutzername">
-							<input type="password" name="pwd" placeholder="Passwort">
-							<button class="btn btn-default" type="submit" name="submit">Einloggen</button>
-						</form>';
-				}
-			
-
-
-                ?>
-			</div>
+        
 				</ul>
 			</nav>
 
 
         </header>
-		
 		<!--</main>-->
 		<section id="main" class="wrapper">
             <?php if(isset($_GET['page'])){}
@@ -153,9 +130,8 @@ else{
             <?php getContent();?>
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
             </section>
-			</body>
-			<!-- Footer -->
-<footer id="footer">
+		<!-- Footer -->
+        <footer id="footer">
 				<div class="container">
 					<section class="links">
 						<div class="row">

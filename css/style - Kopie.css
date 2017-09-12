@@ -3,7 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 /* Basic */
-
 	body {
 		background: #fff;
 	}
@@ -199,7 +198,12 @@
 			font-size: 1.5em;
 		}
 
+/* Form */
 
+	form {
+
+		margin: 0 0 6em 0;
+	}
 
 	label {
 		color: #474747;
@@ -800,6 +804,11 @@
 	}
 
 		body.landing #header nav a {
+			-moz-transition: 0.3s ease-in-out;
+			-webkit-transition: 0.3s ease-in-out;
+			-o-transition: 0.3s ease-in-out;
+			-ms-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
 			color:#3AAA35;
 			font-family: "Raleway";
 			font-weight:bold;
@@ -938,7 +947,7 @@
 
 		#header nav {
 			height: 3em;
-			line-height: 1.8em;
+			line-height: 3em;
 			position: absolute;
 			right: 3em;
 			vertical-align: middle;
@@ -1042,7 +1051,6 @@
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 		/* Style 3 Wrapper */
-
 	}
 
 		.wrapper.style1 {
@@ -1176,116 +1184,6 @@
 			cursor: pointer;
 		}
 
-/* Grid Demo */
-
-	.grid-demo {
-		display: block;
-		margin: 0 0 2em 0;
-	}
-
-		.grid-demo span {
-			background: #8d93a0;
-			border-radius: 4px;
-			color: rgba(0, 0, 0, 0.25);
-			display: block;
-			font-weight: 700;
-			height: 2.75em;
-			line-height: 2.75em;
-			text-align: center;
-		}
-
-		.grid-demo .row.flush > div span {
-			border-radius: 0;
-		}
-
-		.grid-demo .row.flush > div:first-child span {
-			border-radius: 4px 0 0 4px;
-		}
-
-		.grid-demo .row.flush > div:last-child span {
-			border-radius: 0 4px 4px 0;
-		}
-		header .nav-login {
-			float: left;
-		}
-		
-		header .nav-login form {
-			float: left;
-			padding-top: 20px;
-		}
-		
-		header .nav-login form input {
-			float: left;
-			width: 400px;
-			height: 40px;
-			padding: 0px 10px;
-			margin-left: 70px;
-			margin-bottom:15px;
-			border: none;
-			
-	        background-color: #ccc;
-			font-family: arial;
-			font-size: 14px;
-			color: #111;
-			line-height: 30px;
-		}
-		
-		header .nav-login form button {
-			float: left;
-			width: 90px;
-			height: 30px;
-			margin-left: 70px;
-			border: none;
-			background-color: #f3f3f3;
-			font-family: arial;
-			font-size: 14px;
-			color: #111;
-			cursor: pointer;
-		}
-		
-		header .nav-login form button:hover {
-			background-color: #ccc;
-		}
-		
-		header .nav-login a {
-			display: block;
-			width: 60px;
-			height: 60px;
-			border: none;
-			float: left;
-			background-color: #fff;
-			font-family: arial;
-			font-size: 16px;
-			color: #111;
-			line-height: 63px;
-			cursor: pointer;
-		}
-		
-		.regKasten{
-			width: 500px;
-			margin-left: 70px;
-			padding-bottom:40px;
-		}
-
-		#closeModal{
-			margin-left: 400px;
-			background-color: #EF5350;
-		}
-
-		.strich{
-
-			margin-left:0px;
-		}
-
-/*signup.php*/
-
-.signup-form {
-    width: 400px;
-    margin: 0 auto;
-	padding-top: 30px;
-	line-height:2em;
-}
-    
 /* Bahn-Editor */
 
 #canvas{
@@ -1327,6 +1225,7 @@
 }
 
 #bahn-title {
+
 	color: white;
 	text-align: center;
 	font-size: 22px;
