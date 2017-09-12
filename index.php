@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(E_ALL);
-require ("frontendHandler.php")
+require ("includes/frontendHandler.inc.php")
 ?>
 <!DOCTYPE html>
 <html lang="de">
