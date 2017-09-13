@@ -114,7 +114,6 @@ else{
                    else{ $_GET['page'] = 'home';}
             ?>
             <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
-<<<<<<< HEAD
             <!--getContent()-->
 				<?php
 				if($_GET['page']=='home'){
@@ -131,12 +130,6 @@ else{
 				}
 				?>
 			
-=======
-			<?php getContent();?>
-			
-			
-					  
->>>>>>> a7cc04403de95a8c8186d305f82415c4349c247f
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
             </section>
 		<?php
