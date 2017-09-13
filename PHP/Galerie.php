@@ -34,7 +34,7 @@ $fotos = [
     if(isset($_GET['bahn'])){
      $bildOrdner = $_GET['bahn'];
 
-     ($_GET['bahn'] == 'Schlagempfehlungen/Bahn'.$Bahnnummer);
+     ($_GET['bahn'] == 'images/gallery/Schlagempfehlungen/Bahn'.$Bahnnummer);
 
      do {
         $a = $a + 1;
@@ -70,14 +70,14 @@ $fotos = [
         echo"<h2> Schlagempfehlungen für Bahn ".$a. " <h2>";
         
 
-        $elemente = scandir($bildOrdner);
+        $elemente = scandir('images/gallery/'.$bildOrdner);
         foreach($elemente as $e){
             if($e == '.' or $e == '..') {continue; }
-            if(is_dir($bildOrdner.$e)){
+            //if(is_dir($bildOrdner.$e)){
             //für unterordner   $html .= '<a href="index.php?album='.urlencode($bildOrdner.$e.'/').'">'.$e.'</a>';
-            }
+            //}
             else {
-                $size = getimagesize($bildOrdner."/".$e);
+                $size = getimagesize('images/gallery/'.$bildOrdner."/".$e);
                 if($size[2] == 1 or $size[2] == 2) {
                     $html .= '<div style="display:inline-block;margin:7px;">
                     <img src="'.$bildOrdner."/".$e.'" '.$size[3].' alt="'.$e.'"></div>';
