@@ -14,7 +14,7 @@ include_once("./registrieren.php");
             <author><![CDATA[par5]]></author>
             <keywords><![CDATA[start]]></keywords>
             <content>
-            <![CDATA[<div id="banner">
+            <![CDATA[ <div id="banner">
       				<h2>Willkommen</h2>
       				<p>par5 - Für alle Minigolf Spieler und solche, die es werden wollen</p>
       				<ul class="actions">
@@ -22,7 +22,7 @@ include_once("./registrieren.php");
       						<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
       					</li>
       				</ul>
-      			</section>
+      			</section> 
 
       		<!-- Funktionen -->
       			<section id="one" class="wrapper style1 special">
