@@ -22,7 +22,8 @@ if (isset($_SESSION['u_id'])) {
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
 	if (isset($_SESSION['u_id'])) {
-		//echo "Du bist eingeloggt!";
+		$username= $_SESSION['u_uid'];
+		echo "Hallo <a href='index.php?page=profile'>$username</a>";
 	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	
@@ -50,9 +51,7 @@ else{
 	 <?php
 	  if (isset($_SESSION['u_id'])) {
 		  echo "<form action='includes/logout.inc.php' method='POST'>";
-		  if (isset($_SESSION['u_id'])) {
-			  echo "Du bist eingeloggt!";
-		  }	echo "<button type='submit' name='submit'>Ausloggen</button>
+		  echo "<button type='submit' name='submit'>Ausloggen</button>
 			  </form>";
 	  } else {
 		  echo '<form action="includes/login.inc.php" method="POST">
