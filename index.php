@@ -22,8 +22,7 @@ if (isset($_SESSION['u_id'])) {
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
 	if (isset($_SESSION['u_id'])) {
-		$username=$_SESSION['u_uid'];
-		echo "Hallo <a href='index.php?page=profile'>$username</a>";
+		//echo "Du bist eingeloggt!";
 	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	
@@ -39,7 +38,7 @@ else{
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-		<h4 class="modal-title">        Hier anmelden!</h4>
+		<h4 class="modal-title">Hier anmelden!</h4>
 
       </div>
    
@@ -48,10 +47,12 @@ else{
 	  <div class="nav-login">
 	 
 	 
-	  <?php
+	 <?php
 	  if (isset($_SESSION['u_id'])) {
 		  echo "<form action='includes/logout.inc.php' method='POST'>";
-		  echo "<button type='submit' name='submit'>Ausloggen</button>
+		  if (isset($_SESSION['u_id'])) {
+			  echo "Du bist eingeloggt!";
+		  }	echo "<button type='submit' name='submit'>Ausloggen</button>
 			  </form>";
 	  } else {
 		  echo '<form action="includes/login.inc.php" method="POST">
@@ -67,7 +68,11 @@ else{
 
 </div>
 </div>
-<p class="strich"> ___________________________________________________________</p>
+
+
+<hr class="strich">
+			
+
 <div class="regKasten">
 <h5>Noch kein Konto?</h5>
 <p>Dann registriere dich noch heute!</p>
@@ -99,11 +104,17 @@ else{
 
         </header>
 		<!--</main>-->
+
+
+	
+	
 		<section id="main" class="wrapper">
-            <?php if(isset($_GET['page'])){}
-                    else{ $_GET['page'] = 'home';}
+		
+	    <?php if(isset($_GET['page'])){}
+                   else{ $_GET['page'] = 'home';}
             ?>
             <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
+<<<<<<< HEAD
             <!--getContent()-->
 				<?php
 				if($_GET['page']=='home'){
@@ -120,6 +131,12 @@ else{
 				}
 				?>
 			
+=======
+			<?php getContent();?>
+			
+			
+					  
+>>>>>>> a7cc04403de95a8c8186d305f82415c4349c247f
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
             </section>
 		<?php
