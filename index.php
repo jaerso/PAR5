@@ -2,7 +2,7 @@
 
 	<?php
 	include_once "PHP/Head.php";
-	//require "PHP/Profil.php";
+//require "PHP/Profil.php";
 	?>
 	<body class="landing" onload="init()">
 		<!-- Header -->
@@ -25,9 +25,8 @@ if (isset($_SESSION['u_id'])) {
 	if (isset($_SESSION['u_id'])) {
 		$username= $_SESSION['u_uid'];
 		//$id=$_SESSION['u_id'];
-		//echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."'>";*/
-		//profilIcon();
-		echo "Willkommen <a href='index.php?page=profile'>$username</a> !";
+		
+		echo "Hallo <a href='index.php?page=profile'>$username</a>";
 	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	

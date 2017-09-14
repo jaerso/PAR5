@@ -1,6 +1,6 @@
 <?php
 $bahn = $_POST['bahn'];
-    $upload_dir = "images/Schlagempfehlungen/Bahn".$bahn."/";
+    $upload_dir = "images/gallery/Schlagempfehlungen/Bahn".$bahn."/";
 $img = $_POST['hidden_data'];
 $img = str_replace('data:image/png;base64,', '', $img);
 $img = str_replace(' ', '+', $img);
