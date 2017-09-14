@@ -1395,3 +1395,32 @@ hr.strich {
 		color: whitesmoke;
 		background-color: #4CAF50;
 	}
+
+	/*Profil*/
+
+	.user-container {
+		width: 400px;
+		padding: 10px;
+		background-color: #fff;
+		margin: 10px;
+		overflow: hidden;
+	}
+	
+	.user-container img {
+		float: left;
+		width: 60px;
+	}
+	
+	.user-container div {
+		float: left;
+	}
+	
+	form {
+		padding: 0px;
+		margin: 4px;
+	}
+	
+	form button {
+		padding: 4px;
+	}
+	/*Ende Profil*/

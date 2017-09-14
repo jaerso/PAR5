@@ -2,6 +2,7 @@
 
 	<?php
 	include_once "PHP/Head.php";
+	//require "PHP/Profil.php";
 	?>
 	<body class="landing" onload="init()">
 		<!-- Header -->
@@ -22,8 +23,11 @@ if (isset($_SESSION['u_id'])) {
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
 	if (isset($_SESSION['u_id'])) {
-		$username= $_SESSION['u_uid'];
-		echo "Hallo <a href='index.php?page=profile'>$username</a>";
+		//$username= $_SESSION['u_uid'];
+		/*$id=$_SESSION['u_id'];
+		echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."'>";*/
+		//profilIcon();
+		//echo "Hallo <a href='index.php?page=profile'>$username</a>";
 	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	
@@ -127,7 +131,14 @@ else{
 				elseif($_GET['page']=='editor'){
 					include_once "PHP/Editor.php";
 				}
+				elseif($_GET['page']=='profile'){
+					include_once "PHP/Profil.php";
+				}
+				elseif($_GET['page']=='registration'){
+					include_once "PHP/Registrierung.php";
+				}
 				?>
+			
 			
             <?php if($_GET['page'] != 'home'){ echo "</div>";} ?>
             </section>
