@@ -1,7 +1,10 @@
 <?php
 include_once 'includes/dbh.inc.php';
 
-echo "<h1>Profil</h1>";
+
+echo "<div class='profil-container'>";
+
+echo "<h1>Dein Profil</h1>";
 	$sql = "SELECT * FROM users";
 	$result = mysqli_query($conn, $sql);
 	if (mysqli_num_rows($result) > 0) {
@@ -21,11 +24,36 @@ echo "<h1>Profil</h1>";
 					} else {
 						echo "<img src='uploads/profiledefault.jpg'>";
 					}
-					echo "<p>".$row['user_uid']."</p>";
-					echo "<p>".$row['user_first'] ." ". $row['user_last']."</p>";
+				
 					
+					if (isset($_SESSION['u_id'])) {
+						echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data'>
+							<input type='file' name='file'>
+							<button type='submit' name='submit'>Hochladen</button>
+						</form>";
+						echo "<form action='includes/deleteprofile.inc.php' method='POST'>
+						<button type='submit' name='submit'>Profilbild löschen</button>
+					</form>";
+					} 
 					
+					function profilIcon(){
+						$username= $_SESSION['u_uid'];
+					   /* $id=$_SESSION['u_id'];
+						echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."'>";*/
+						echo "Hallo <a href='index.php?page=profile'>$username</a>";
+					   
+					}	
+
+
+
+				echo "</div>";
+
+
+
+					echo "<p> Dein Benutzername: ".$row['user_uid']."</p>";
+					echo "<p> Dein Vor- und Nachname: ".$row['user_first'] ." ". $row['user_last']."</p>";
 					
+
 
 
 				echo "</div>";
@@ -34,21 +62,5 @@ echo "<h1>Profil</h1>";
 		}
 	}
 
-	if (isset($_SESSION['u_id'])) {
-		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data'>
-			<input type='file' name='file'>
-			<button type='submit' name='submit'>UPLOAD</button>
-		</form>";
-		echo "<form action='includes/deleteprofile.inc.php' method='POST'>
-		<button type='submit' name='submit'>Delete profile image</button>
-	</form>";
-    } 
-    
-    function profilIcon(){
-        $username= $_SESSION['u_uid'];
-       /* $id=$_SESSION['u_id'];
-        echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."'>";*/
-        echo "Hallo <a href='index.php?page=profile'>$username</a>";
-       
-    }
+
 ?>

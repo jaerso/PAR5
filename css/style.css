@@ -156,6 +156,11 @@
 		text-align: right;
 	}
 
+	#three > .container{
+
+		margin-bottom: 0;
+	}
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -1128,7 +1133,9 @@
 			}
 
 	.container{
-		margin-bottom: 4em;
+		padding-bottom: 4em;
+
+	
 	}
 
 /* Footer */
@@ -1398,17 +1405,27 @@ hr.strich {
 
 	/*Profil*/
 
+	.profil-container{
+
+background-color: lightgrey;
+
+	}
+
 	.user-container {
-		width: 400px;
+		
 		padding: 10px;
 		background-color: #fff;
 		margin: 10px;
 		overflow: hidden;
+		background-color:#4CAF50;
 	}
-	
+
 	.user-container img {
 		float: left;
-		width: 60px;
+		width: 200px;
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
 	}
 	
 	.user-container div {
