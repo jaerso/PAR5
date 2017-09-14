@@ -74,9 +74,14 @@ else{
 
 
 <hr class="strich">
-			
+	
+
+<img src="images/regMensch.png" style="width: 160px; float: right; margin-right:55px;">		
+
 
 <div class="regKasten">
+	
+
 <h5>Noch kein Konto?</h5>
 <p>Dann registriere dich noch heute!</p>
 <ul class="actions">
@@ -84,6 +89,9 @@ else{
 		<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
 	</li>
 </ul>
+
+
+
 
 </div>
 </div>

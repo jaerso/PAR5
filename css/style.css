@@ -1282,15 +1282,15 @@
 			padding-bottom:40px;
 		}
 
-		#closeModal{
-			margin-left: 400px;
-			background-color: #EF5350;
-		}
+
+
+
 
 		.modal-title {
 			margin: 0;
 			line-height: 1.42857143;
 			margin-left: 55px;
+          margin-top:15px;
 		}
 
 		
