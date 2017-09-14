@@ -16,12 +16,20 @@ echo "<h1>Profil</h1>";
 						$fileinfo=glob($filename);
 						$fileext=explode(".",$fileinfo[0]);
 						$fileactualext= $fileext[1];
+						//Profilausgabe
 						echo "<img src='uploads/profile".$id.".".$fileactualext."?".mt_rand()."'>";
 					} else {
 						echo "<img src='uploads/profiledefault.jpg'>";
 					}
 					echo "<p>".$row['user_uid']."</p>";
+					echo "<p>".$row['user_first'] ." ". $row['user_last']."</p>";
+					
+					
+					
+
+
 				echo "</div>";
+				//Profilausgabe Ende
 			}
 		}
 	}
