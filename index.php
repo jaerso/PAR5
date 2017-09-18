@@ -7,13 +7,32 @@
 	<body class="landing" onload="init()">
 		<!-- Header -->
         <header id="header" class="header-home">
-				<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-					<a href=index.php?page=home><img src="images/logo.png" style="width: 120px; margin: 15px 15px 20px; float: left;"></a>
 
+		<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href=index.php?page=home>
+		  <img id="brand-image" alt="Website Logo" src="images/logo.png">
+		</a>
+    </div>
 
-			<nav id="" >
-				<ul id="" class="nav">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
 
+	  				<li><a href="index.php?page=home">Start</a></li>
+					<li><a href="index.php?page=gallery">Galerie</a></li>
+					<li><a href="index.php?page=function">Funktionen</a></li>
+					<li><a href="index.php?page=editor">Editor</a></li>
+  
+					</ul>
 
 <?php 
 
@@ -31,11 +50,36 @@ if (isset($_SESSION['u_id'])) {
 		</form>";
 }	
 else{
-?>				
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+?>
 
-<!-- Modal -->
+
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal"></span> Login</a></li>
+ </ul>
+
+
+
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+<?php
+}
+?>
+					<!--getNavigation()-->
+					
+        
+				
+			</nav>
+
+
+        </header>
+		<!--</main>-->
+
+
+	
+	<!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
+
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -89,35 +133,11 @@ else{
 	</li>
 </ul>
 
-
-
-
 </div>
 </div>
-
 </div>
-
 </div>
-
-<?php
-}
-?>
-					<!--getNavigation()-->
-					<li><a href="index.php?page=home">Start</a></li>
-					<li><a href="index.php?page=gallery">Galerie</a></li>
-					<li><a href="index.php?page=function">Funktionen</a></li>
-					<li><a href="index.php?page=editor">Editor</a></li>
-        
-				</ul>
-			</nav>
-
-
-        </header>
-		<!--</main>-->
-
-
-	
-	
+</div>
 		<section id="main" class="wrapper">
 		
 	    <?php if(isset($_GET['page'])){}

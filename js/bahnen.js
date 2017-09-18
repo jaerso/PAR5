@@ -5,10 +5,12 @@
 //mouse-draw Funktion für Schlagempfehlungen ***WIP***
 var canvas,
     ctx,
+    dragStop,
     dragging = false,
     dragStartLocation,
     snapshot,
     clearCanvas,
+    clearKey,
     pic = new Image(),
     coordinates =[
         {x: 156,y:187},
@@ -41,11 +43,23 @@ var canvas,
 
 function bahn($bahntyp){
     bahnNummer = $bahntyp;
-    drawLineCoordinates();
+    //drawLineCoordinates();
     pic.src = "images/minigolfbahnen/bahn"+$bahntyp+".jpg";
     pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
     document.getElementById("bahn-title").innerHTML = bahnNamen[$bahntyp-1];
     document.getElementById("bahn-title").style.backgroundColor = "#474747";
+    
+    if (bahnNummer !== null) {
+        ctx.strokeStyle = 'yellow';
+        ctx.lineWidth = 6;
+        ctx.lineCap = 'round';
+
+        canvas.addEventListener('mousedown', dragStart, false);
+        canvas.addEventListener('mousemove', drag, false);
+        canvas.addEventListener('keydown', dragStop, false);
+        canvas.addEventListener('keydown', clearKey, false);
+        clearCanvas.addEventListener('click', clearCan, false);
+}
 }
 
     //clear Canvas + set background again
@@ -97,7 +111,24 @@ function drag(event) {
         drawLine(position);
     }
 }
-
+document.onkeydown = function dragStop(event) {
+    //event = event || window.event;
+    if (event.keyCode == 27) {
+        //alert('Esc key pressed.');
+    dragging = false;
+    restoreSnapshot();
+    var position = getCanvasCoordinates(event);
+    coordinates.push(position);
+    console.log(coordinates);
+    drawLine(position);
+        }
+        if (event.keyCode == 8) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            pic.src = "images/minigolfbahnen/bahn"+bahnNummer+".jpg";
+            pic.addEventListener("load", function () {ctx.drawImage(pic, 0, 0)}, false);
+        }
+}
+/*
 function dragStop(event) {
     dragging = false;
     restoreSnapshot();
@@ -106,6 +137,7 @@ function dragStop(event) {
     console.log(coordinates);
     drawLine(position);
 }
+*/
 /*
  *   Exportiert Canvas in den Image-Ordner
  */
@@ -135,17 +167,7 @@ function init() {
     clearCanvas = document.getElementById('clearCanvas'),
     canvas.width = canvas.scrollWidth;
     canvas.height = canvas.scrollHeight;
-    ctx = canvas.getContext('2d');
-
-    ctx.strokeStyle = 'yellow';
-    ctx.lineWidth = 6;
-    ctx.lineCap = 'round';
-
-    canvas.addEventListener('mousedown', dragStart, false);
-    canvas.addEventListener('mousemove', drag, false);
-    canvas.addEventListener('mouseup', dragStop, false);
-    clearCanvas.addEventListener('click', clearCan, false);
-    
+    ctx = canvas.getContext('2d'); 
 }
 window.addEventListener('load', init, false);
 //mouse-draw Funktion ENDE
@@ -221,5 +243,4 @@ $(document).ready(function () {
         $("#dropBahn:first-child").text($(this).text());
         $("#dropBahn:first-child").val($(this).text());
     })
-
 });
