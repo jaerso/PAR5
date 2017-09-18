@@ -1371,6 +1371,11 @@ hr.strich {
 		font-size: 22px;
 	}
 
+.swal2-cancel,
+.swal2-confirm{
+	margin: 10px;
+}
+
 .btn-default{
 	background-color: #4CAF50;
 	color: white;
