@@ -2,13 +2,10 @@
 include_once 'includes/dbh.inc.php';
 include_once 'includes/picture.inc.php';
 
-<<<<<<< HEAD
-=======
 
 echo "<div class='profil-container'>";
 
 
->>>>>>> 1c4928e935ab860d9fc6696e4b605be4e51913ed
 //Profilausgabe Ende
 echo "<h1 style='color: grey;'>Profil</h1>";
 echo "<div class='user-container'>";
@@ -22,8 +19,6 @@ echo "<img class='zoom' src=$profilepic >";
 		<button type='submit' name='submit' style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 10px 0 10px; '>🗑️ löschen </button>
 	</form>";
 		}
-<<<<<<< HEAD
-=======
 	
 echo "</div>";
 
@@ -34,6 +29,5 @@ echo "</div>";
 		echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em;'> Dein Name: ".$firstname." ". $lastname."</p>";
 
  echo "</div>";
->>>>>>> 1c4928e935ab860d9fc6696e4b605be4e51913ed
 
 ?>
