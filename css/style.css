@@ -1410,6 +1410,11 @@ hr.strich {
 		font-size: 22px;
 	}
 
+.swal2-cancel,
+.swal2-confirm{
+	margin: 10px;
+}
+
 .btn-default{
 	background-color: #4CAF50;
 	color: white;
@@ -1468,6 +1473,35 @@ padding-bottom:300px;
 		-webkit-border-radius: 100%;
 		-moz-border-radius: 100%;
 	}
+
+
+	.user-container img.zoom {
+		transition: transform 0.8s;
+		-moz-transition: transform 0.8s;
+		-webkit-transition: transform 0.8s;
+		-o-transition: transform 0.8s;
+		-ms-transition: transform 0.8s;
+		margin-left:13px;
+	   }
+
+	 .user-container img.zoom:hover {
+		cursor: zoom-in; 
+		cursor: -moz-zoom-in;
+		cursor: -webkit-zoom-in;
+		transform: scale(1.2, 1.2);
+		-moz-transform: scale(1.2, 1.2);
+		-webkit-transform: scale(1.2, 1.2);
+		-o-transform: scale(1.2, 1.2);
+		-ms-transform: scale (1.2, 1.2);
+	   }
+
+	   .img-responsive{ 
+		   max-width: 100%; 
+		   height: auto; 
+		   display:block;}
+
+
+
 	
 	.user-container div {
 		float: left;

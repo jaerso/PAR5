@@ -1,6 +1,6 @@
 <div class="row">
                             <div class="col-lg-3">
-                                <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-train" aria-hidden="true"></i></h1>
+                                <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-cubes" aria-hidden="true"></i></h1>
                             </div>
                             <div class="col-lg-3">
                                 <div class="dropdown">
