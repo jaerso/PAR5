@@ -1455,6 +1455,14 @@ padding-bottom:300px;
 		-o-transform: scale(1.2, 1.2);
 		-ms-transform: scale (1.2, 1.2);
 	   }
+
+	   .img-responsive{ 
+		   max-width: 100%; 
+		   height: auto; 
+		   display:block;}
+
+
+
 	
 	.user-container div {
 		float: left;
