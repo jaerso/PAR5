@@ -13,10 +13,10 @@ echo "<img src=$profilepic>";
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data'>
 		<p>Wähle ein neues Profilbild aus<input type='file' name='file'> </p>
-		<button type='submit' name='submit'style='border-radius: 8px; padding:0;'> 📷 hochladen </button>
+		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 10px 0 10px;'> 📷 hochladen </button>
 		</form>";
 		echo "<form action='includes/deleteprofile.inc.php' method='POST'>
-		<button type='submit' name='submit' style='border-radius: 8px; padding:0; '>🗑️ löschen </button>
+		<button type='submit' name='submit' style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 10px 0 10px; '>🗑️ löschen </button>
 	</form>";
 		}
 	
