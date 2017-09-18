@@ -7,16 +7,16 @@ echo "<div class='profil-container'>";
 
 
 //Profilausgabe Ende
-echo "<h1>Profil</h1>";
+echo "<h1 style='color: grey;'>Profil</h1>";
 echo "<div class='user-container'>";
 echo "<img src=$profilepic>";
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data'>
-			<input type='file' name='file'>
-			<button type='submit' name='submit'>hochladen</button>
+		<p>Wähle ein neues Profilbild aus<input type='file' name='file'> </p>
+		<button type='submit' name='submit'style='border-radius: 8px; padding:0;'> 📷 hochladen </button>
 		</form>";
 		echo "<form action='includes/deleteprofile.inc.php' method='POST'>
-		<button type='submit' name='submit'>Lösche dein Profilbild</button>
+		<button type='submit' name='submit' style='border-radius: 8px; padding:0; '>🗑️ löschen </button>
 	</form>";
 		}
 	
@@ -25,8 +25,8 @@ echo "</div>";
 	
 	
 	
-		echo "<p> Dein Benutzername: ".$username."</p>";
-		echo "<p> Dein Vor- und Nachname".$firstname." ". $lastname."</p>";
+		echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em;'> Dein Benutzername: ".$username."</p>";
+		echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em;'> Dein Name: ".$firstname." ". $lastname."</p>";
 
  echo "</div>";
 
