@@ -1435,6 +1435,13 @@ padding-bottom:300px;
 		-moz-border-radius: 100%;
 	}
 
+	.img-responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;}
+
+
+
 
 	.user-container img.zoom {
 		transition: transform 0.8s;
@@ -1456,10 +1463,7 @@ padding-bottom:300px;
 		-ms-transform: scale (1.2, 1.2);
 	   }
 
-	   .img-responsive{ 
-		   max-width: 100%; 
-		   height: auto; 
-		   display:block;}
+	   
 
 
 

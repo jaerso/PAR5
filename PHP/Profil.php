@@ -9,7 +9,7 @@ echo "<div class='profil-container'>";
 //Profilausgabe Ende
 echo "<h1 style='color: grey;'>Profil</h1>";
 echo "<div class='user-container'>";
-echo "<img class='zoom' src=$profilepic class='img-responsive' >";
+echo "<div class='img-responsive'> <img class='zoom' src=$profilepic> </div>";
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data'>
 		<p>Wähle ein neues Profilbild aus <input type='file' name='file'> </p>
