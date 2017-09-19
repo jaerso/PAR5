@@ -676,6 +676,23 @@ form {
 	}
 
 /* Button */
+
+#button-login,
+#button-login:hover,
+#button-login:focus
+ {
+	padding: 0 2em 0 0;
+	margin: 0;
+	line-height: 25px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	color: #3AAA35;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1460,11 +1477,15 @@ padding-bottom:300px;
 	.user-container {
 		
 		padding: 10px;
-		background-color: #fff;
-		margin: 10px;
+		background-color: #AD9797;
+		margin:200px 0 0 0;
 		overflow: hidden;
-		background-color:#4CAF50;
+		background-color:white;
+		width: 1020px;
+		margin-left:60px;
+		margin-top:0;
 	}
+
 
 	.user-container img {
 		float: left;
@@ -1472,7 +1493,19 @@ padding-bottom:300px;
 		border-radius: 100%;
 		-webkit-border-radius: 100%;
 		-moz-border-radius: 100%;
+		position: absolute;
+		z-index: 2;
+		
 	}
+
+
+	.img-responsive{
+	display: block;
+    max-width: 100%;
+	height: auto;
+margin-bottom:50px;}
+
+
 
 
 	.user-container img.zoom {
@@ -1482,6 +1515,7 @@ padding-bottom:300px;
 		-o-transition: transform 0.8s;
 		-ms-transition: transform 0.8s;
 		margin-left:13px;
+		bottom: 250px;
 	   }
 
 	 .user-container img.zoom:hover {
@@ -1495,10 +1529,7 @@ padding-bottom:300px;
 		-ms-transform: scale (1.2, 1.2);
 	   }
 
-	   .img-responsive{ 
-		   max-width: 100%; 
-		   height: auto; 
-		   display:block;}
+	   
 
 
 
