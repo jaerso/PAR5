@@ -3,7 +3,13 @@
       				<p>par5 - Für alle Minigolf Spieler und solche, die es werden wollen</p>
       				<ul class="actions">
       					<li>
-      						<a href="index.php?page=registration" class="button big">Jetzt registrieren!</a>
+						  <?php
+						  if(isset($_SESSION['u_id'])){
+							  echo "<a href='index.php?page=editor' class='button big'>Ab zum Editor!</a>";
+						  }else{
+							echo "<a href='index.php?page=registration' class='button big'>Jetzt registrieren!</a>";
+						  }
+							  ?>
       					</li>
       				</ul>
       			</section>
