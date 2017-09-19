@@ -21,7 +21,7 @@
       <a class="navbar-brand" href=index.php?page=home>
 		  <img id="brand-image" alt="Website Logo" src="images/logo.png">
 		</a>
-    </div>
+		</div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -31,10 +31,13 @@
 					<li><a href="index.php?page=gallery">Galerie</a></li>
 					<li><a href="index.php?page=function">Funktionen</a></li>
 					<li><a href="index.php?page=editor">Editor</a></li>
-  
 					</ul>
+					
 
+<ul class="nav navbar-nav navbar-right">
+<li>
 <?php 
+
 
 
 if (isset($_SESSION['u_id'])) {
@@ -46,20 +49,19 @@ if (isset($_SESSION['u_id'])) {
 		//$id=$_SESSION['u_id'];
 		
 		echo "Willkommen <a href='index.php?page=profile'>$username</a> ! ";
-	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
+	}	echo "<button id='button-login' type='submit' name='submit'><span class='glyphicon glyphicon-log-out'></span> Logout</button>
 		</form>";
 }	
 else{
 ?>
 
 
-<ul class="nav navbar-nav navbar-right">
-<li>
-<a href="#"><span class="glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal"></span> Login</a></li>
+
+<button id="button-login" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</button>
  </ul>
 
-
-
+ 
+ 
 </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 <?php

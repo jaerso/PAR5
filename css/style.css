@@ -676,6 +676,23 @@ form {
 	}
 
 /* Button */
+
+#button-login,
+#button-login:hover,
+#button-login:focus
+ {
+	padding: 0 2em 0 0;
+	margin: 0;
+	line-height: 25px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	color: #3AAA35;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1362,8 +1379,8 @@ hr.strich {
 
 #canvas{
 	border: 1px solid;
-	width: 1100px;
-	height: 450px;
+	width: 1024px;
+	height: 492px;
 	margin: 0 20px;
 	display: block;
 }
