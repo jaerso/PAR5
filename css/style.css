@@ -6,6 +6,7 @@
 
 	body {
 		background: #fff;
+		padding-right: 0 !important;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1346,16 +1347,16 @@ form {
 			padding-bottom:40px;
 		}
 
-
-
-
-
 		.modal-title {
 			margin: 0;
 			line-height: 1.42857143;
 			margin-left: 55px;
           margin-top:15px;
 		}
+
+.modal-backdrop{
+	max-width:100%;
+}
 
 		
 /* für popup -hr Strich */
@@ -1382,7 +1383,7 @@ hr.strich {
 	border: 1px solid;
 	width: 1024px;
 	height: 492px;
-	margin: 0 20px;
+	margin: 7px 20px 20px;
 	display: block;
 }
 
@@ -1478,6 +1479,7 @@ padding-bottom:300px;
 	.user-container {
 		
 		padding: 10px;
+<<<<<<< HEAD
 		
 		margin:200px 0 0 0;
 		overflow: hidden;
@@ -1485,8 +1487,13 @@ padding-bottom:300px;
 		width: 1015px;
 		margin-left:60px;
 		margin-top:0;
+=======
+		background-color: #fff;
+		margin: 10px;
+		overflow: hidden;
+		background-color:#4CAF50;
+>>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6
 	}
-
 
 	.user-container img {
 		float: left;
@@ -1494,19 +1501,7 @@ padding-bottom:300px;
 		border-radius: 100%;
 		-webkit-border-radius: 100%;
 		-moz-border-radius: 100%;
-		position: absolute;
-		z-index: 2;
-		
 	}
-
-
-	.img-responsive{
-	display: block;
-    max-width: 100%;
-	height: auto;
-margin-bottom:50px;}
-
-
 
 
 	.user-container img.zoom {
@@ -1516,7 +1511,10 @@ margin-bottom:50px;}
 		-o-transition: transform 0.8s;
 		-ms-transition: transform 0.8s;
 		margin-left:13px;
+<<<<<<< HEAD
 		top: 35%;
+=======
+>>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6
 	   }
 
 	 .user-container img.zoom:hover {
@@ -1530,7 +1528,10 @@ margin-bottom:50px;}
 		-ms-transform: scale (1.2, 1.2);
 	   }
 
-	   
+	   .img-responsive{ 
+		   max-width: 100%; 
+		   height: auto; 
+		   display:block;}
 
 
 
@@ -1547,6 +1548,7 @@ margin-bottom:50px;}
 	form button {
 		padding: 4px;
 	}
+<<<<<<< HEAD
 
 
 .hintergrund-bild{
@@ -1560,3 +1562,13 @@ margin-bottom:50px;}
 
 	
 	/*Ende Profil*/
+=======
+	/*Ende Profil*/
+
+/*==================================================
+ * Box Shadow
+ * ===============================================*/
+.box{
+
+}
+>>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6
