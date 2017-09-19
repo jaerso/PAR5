@@ -866,7 +866,8 @@ form {
 	}
 
 	.header-background {
-		background-image: url("../images/pic09.jpg");
+		background-image: url("../images/pic09.jpg") no repeat;
+		
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -1477,11 +1478,11 @@ padding-bottom:300px;
 	.user-container {
 		
 		padding: 10px;
-		background-color: #AD9797;
+		
 		margin:200px 0 0 0;
 		overflow: hidden;
 		background-color:white;
-		width: 1020px;
+		width: 1015px;
 		margin-left:60px;
 		margin-top:0;
 	}
@@ -1515,7 +1516,7 @@ margin-bottom:50px;}
 		-o-transition: transform 0.8s;
 		-ms-transition: transform 0.8s;
 		margin-left:13px;
-		bottom: 250px;
+		top: 35%;
 	   }
 
 	 .user-container img.zoom:hover {
@@ -1546,4 +1547,16 @@ margin-bottom:50px;}
 	form button {
 		padding: 4px;
 	}
+
+
+.hintergrund-bild{
+
+	background-image: url(../images/profil2.jpeg);
+	margin-left:60px;
+	 opacity: 0.5;
+	 width: 1015px;
+	 height: 230px;
+}
+
+	
 	/*Ende Profil*/
