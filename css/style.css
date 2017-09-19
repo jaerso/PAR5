@@ -1479,20 +1479,11 @@ padding-bottom:300px;
 	.user-container {
 		
 		padding: 10px;
-<<<<<<< HEAD
-		
 		margin:200px 0 0 0;
-		overflow: hidden;
 		background-color:white;
 		width: 1015px;
 		margin-left:60px;
 		margin-top:0;
-=======
-		background-color: #fff;
-		margin: 10px;
-		overflow: hidden;
-		background-color:#4CAF50;
->>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6
 	}
 
 	.user-container img {
@@ -1511,10 +1502,9 @@ padding-bottom:300px;
 		-o-transition: transform 0.8s;
 		-ms-transition: transform 0.8s;
 		margin-left:13px;
-<<<<<<< HEAD
-		top: 35%;
-=======
->>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6
+		top: 50%;
+		z-index: 2;
+		overflow: hidden;
 	   }
 
 	 .user-container img.zoom:hover {
@@ -1548,7 +1538,6 @@ padding-bottom:300px;
 	form button {
 		padding: 4px;
 	}
-<<<<<<< HEAD
 
 
 .hintergrund-bild{
@@ -1562,13 +1551,3 @@ padding-bottom:300px;
 
 	
 	/*Ende Profil*/
-=======
-	/*Ende Profil*/
-
-/*==================================================
- * Box Shadow
- * ===============================================*/
-.box{
-
-}
->>>>>>> 8e5de7ff286953e351fa2863aaac05d9ae1e86a6

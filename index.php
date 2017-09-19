@@ -48,7 +48,7 @@ if (isset($_SESSION['u_id'])) {
 	echo "<form action='includes/logout.inc.php' method='POST'>";
 		$username= $_SESSION['u_uid'];
 		$pic=$_SESSION['pic'];
-		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' >	<a href='index.php?page=profile'>$username</a>! ";
+		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' >	<a href='index.php?page=profile'>$username</a>! ";
 		echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	

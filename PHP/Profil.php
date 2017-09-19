@@ -18,17 +18,14 @@ echo "<div class='img-responsive'> <img class='zoom' src=$profilepic> </div>";
 		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 230px 0 0;'> 📷 hochladen </button>
 		</form>";
 		echo "<form action='includes/deleteprofile.inc.php' method='POST'>
-		<button type='submit' name='submit' style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 230px 0 230px; '>🗑️ löschen </button>
+		<button type='submit' name='submit' style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 230px 0 20px; '>🗑️ löschen </button>
 	</form>";
 		}
 	
 echo "</div>";
 
-	
-	
-	
-		echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
-		echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
+	echo "<p style='color: grey; font-weight:bold; margin:3em  0 0 1em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
+	echo "<p style='color: grey; font-weight:bold; margin:1em  0 0 1em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
 
  echo "</div>";
 
