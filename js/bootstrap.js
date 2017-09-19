@@ -1092,7 +1092,8 @@ if (typeof jQuery === 'undefined') {
       that.$element.trigger('hidden.bs.modal')
     })
   }
-
+ 
+  
   Modal.prototype.removeBackdrop = function () {
     this.$backdrop && this.$backdrop.remove()
     this.$backdrop = null
