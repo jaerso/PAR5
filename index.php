@@ -22,12 +22,12 @@ if (isset($_SESSION['u_id'])) {
 
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
-	if (isset($_SESSION['u_id'])) {
+	
 		$username= $_SESSION['u_uid'];
 		//$id=$_SESSION['u_id'];
 		
-		echo "Willkommen <a href='index.php?page=profile'>$username</a> ! ";
-	}	echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
+		echo "Willkommen <a href='index.php?page=profile'>$username</a>! ";
+		echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	
 else{
