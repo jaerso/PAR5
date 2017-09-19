@@ -2,6 +2,8 @@
 
 	<?php
 	include_once "PHP/Head.php";
+	include_once "includes/dbh.inc.php";
+	include_once "includes/picture.inc.php";
 //require "PHP/Profil.php";
 	?>
 	<body class="landing" onload="init()">
@@ -41,11 +43,9 @@ if (isset($_SESSION['u_id'])) {
 
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
-	
 		$username= $_SESSION['u_uid'];
-		//$id=$_SESSION['u_id'];
-		
-		echo "Willkommen <a href='index.php?page=profile'>$username</a>! ";
+		$pic=$_SESSION['pic'];
+		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' >	<a href='index.php?page=profile'>$username</a>! ";
 		echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
 		</form>";
 }	

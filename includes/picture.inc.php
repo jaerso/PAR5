@@ -1,4 +1,5 @@
 <?php
+if(isset($_SESSION['u_id'])){
     $uid=$_SESSION['u_id'];
 	$sql = "SELECT * FROM users WHERE user_id='$uid'";
 	$result = mysqli_query($conn, $sql);
@@ -22,10 +23,7 @@
                     $username=$row['user_uid'];
                     $firstname=$row['user_first'];
                     $lastname=$row['user_last'];
-                    global $username;
-                    global $firstname;
-                    global $lastname;
-                    global $profilepic;
+                    $_SESSION['pic']= $profilepic;
 			}
 		}
     }
@@ -36,4 +34,5 @@
         	 
     }
    */
+}
     ?>
