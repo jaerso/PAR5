@@ -49,7 +49,7 @@ if (isset($_SESSION['u_id'])) {
 		$username= $_SESSION['u_uid'];
 		$pic=$_SESSION['pic'];
 		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' >	<a href='index.php?page=profile'>$username</a>! ";
-		echo "<button type='submit' name='submit' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal'>Logout</button>
+		echo "<button id='button-login' type='submit' name='submit'><span class='glyphicon glyphicon-log-out'></span> Logout</button>
 		</form>";
 }	
 else{

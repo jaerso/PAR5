@@ -682,7 +682,7 @@ form {
 #button-login:hover,
 #button-login:focus
  {
-	padding: 0 2em 0 0;
+	padding: 0 2em 0 2em;
 	margin: 0;
 	line-height: 25px;
 	background-color: Transparent;
