@@ -3,7 +3,7 @@ include_once 'includes/dbh.inc.php';
 include_once 'includes/picture.inc.php';
 
 
-echo "<div class='profil-container'> <div class='hintergrund-bild'> <h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 300px 350px;'> Dein Profil </h1> </div>
+echo "<div class='profil-container'> <div class='hintergrund-bild'> <h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 0 350px;'> Dein Profil </h1> </div>
 <div class='user-container'>";
 
 
