@@ -74,7 +74,7 @@ $fotos = [
          
         echo"<h2> Schlagempfehlungen für Bahn ".$a. " <h2>";
         
-
+        $html ="";
         $elemente = scandir($bildOrdner);
         foreach($elemente as $e){
             if($e == '.' or $e == '..') {continue; }

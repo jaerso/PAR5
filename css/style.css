@@ -1468,22 +1468,24 @@ hr.strich {
 
 	/*Profil*/
 
-	.profil-container{
+.profilansicht{
 
-background-color: lightgrey;
+height: 1000px;
 
-padding-bottom:300px;
+}
 
-	}
+
 
 	.user-container {
 		
 		padding: 10px;
 		margin:200px 0 0 0;
-		background-color:white;
 		width: 1015px;
+		height: 700px;
 		margin-left:60px;
 		margin-top:0;
+		border-radius:10%;
+
 	}
 
 	.user-container img {
@@ -1502,7 +1504,6 @@ padding-bottom:300px;
 		-o-transition: transform 0.8s;
 		-ms-transition: transform 0.8s;
 		margin-left:13px;
-		top: 50%;
 		z-index: 2;
 		overflow: hidden;
 	   }
@@ -1542,11 +1543,10 @@ padding-bottom:300px;
 
 .hintergrund-bild{
 
-	background-image: url(../images/profil2.jpeg);
-	margin-left:60px;
-	 opacity: 0.5;
-	 width: 1015px;
-	 height: 230px;
+	background-image: url(../images/minigolf-titelbild.jpg);
+	background-position: center center;
+    background-size: cover;
+	 height: 350px;
 }
 
 	
