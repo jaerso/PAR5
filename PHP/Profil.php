@@ -4,7 +4,12 @@ include_once 'includes/picture.inc.php';
 
 echo "<div class='profilansicht'>";
 
+<<<<<<< HEAD
 echo " <div class='hintergrund-bild'>
+=======
+echo "<div class='profil-container'> <div class='hintergrund-bild'> <h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 0 350px;'> Dein Profil </h1> </div>
+<div class='user-container'>";
+>>>>>>> cd5c1aeed2fab36434bfa9cbb6af866fed8dd498
 
 <h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 0 400px;'> Dein Profil </h1>
 

@@ -1,4 +1,7 @@
-                    <div class="row">
+              <?php
+              if(isset($_SESSION['u_id'])){
+              ?>
+              <div class="row">
                         <div class="col-lg-3">
                             <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-cubes" aria-hidden="true"></i></h1>
                         </div>
@@ -81,5 +84,10 @@
                         </div>
                     </div>
             </div>
+            <?php
+              } else{
+                  echo "Registriere dich um den Editor benutzen zu können!";
+              }
+            ?>
 
 
