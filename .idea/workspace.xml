@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fed3ee5b-16cb-46e0-ae43-4596e83ff973" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PAR5.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Editor.php" afterPath="$PROJECT_DIR$/PHP/Editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bahnen.js" afterPath="$PROJECT_DIR$/js/bahnen.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -418,7 +413,7 @@
       <workItem from="1505729307071" duration="1751000" />
       <workItem from="1505749358172" duration="9000" />
       <workItem from="1505809983910" duration="12020000" />
-      <workItem from="1506440656842" duration="2806000" />
+      <workItem from="1506440656842" duration="2861000" />
     </task>
     <task id="LOCAL-00001" summary="canvas formatiert">
       <created>1504264377442</created>
@@ -581,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505824455568</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Blur Filter unter Text&#10;Text muss noch gecentered werden">
+      <created>1506443498802</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1506443498802</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114027000" />
+    <option name="totallyTimeSpent" value="114082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1924" height="1042" extended-state="0" />
@@ -645,7 +647,8 @@
     <MESSAGE value="Change Bahneditor Icon" />
     <MESSAGE value="Bahn editor upload dialog button style geändert" />
     <MESSAGE value="Editor Anleitung angepasst" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editor Anleitung angepasst" />
+    <MESSAGE value="Blur Filter unter Text&#10;Text muss noch gecentered werden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blur Filter unter Text&#10;Text muss noch gecentered werden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
