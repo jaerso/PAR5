@@ -1,6 +1,7 @@
               <?php
               if(isset($_SESSION['u_id'])){
               ?>
+              <div class="container">
               <div class="row">
                         <div class="col-lg-3">
                             <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-cubes" aria-hidden="true"></i></h1>
@@ -84,9 +85,20 @@
                         </div>
                     </div>
             </div>
+            </div>
             <?php
               } else{
-                  echo "Registriere dich um den Editor benutzen zu können!";
+                  ?>
+
+      				<div id="banner">
+      					
+      						<h2>Registriere oder logge dich ein um den Editor nutzen zu können!</h2>
+      					
+                          <button  id="editor-login" class="button big" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+                        
+                    </div>
+                
+                  <?php
               }
             ?>
 
