@@ -90,14 +90,16 @@
               } else{
                   ?>
 
-      				<div id="banner">
-      					
+
+                     
+                      <div id="bannertwo">
       						<h2>Registriere oder logge dich ein um den Editor nutzen zu können!</h2>
       					
                           <button  id="editor-login" class="button big" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</button>
                         
+                          
                     </div>
-                
+                    
                   <?php
               }
             ?>

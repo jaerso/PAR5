@@ -1101,6 +1101,34 @@ margin-top: 2em;
 		text-align: center;
 	}
 
+	#bannertwo {
+		background-image: url(../images/header_hf_minigolf.jpg);
+		background-position: center center;
+		background-size: cover;
+		padding: 14em 0em 14em 0em;
+
+		color: #ffffff;
+		text-align: center;
+
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+		
+		z-index: 1;
+	}
+
+	#bannertwo h2 {
+		color: #ffffff;
+		font-size: 2em;
+		line-height: 1.25em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+
+		z-index: 2;
+	}
+
 		#banner :last-child {
 			margin-bottom: 0;
 		}
