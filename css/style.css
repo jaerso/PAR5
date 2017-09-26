@@ -678,6 +678,10 @@ form {
 
 /* Button */
 
+#editor-login {
+margin-top: 2em;
+}
+
 #button-login,
 #button-login:hover,
 #button-login:focus
@@ -959,6 +963,7 @@ form {
 	width: 90%;
 	height: 40px;
 	padding: 0px 5%;
+	margin-top: 0.8em;
 	margin-bottom: 4px;
 	background-color: lightgrey;
 	font-family: arial;
@@ -969,7 +974,7 @@ form {
 
 .signup-form button {
 	display: block;
-
+	margin-top: 2em;
 	width: 30%;
 	height: 40px;
 	border: none;
@@ -1078,6 +1083,11 @@ form {
 
 			#header .container nav {
 				right: 0;
+			}
+
+			.container-editor-login {
+				padding: 7em 0em 4em 0em;
+				text-align: center;
 			}
 
 /* Banner */

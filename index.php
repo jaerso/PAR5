@@ -145,7 +145,7 @@ else{
 	    <?php if(isset($_GET['page'])){}
                    else{ $_GET['page'] = 'home';}
             ?>
-            <?php if($_GET['page'] != 'home' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
+            <?php if($_GET['page'] != 'home' && $_GET['page'] != 'editor' && $_GET['page'] != 'profile'|| $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <!--getContent()-->
 				<?php
 				if($_GET['page']=='home'){
