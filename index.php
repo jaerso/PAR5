@@ -4,6 +4,7 @@
 	include_once "PHP/Head.php";
 	include_once "includes/dbh.inc.php";
 	include_once "includes/picture.inc.php";
+	//$page = $_GET['page'];
 //require "PHP/Profil.php";
 	?>
 	<body class="landing" onload="init()">
@@ -43,7 +44,6 @@
 
 
 if (isset($_SESSION['u_id'])) {
-
 
 	echo "<form action='includes/logout.inc.php' method='POST'>";
 		$username= $_SESSION['u_uid'];
@@ -98,6 +98,7 @@ else{
 	 
 	 
 	 <?php
+	 $_SESSION['page']=$_GET['page'];
 	  if (isset($_SESSION['u_id'])) {
 		  echo "<form action='includes/logout.inc.php' method='POST'>";
 		  echo "<button type='submit' name='submit'>Ausloggen</button>
