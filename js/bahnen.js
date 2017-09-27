@@ -183,6 +183,9 @@ pic.onload = function(){
     */
 
 $(document).ready(function () {
+
+
+
     document.querySelector('#export').onclick = function () {
         var canvas = document.getElementById("canvas");
         var dataURL = canvas.toDataURL("image/png");
