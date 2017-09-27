@@ -1042,18 +1042,26 @@ margin-top: 2em;
 						text-decoration: none;
 					}
 
-						#header nav > ul > li a:active, #header nav > ul > li a:hover {
-
-							-moz-transition: 0.6s ease-in-out;
-							-webkit-transition: 0.6s ease-in-out;
-							-o-transition: 0.6s ease-in-out;
-							-ms-transition: 0.6s ease-in-out;
-							transition: 0.6s ease-in-out;
-							color: white;
-							background-color: black;
+					body.landing #header nav a.loginName  a:hover{
+						color:pink; 
+					 }
 
 
-						}
+					body.landing #header nav a:hover {
+						color: #3AAA35;
+						font-family: "Raleway";
+						font-weight: bold;
+						font-size: 1em;
+						-moz-transition: 0.6s ease-in-out;
+						-webkit-transition: 0.6s ease-in-out;
+						-o-transition: 0.6s ease-in-out;
+						-ms-transition: 0.6s ease-in-out;
+						transition: 0.6s ease-in-out;
+						color: white;
+						background-color: black;
+					}
+
+
 
 
 
