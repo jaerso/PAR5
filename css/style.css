@@ -1012,6 +1012,16 @@ transform: translate(-50%, -50%);
 	margin-top: -7px;
 }
 
+.login-name:hover{
+  background-color: transparent !important;
+  transition: 0s ease-in-out !important;
+  color: #3AAA35 !important;
+}
+
+.navbar-brand:hover {
+  background-color: transparent !important;
+}
+
 .navbar-default {
 	background: rgba(248,248,248,0.7);
 }
