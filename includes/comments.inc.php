@@ -5,14 +5,15 @@ if(isset($_POST['commentSubmit'])){
 $uid=$_POST['uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
+$imgid=$_POST['imgid'];
 
-$sql = "INSERT INTO comments (uid, date, message) VALUES('$uid', '$date', '$message')";
-$result = mysqli_query($conn,$sql);
+$sql = "INSERT INTO comments (uid, date, message, imgid) VALUES('$uid', '$date', '$message', '$imgid')";
+/*$result=*/ mysqli_query($conn,$sql);
 }
 }
 
-function getComments($conn){
-    $sql = "SELECT * FROM comments ORDER BY date DESC";            //go into the database
+function getComments($conn,$bildid){
+    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC";            //go into the database
     $result = mysqli_query($conn, $sql);        //run the query
     while($row = mysqli_fetch_assoc($result)){  //spit it out
         $id = $row['uid'];

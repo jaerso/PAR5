@@ -1,4 +1,4 @@
-
+﻿
 CREATE TABLE images
 (
 	id int NOT null PRIMARY KEY AUTO_INCREMENT,
