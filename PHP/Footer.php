@@ -43,5 +43,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
-    <script src="js/bahnen.js"></script>
+	<script src="js/bahnen.js"></script>
+	<script src="js/scripts.js"></script>
 </html>

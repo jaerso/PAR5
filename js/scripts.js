@@ -8,3 +8,17 @@ $('.hide-password').on('click', function(){
     //focus and move cursor to the end of input field
     $password_field.putCursorAtEnd();
 });
+
+jQuery(document).ready(function($) {
+
+
+  var path = window.location.pathname.split("/");
+
+  if (path == '') {
+
+    path = 'index.php?page=home';
+  }
+
+  var target = $('nav a [href="'+path+'"]');
+  target.addClass('active');
+});
