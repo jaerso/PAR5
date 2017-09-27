@@ -680,6 +680,10 @@ form {
 
 #editor-login {
 margin-top: 2em;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 #button-login,
@@ -1104,23 +1108,36 @@ margin-top: 2em;
 	#bannertwo {
 		left:0;
 		top: 0;
-		background-image: url(../images/header_hf_minigolf.jpg);
-		height: 100vh;
+		background-image: url(../images/minigolf_editorbanner.jpg);
+		height: 92vh;
 		width: 100%;
+		
+
 		background-position: center center;
 		background-size: cover;
-		-webkit-filter: blur(3px);
-		-moz-filter: blur(3px);
-		-o-filter: blur(3px);
-		-ms-filter: blur(3px);
-		filter: blur(3px);
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);
+		
 	}
 
 	.content-blur{
-		margin: 150px 50px;
+		
+		
 		position: absolute;
-		left:0;
-		top: 0;
+		
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		
+	}
+
+	.content-blur button {
+		text-align: center;
 	}
 
 	.content-blur h2 {
@@ -1130,7 +1147,6 @@ margin-top: 2em;
 		margin: 0 0 0.5em 0;
 		padding: 0;
 		text-align: center;
-		z-index: 2;
 	}
 
 		#banner :last-child {
@@ -1231,10 +1247,6 @@ margin-top: 2em;
 				padding-bottom: 2em;
 			}
 		
-			.container3 {
-				margin-bottom: 0em;
-				padding-top: 2em;
-			}
 
 /* Footer */
 	#footer {
@@ -1389,6 +1401,7 @@ margin-top: 2em;
 			padding-bottom:40px;
 		}
 
+		
 		.modal-title {
 			margin: 0;
 			line-height: 1.42857143;
