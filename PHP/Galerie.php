@@ -3,7 +3,7 @@
 date_default_timezone_set('Europe/Berlin');
 include 'includes/comments.inc.php';
 include 'includes/dbh.inc.php';
-?>
+
 <header class="major">
 
 <form action="includes/bilderupload.inc.php" method="post" enctype="multipart/form-data" name="Upload-Form"> 
