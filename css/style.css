@@ -867,6 +867,7 @@ transform: translate(-50%, -50%);
 			font-family: "Raleway";
 			font-weight:bold;
 			font-size: 1em;
+			padding-top: 18px;
 		}
 
 	#header {
@@ -1014,7 +1015,7 @@ transform: translate(-50%, -50%);
 
 #brand-image {
 	height: 45px; 
-	margin-top: -7px;
+	margin-top: -10px;
 }
 
 .login-name:hover{
@@ -1036,9 +1037,6 @@ transform: translate(-50%, -50%);
 	padding-top: 0 !important;
 }
 
-.navbar-nav {
-	padding-top: 3.4px;
-}
 /*navi orginal*/
 
 		#header nav {
@@ -1070,10 +1068,6 @@ transform: translate(-50%, -50%);
 						text-decoration: none;
 					}
 
-					body.landing #header nav a.loginName  a:hover{
-						color:pink; 
-					 }
-
 
 					body.landing #header nav a:hover {
 						color: #3AAA35;
@@ -1087,8 +1081,14 @@ transform: translate(-50%, -50%);
 						transition: 0.6s ease-in-out;
 						color: white;
 						background-color: black;
+						height: 57px;
 					}
 
+
+					nav ul li a.active { 
+						background-color: black;
+						height: 66px;
+					}
 
 
 
