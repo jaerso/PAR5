@@ -2,6 +2,8 @@
 include_once 'includes/dbh.inc.php';
 include_once 'includes/picture.inc.php';
 
+
+
 echo "<div class='profilansicht'>";
 
 echo " <div class='hintergrund-bild'>
