@@ -1,11 +1,11 @@
-
-
-	<?php
+<?php
 	include_once "PHP/Head.php";
 	include_once "includes/dbh.inc.php";
 	include_once "includes/picture.inc.php";
-	//$page = $_GET['page'];
-//require "PHP/Profil.php";
+	/*if($_GET['page']==''){
+		$_GET['page']='home';
+	}*/
+	$_SESSION['page']=$_GET['page'];
 	?>
 	<body class="landing" onload="init()">
 		<!-- Header -->
@@ -96,9 +96,9 @@ else{
 
 	  <div class="nav-login">
 	 
-	 
+	  
 	 <?php
-	 $_SESSION['page']=$_GET['page'];
+	 
 	  if (isset($_SESSION['u_id'])) {
 		  echo "<form action='includes/logout.inc.php' method='POST'>";
 		  echo "<button type='submit' name='submit'>Ausloggen</button>
@@ -143,8 +143,10 @@ else{
 </div>
 		<section id="main" class="wrapper">
 		
-	    <?php if(isset($_GET['page'])){}
-                   else{ $_GET['page'] = 'home';}
+	    <?php if(!isset($_GET['page'])){
+			header("Location: index.php?page=home");
+		}
+                   elseif($_GET['page']==''){ $_GET['page'] = 'home';}
             ?>
             <?php if($_GET['page'] != 'home' && $_GET['page'] != 'editor' && $_GET['page'] != 'profile'|| $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <!--getContent()-->

@@ -89,16 +89,19 @@
             <?php
               } else{
                   ?>
-
-
-                     
-                      <div id="bannertwo">
-      						<h2>Registriere oder logge dich ein um den Editor nutzen zu können!</h2>
-      					
-                          <button  id="editor-login" class="button big" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</button>
-                        
-                          
-                    </div>
+                      <div id="bannertwo"></div>
+                  <div class="content-blur">
+                      <div class="container">
+                          <div class="col-lg-12">
+                              <h2>Registriere oder logge dich ein um den Editor nutzen zu können!</h2>
+                          </div>
+                          <div class="col-lg-push-5 col-lg-2">
+                              <button  id="editor-login" class="button big" data-toggle="modal" data-target="#myModal">
+                                  <span class="glyphicon glyphicon-log-in"></span> Login
+                              </button>
+                          </div>
+                      </div>
+                  </div>
                     
                   <?php
               }
