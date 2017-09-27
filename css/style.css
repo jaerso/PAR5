@@ -1046,10 +1046,21 @@ transform: translate(-50%, -50%);
 						text-decoration: none;
 					}
 
-					body.landing #header nav a.loginName  a:hover{
-						color:pink; 
-					 }
 
+
+					body.landing #header nav .loginName:hover{
+					color: #3AAA35;
+					font-family: "Raleway";
+					font-weight: bold;
+					font-size: 1em;
+				background-color:transparent !important;
+				color:transparent !important;
+				-moz-transition: 0 !important;
+				-webkit-transition: 0 !important;
+				-o-transition: 0 !important;
+				-ms-transition: 0 !important;
+				transition: 0 !important;
+				}
 
 					body.landing #header nav a:hover {
 						color: #3AAA35;
@@ -1596,7 +1607,7 @@ height: 1000px;
 	
 	form {
 		padding: 0px;
-		margin: 4px;
+		margin: 0.2px;
 	}
 	
 	form button {
