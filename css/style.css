@@ -231,9 +231,14 @@
 /* Form */
 
 form {
+	padding: 0px;
 	
-			margin: 0 0 0em 0;
-		}
+}
+
+form button {
+	padding: 4px;
+}
+
 	label {
 		color: #474747;
 		display: block;
@@ -1012,8 +1017,27 @@ transform: translate(-50%, -50%);
 	margin-top: -7px;
 }
 
+.login-name:hover{
+  background-color: transparent !important;
+  transition: 0s ease-in-out !important;
+  color: #3AAA35 !important;
+}
+
+.navbar-brand:hover {
+  background-color: transparent !important;
+}
+
 .navbar-default {
 	background: rgba(248,248,248,0.7);
+	margin: 0;
+}
+
+.navbar-right {
+	padding-top: 0 !important;
+}
+
+.navbar-nav {
+	padding-top: 3.4px;
 }
 /*navi orginal*/
 
@@ -1136,11 +1160,11 @@ transform: translate(-50%, -50%);
 
 		background-position: center center;
 		background-size: cover;
-		-webkit-filter: blur(5px);
-		-moz-filter: blur(5px);
-		-o-filter: blur(5px);
-		-ms-filter: blur(5px);
-		filter: blur(5px);
+		-webkit-filter: blur(8px);
+		-moz-filter: blur(8px);
+		-o-filter: blur(8px);
+		-ms-filter: blur(8px);
+		filter: blur(8px);
 		
 	}
 
@@ -1607,6 +1631,7 @@ background-color:beige;
 	.user-container div {
 		float: left;
 	}
+<<<<<<< HEAD
 	
 	form {
 		padding: 0px;
@@ -1617,6 +1642,8 @@ background-color:beige;
 		padding: 4px;
 	}
 
+=======
+>>>>>>> 93ac830b4016b4b6b241e3c54b9f54b97ac83873
 
 .hintergrund-bild{
 
