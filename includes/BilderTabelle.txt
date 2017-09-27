@@ -1,0 +1,26 @@
+
+CREATE TABLE images
+(
+	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) not null,
+    type varchar(100) not null,
+    bildlink varchar(300) not null,
+    bahnnummer varchar(200) not null
+);
+
+CREATE TABLE frontimages
+(
+	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) not null,
+    type varchar(100) not null,
+    bildlink varchar(300) not null,
+    bahnnummer varchar(200) not null
+);
+
+
+tabelle füllen:
+
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '2');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '3');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('4.jpg', 'image/jpeg', 'images/gallery/Fotos/4.jpg', '4');
