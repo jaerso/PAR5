@@ -8,6 +8,7 @@ if (isset($_POST['submit'])) {
 
 	$uid = mysqli_real_escape_string($conn, $_POST['uid']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+	$page=$_POST['value'];
 
 	//Error handlers
 	//Check if inputs are empty
@@ -35,7 +36,9 @@ if (isset($_POST['submit'])) {
 					$_SESSION['u_last'] = $row['user_last'];
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_uid'] = $row['user_uid'];
-					header("Location: ../index.php?login=success");
+					$page=$_SESSION['page'];
+				//	header("Location: ../index.php?page=".$page."&login=success");
+				header("Location: ../index.php?page=$page");
 					exit();
 				}
 			}

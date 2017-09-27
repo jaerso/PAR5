@@ -1,23 +1,22 @@
 <?php
 include_once 'includes/dbh.inc.php';
 include_once 'includes/picture.inc.php';
+?>
+<div class='profilansicht'>
 
-echo "<div class='profilansicht'>";
-
-echo " <div class='hintergrund-bild'>
+<div class='hintergrund-bild'>
 
 <h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 0 400px;'> Dein Profil </h1>
 
+<div class='user-container'>
 
-<div class='user-container'>";
+<?php
+echo"<div class='img-responsive'> <img class='zoom'  src= $profilepic></div>";
+echo"<p style='color: black; font-weight:bold; margin:3em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
+echo"<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
+?>
 
-
-echo "<div class='img-responsive'> <img class='zoom' src=$profilepic> </div>";
-echo "<p style='color: black; font-weight:bold; margin:3em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
-echo "<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
-
-
-
+<?php
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data' style='margin: 120px 0 0 0;'>
 		
@@ -32,30 +31,10 @@ echo "<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0
 	
 		}
 
-
-
-
-
-
+		?>
 	
-echo "</div>";
-
-
-
-
-
-
-
-
-
-
-//Profilausgabe Ende
-
-
-
-
-
+</div>
 	
- echo "</div>";
+ </div>
 
-?>
+
