@@ -231,9 +231,14 @@
 /* Form */
 
 form {
+	padding: 0px;
 	
-			margin: 0 0 0em 0;
-		}
+}
+
+form button {
+	padding: 4px;
+}
+
 	label {
 		color: #474747;
 		display: block;
@@ -1024,6 +1029,15 @@ transform: translate(-50%, -50%);
 
 .navbar-default {
 	background: rgba(248,248,248,0.7);
+	margin: 0;
+}
+
+.navbar-right {
+	padding-top: 0 !important;
+}
+
+.navbar-nav {
+	padding-top: 3.4px;
 }
 /*navi orginal*/
 
@@ -1603,16 +1617,6 @@ height: 1000px;
 	.user-container div {
 		float: left;
 	}
-	
-	form {
-		padding: 0px;
-		margin: 4px;
-	}
-	
-	form button {
-		padding: 4px;
-	}
-
 
 .hintergrund-bild{
 
