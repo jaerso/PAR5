@@ -1068,10 +1068,6 @@ transform: translate(-50%, -50%);
 						text-decoration: none;
 					}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 20387e0c1f91c41a438189492559e6123164df0e
 
 					
 
@@ -1091,7 +1087,6 @@ transform: translate(-50%, -50%);
 					}
 
 
-<<<<<<< HEAD
 					#header nav > ul > li	a:focus {
 						background-color: red;
 						color: black;
@@ -1107,14 +1102,12 @@ transform: translate(-50%, -50%);
 						color: black;
 					}
 					
-=======
 					nav ul li a.active { 
 						background-color: black;
 						height: 66px;
 					}
 
 
->>>>>>> 20387e0c1f91c41a438189492559e6123164df0e
 
 
 #header nav > ul > li:first-child {
