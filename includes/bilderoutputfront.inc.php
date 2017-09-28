@@ -13,7 +13,7 @@ include 'dbh.inc.php';
        while($row=mysqli_fetch_assoc($result))
         { ?>
 
-<div style='background-image: url(../images/gras.jpg);'> 
+ 
         
         <div class='col-lg-4'>
 
@@ -27,13 +27,13 @@ include 'dbh.inc.php';
                
  
             
-                          <a style='font-size: 15px;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
+                          <a style='font-size: 15px; background-color:green; color:white; border-radius:5%;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
    Schlagempfehlungen Bahn  <?=htmlspecialchars($row['bahnnummer']); ?>
             </a> 
         
             
         <div class="clearfix"></div>
-        </div>
+        
         </div>
         </div>
         </div>
