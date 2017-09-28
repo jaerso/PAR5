@@ -1,8 +1,9 @@
+<div>
 <?php
 
 include 'dbh.inc.php';
 
-echo"<h2> Sehen sie hier unsere Bahnen <h2>";
+
 
     $sql = "SELECT * FROM frontimages";
     $result= mysqli_query($conn, $sql); ?>
@@ -11,23 +12,31 @@ echo"<h2> Sehen sie hier unsere Bahnen <h2>";
     <?php
        while($row=mysqli_fetch_assoc($result))
         { ?>
-        
-        <div class='col-lg-6'>
-            <h2>Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
 
-            <div>
-               <?php echo "<img style='width:200px; height: 250px;' src='".$row['bildlink']."' alt='Bild'>"; ?>
+<div style='background-image: url(../images/gras.jpg); background-color:red;'> 
+        
+        <div class='col-lg-4'>
+
+    <div id='divBorder'>
+
+    <div style='text-align:center;'>
+            <h2 >Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
+
+            
+               <?php echo "<img class='galerie-Bilder' src='".$row['bildlink']."' alt='Bild'>"; ?>
                
  
-            </div>
-                          <a style='font-size: 0.5em;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
+            
+                          <a style='font-size: 15px;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
    Schlagempfehlungen Bahn  <?=htmlspecialchars($row['bahnnummer']); ?>
             </a> 
-            
+        
             
         <div class="clearfix"></div>
         </div>
-      
+        </div>
+        </div>
+        </div>
     <?php } ?>
      
-     
+    </div>
