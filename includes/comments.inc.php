@@ -21,7 +21,7 @@ if(empty($_POST['checkID'])){
      
      if($resultCheck == 1)
      {
-         $message = 'Ihr Kommentar wurde bereits gesendet';
+         print_r("Ihr Kommentar wurde bereits gesendet") ;
      }
      else
      {
@@ -29,10 +29,10 @@ if(empty($_POST['checkID'])){
                 $sql = "INSERT INTO comments (uid, date, message, imgid, checkID) VALUES('$uid', '$date', '$message', '$imgid', '$checkID')";
                 /*$result=*/ mysqli_query($conn,$sql);
          
-         /*if(mysqli_affected_rows() == 1) {
+         if(mysqli_affected_rows() == 1) {
              $message = 'Kommentar wurde gesendet!';}
          else{
-             $message = 'Ihr Kommentar konnte nicht gesendet werden!';}*/
+             $message = 'Ihr Kommentar konnte nicht gesendet werden!';}
      }
 
  }
@@ -128,7 +128,7 @@ function editComments($conn){
             
             $sql = "DELETE FROM comments WHERE cid='$cid'";
             $result = mysqli_query($conn,$sql);
-            header("Location: index.php");
+            header("Location: index.php?page=gallery&bahn=$bildid");
             }
     }
 

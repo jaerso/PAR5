@@ -18,11 +18,11 @@ id int(11) not null PRIMARY KEY AUTO_INCREMENT,
 CREATE TABLE comments (
     cid int(11) not null AUTO_INCREMENT PRIMARY KEY,
 imgid varchar(256) not null,
-checkID varchar(256) not null,
+checkID varchar(32) not null,
     uid varchar(256) not null,
     date datetime not null,
-    message TEXT not null
-	
+    message TEXT not null,
+UNIQUE KEY `checkID` (`checkID`)
 );
 
 CREATE TABLE images
