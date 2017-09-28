@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 							$sql = "INSERT INTO profileimg (userid, status)
 							VALUES ('$userid', 1)";
 							mysqli_query($conn, $sql);
-							header("Location: index.php");
+							header("Location: ../index.php");
 						}
 					} else {
 						echo "You have an error!";
