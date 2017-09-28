@@ -14,11 +14,11 @@ include 'dbh.inc.php';
         { ?>
 
  
-    <div class='col-lg-2 col-md-3 col-sm-3 col-xs-12'>
+    <div class='col-lg-2 col-md-3 col-sm-4 col-xs-12'>
         
     <div id='divBorder' style="cursor: pointer;" onclick="window.location='index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>';">
 
-    <div style='text-align:center;'>
+    <div class="bahn-container">
             <h2 >Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
 
             <a href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">

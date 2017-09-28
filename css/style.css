@@ -1684,7 +1684,11 @@ background-color:beige;
 	/*Galarie*/
 
 .gallery-container h2 {
+	text-align: center;
+}
+.bahn-container h2 {
 	margin-top: 0em !important;
+	text-align: center;
 }
 
 	.gallery-container {
