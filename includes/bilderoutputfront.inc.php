@@ -14,10 +14,9 @@ include 'dbh.inc.php';
         { ?>
 
  
+    <div class='col-lg-4'>
         
-        <div class='col-lg-4'>
-
-    <div id='divBorder'>
+    <div id='divBorder' style="cursor: pointer;" onclick="window.location='index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>';">
 
     <div style='text-align:center;'>
             <h2 >Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
@@ -30,7 +29,9 @@ include 'dbh.inc.php';
         
         </div>
         </div>
+        
         </div>
+       
     <?php } ?>
      
     </div>
