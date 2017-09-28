@@ -23,7 +23,7 @@ include 'dbh.inc.php';
             <h2 >Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
 
             <a href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
-               <img class='galerie-Bilder' <?php echo "src='".$row['bildlink']."'"; ?> alt='Bild'>
+               <img class='galerie-Bilder' <?php echo "src='".$row['bildlink']."'"; ?> alt='Bild 404 not found'>
                </a>
  
         <div class="clearfix"></div>
