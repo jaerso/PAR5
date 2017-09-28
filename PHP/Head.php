@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Par5 - Minigolfsimulation</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->

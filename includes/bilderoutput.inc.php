@@ -1,7 +1,5 @@
 <?php
-
 include 'dbh.inc.php';
-
 $bahnnummer = "";
 
 if(isset($_GET['bahn'])){
@@ -23,12 +21,14 @@ if(isset($_GET['bahn'])){
         //print_r('Ausgabe');
         echo "<br>";
    // }
-    
+   
+   // $_POST['checkID']=NULL;
     if(isset($_SESSION['u_id'])){
         echo "<form action='".setComments($conn)."' method='POST'>
         <input type='hidden' name='uid' value='".$_SESSION['u_id']."'>
         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
         <input type='hidden' name='imgid' value='".$data['id']."'>
+        <input type='hidden' name='checkID' value='". $_POST['checkID']. "'>
         <textarea name='message'></textarea><br>
         <button type='submit' name='commentSubmit'>Kommentieren</button>
         </form>";
@@ -36,6 +36,7 @@ if(isset($_GET['bahn'])){
     echo "Du musst eingeloggt sein, um zu kommentieren
     <br><br>";
     }
-    }
+  //  header("Location: ../index.php?page=gallery&bahn=$bahnnummer");
+    }  
 }
 ?>
