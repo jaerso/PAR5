@@ -13,7 +13,7 @@ include 'dbh.inc.php';
        while($row=mysqli_fetch_assoc($result))
         { ?>
 
-<div style='background-image: url(../images/gras.jpg); background-color:red;'> 
+<div style='background-image: url(../images/gras.jpg);'> 
         
         <div class='col-lg-4'>
 
