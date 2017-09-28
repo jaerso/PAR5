@@ -1045,10 +1045,29 @@ transform: translate(-50%, -50%);
 	.navbar-default .navbar-collapse {
 		border-color: white;
 		background-color: rgba(248,248,248,0.94);
-		margin-top: 6px;
+		margin-top: 2px;
 		
 
 	 } 
+ }
+
+ 
+ .navbar-toggle:focus {
+	background-color: #3AAA35 !important;
+}
+
+ .navbar-toggle:hover {
+	background-color: #58AD4E !important; 
+	border: 1px solid #3AAA35 !important;
+}
+
+ .navbar-toggle {
+	 margin-top: 12px;
+	 background-color: #3AAA35;
+ }
+
+ .icon-bar {
+	 background-color: white !important;
  }
 /*navi orginal*/
 
