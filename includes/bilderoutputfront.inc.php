@@ -22,15 +22,12 @@ include 'dbh.inc.php';
     <div style='text-align:center;'>
             <h2 >Bahn <?=htmlspecialchars($row['bahnnummer']); ?></h2>
 
-            
-               <?php echo "<img class='galerie-Bilder' src='".$row['bildlink']."' alt='Bild'>"; ?>
-               
+            <a href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
+               <img class='galerie-Bilder' <?php echo "src='".$row['bildlink']."'"; ?> alt='Bild'>
+               </a>
  
             
-                          <a style='font-size: 15px;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
-   Schlagempfehlungen Bahn  <?=htmlspecialchars($row['bahnnummer']); ?>
-            </a> 
-        
+  
             
         <div class="clearfix"></div>
         </div>
