@@ -1683,11 +1683,16 @@ background-color:beige;
 
 	/*Galarie*/
 
+	.gallery-container {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	.galerie-Bilder
-	{width:200px; 
-	height: 250px;
-	margin-bottom: 2em;
+	{width:100%; 
+	height: 100%;
+	padding: 0em 2em 2em 2em;
 }
 
 
