@@ -1011,6 +1011,13 @@ margin-top: 2em;
 .navbar-default {
 	background: rgba(248,248,248,0.7);
 }
+
+@media only screen and (max-width: 768px) {
+	.navbar-default .navbar-collapse {
+		border-color: white;
+		background-color: #000000;
+	 } 
+ }
 /*navi orginal*/
 
 		#header nav {
@@ -1090,6 +1097,7 @@ margin-top: 2em;
 				text-align: center;
 			}
 
+			
 /* Banner */
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
