@@ -5,14 +5,45 @@ if(isset($_POST['commentSubmit'])){
 $uid=$_POST['uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
+$imgid=$_POST['imgid'];
+$checkID=$_POST['checkID'];
 
-$sql = "INSERT INTO comments (uid, date, message) VALUES('$uid', '$date', '$message')";
-$result = mysqli_query($conn,$sql);
+if(empty($_POST['checkID'])){
+    $_POST['checkID']=md5(microtime());
+} else{
+ if(preg_match('/^[a-f0-9]{32}$/',$_POST['checkID']))
+ {
+ 
+    $sql="SELECT cid FROM comments WHERE checkID = '$checkID'";
+     $result = mysqli_query($conn,$sql);
+
+    $resultCheck= mysqli_num_rows($result);
+     
+     if($resultCheck == 1)
+     {
+         print_r("Ihr Kommentar wurde bereits gesendet") ;
+     }
+     else
+     {
+
+                $sql = "INSERT INTO comments (uid, date, message, imgid, checkID) VALUES('$uid', '$date', '$message', '$imgid', '$checkID')";
+                /*$result=*/ mysqli_query($conn,$sql);
+         
+         if(mysqli_affected_rows() == 1) {
+             $message = 'Kommentar wurde gesendet!';}
+         else{
+             $message = 'Ihr Kommentar konnte nicht gesendet werden!';}
+     }
+
+ }
+
+
 }
 }
+}
 
-function getComments($conn){
-    $sql = "SELECT * FROM comments ORDER BY date DESC";            //go into the database
+function getComments($conn,$bildid){
+    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC";            //go into the database
     $result = mysqli_query($conn, $sql);        //run the query
     while($row = mysqli_fetch_assoc($result)){  //spit it out
         $id = $row['uid'];
@@ -97,7 +128,7 @@ function editComments($conn){
             
             $sql = "DELETE FROM comments WHERE cid='$cid'";
             $result = mysqli_query($conn,$sql);
-            header("Location: index.php");
+            header("Location: index.php?page=gallery&bahn=$bildid");
             }
     }
 

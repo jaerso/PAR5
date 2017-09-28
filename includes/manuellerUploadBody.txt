@@ -1,0 +1,47 @@
+
+CREATE TABLE images
+(
+	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) not null,
+    type varchar(100) not null,
+    bildlink varchar(300) not null,
+    bahnnummer varchar(200) not null
+);
+
+CREATE TABLE frontimages
+(
+	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(100) not null,
+    type varchar(100) not null,
+    bildlink varchar(300) not null,
+    bahnnummer varchar(200) not null
+);
+
+
+tabelle füllen:
+
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '2');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '3');
+INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('4.jpg', 'image/jpeg', 'images/gallery/Fotos/4.jpg', '4');
+
+
+
+<?php   Bilder hochladen
+date_default_timezone_set('Europe/Berlin');
+include 'includes/comments.inc.php';
+include 'includes/dbh.inc.php';
+?>
+<header class="major">
+
+<form action="includes/bilderupload.inc.php" method="post" enctype="multipart/form-data" name="Upload-Form"> 
+<table><tr><td> 
+Bild</td><td> 
+<input type="file" name="bild" size="30"> 
+</td></tr><tr><td height="5"></td></tr><tr><td> 
+Bahnnummer</td><td> 
+<input type="text" name="bahnnummer" size="30"> 
+</td></tr></table> 
+<input type="submit" name="submit" value="Hochladen!"> 
+<input type="reset" name="reset" value="Zurücketzen!"> 
+</form> 
