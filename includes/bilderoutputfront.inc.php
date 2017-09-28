@@ -18,11 +18,11 @@ echo"<h2> Sehen sie hier unsere Bahnen <h2>";
             <div>
                <?php echo "<img style='width:200px; height: 250px;' src='".$row['bildlink']."' alt='Bild'>"; ?>
                
-               <a style='font-size: 0.5em;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
-   Schlagempfehlungen Bahn  <?=htmlspecialchars($row['bahnnummer']); ?>
-            </a>
+ 
             </div>
-             
+                          <a style='font-size: 0.5em;' href="index.php?page=gallery&bahn=<?=htmlspecialchars($row['bahnnummer']); ?>">
+   Schlagempfehlungen Bahn  <?=htmlspecialchars($row['bahnnummer']); ?>
+            </a> 
             
             
         <div class="clearfix"></div>
