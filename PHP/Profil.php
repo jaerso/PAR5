@@ -6,7 +6,7 @@ include_once 'includes/picture.inc.php';
 
 <div class='hintergrund-bild'>
 
-<h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 60px 0 0 400px;'> Dein Profil </h1>
+<h1 style='font-family: Raleway; font-weight:bold; color:black; padding: 50px 0 0 400px; margin:0em;'> Dein Profil </h1>
 
 <div class='user-container'>
 
