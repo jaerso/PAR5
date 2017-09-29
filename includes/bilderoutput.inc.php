@@ -44,10 +44,8 @@ if(isset($_GET['bahn'])){
 
     
 }
-<<<<<<< HEAD
-echo "<a style='font-family:Raleway; font-weight:bold;' href='#top'>zurück an den Seitenanfang</a>";
+
 ?>
-=======
 
 
 
@@ -55,4 +53,3 @@ echo "<a style='font-family:Raleway; font-weight:bold;' href='#top'>zurück an d
   
 }*/
 ?>
->>>>>>> 2b120258442f018b0411c01feb238d05d66d2a3d

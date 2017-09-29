@@ -1733,17 +1733,15 @@ background-color:beige;
 	transform: scale(1.1);  
 }
 
-<<<<<<< HEAD
-	  border-style: inset;
-=======
 #divBorder{
-	transition: all .2s ease-in-out;
-	  border-style: inset ;
->>>>>>> 2b120258442f018b0411c01feb238d05d66d2a3d
-	  border-width: 2px;
-	  border-color: green;
-	  margin: 1em 0em 2em 0em;
+	transition: all .2s ease-in-out !important;
+	  border-style: inset !important;
+	  border-width: 2px !important;
+	  border-color: green !important;
+	  margin: 1em 0em 2em 0em !important;
 }
+
+
 #schlag-border {
 	border-style: inset;
 	border-width: 2px;
