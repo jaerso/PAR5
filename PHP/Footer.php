@@ -23,7 +23,7 @@
 								<h3>THM</h3>
 								<ul class="unstyled">
 									<li><a href="https://thm.de">TH Mittelhessen</a></li>
-									<li><a href="#">Altes Minigolfprojekt</a></li>
+									<li><a href="https://hosting.iem.thm.de/user/euler/minigolf/index.php?inhalt=home">Altes Minigolfprojekt</a></li>
 									<li><a href="https://galileo3.mnd.thm.de/profilseite/euler">Prof. Euler</a></li>
 								</ul>
 							</section>
@@ -36,7 +36,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+					</div>
 			</footer>
 	</body>
 

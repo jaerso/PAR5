@@ -49,19 +49,20 @@
 
       		<!-- Two -->
       			<section id="two" class="wrapper style2 special">
-      				<div class="container">
+      				<div class="start-container">
       					<header class="major">
       						<h2>Projekt Minigolf Webanwendung</h2>
       						<p>Diese Anwendung ist ein Projekt im Rahmen unseres Studiums</p>
       					</header>
       					<footer>
-      						<p>Dieses Projekt wurde im Rahmen der Veranstaltung Medienprojektmanagement programmiert. Dabei wurde an die Idee einer bestehenden Umsetzung angesetzt.</p>
+							  <p>Dieses Projekt wurde im Rahmen der Veranstaltung Medienprojektmanagement programmiert. Dabei wurde an die Idee einer bestehenden Umsetzung angesetzt.</p>
+							  </footer>
       						<ul class="actions">
       							<li>
       								<a href="#" class="button big">Mehr Informationen</a>
       							</li>
       						</ul>
-      					</footer>
+      					
       				</div>
       			</section>
 

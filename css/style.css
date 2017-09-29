@@ -687,6 +687,7 @@ form button {
 
 /* Button */
 
+
 #editor-login {
 margin-top: 2em;
 position: absolute;
@@ -1029,7 +1030,8 @@ transform: translate(-50%, -50%);
 }
 
 .navbar-brand:hover {
-  background-color: transparent !important;
+	background-color: transparent !important;
+	height: 0px !important;
 }
 
 .navbar-default {
@@ -1175,7 +1177,13 @@ transform: translate(-50%, -50%);
 				text-align: center;
 			}
 
-			
+			.start-container {
+				width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 2em;
+				padding-bottom: 2em;
+			}
 /* Banner */
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
@@ -1578,6 +1586,13 @@ hr.strich {
 	border-radius: 0;
 }
 
+.btn-default:focus{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
 	.btn-default:hover{
 		-moz-transition: 0.2s ease-in-out;
 		-webkit-transition: 0.2s ease-in-out;
@@ -1590,6 +1605,8 @@ hr.strich {
 		border-radius: 0;
 	}
 
+	
+
 .dropdown-menu{
 	border-radius: 0;
 	border: none;
@@ -1601,6 +1618,10 @@ hr.strich {
 		text-decoration: none;
 		color: whitesmoke;
 		background-color: #4CAF50;
+	}
+	
+	.dropdown-menu > a > li {
+		height: 28px;
 	}
 
 	/*Profil*/
@@ -1704,12 +1725,24 @@ background-color:beige;
 }
 
 
-#divBorder{
+#divBorder:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);  
+}
 
+<<<<<<< HEAD
 	  border-style: inset;
+=======
+#divBorder{
+	transition: all .2s ease-in-out;
+	  border-style: inset ;
+>>>>>>> 2b120258442f018b0411c01feb238d05d66d2a3d
 	  border-width: 2px;
-	border-color: green;
-	margin-bottom: 30px;
+	  border-color: green;
+	  margin: 1em 0em 2em 0em;
 }
 #schlag-border {
 	border-style: inset;
