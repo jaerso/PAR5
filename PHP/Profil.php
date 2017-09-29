@@ -20,8 +20,8 @@ echo"<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data' style='margin: 120px 0 0 0;'>
 		
-		<p style='font-family:Raleway; margin:0px;'>Wähle ein neues Profilbild aus <input type='file' name='file'> </p>
-		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 17px 0 0 0;'> 📷 hochladen </button>
+		<p style='font-family:Raleway; margin:0 0 10px 0; padding:13px 0 0 0;'>Wähle ein neues Profilbild aus <input type='file' name='file'> </p>
+		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 0 0 0;'> 📷 hochladen </button>
 		</form>";
 
 		echo "<form action='includes/deleteprofile.inc.php' method='POST'>
