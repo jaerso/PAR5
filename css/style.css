@@ -1706,13 +1706,135 @@ background-color:beige;
 
 #divBorder{
 
-	  border-style: inset ;
+	  border-style: inset;
 	  border-width: 2px;
 	border-color: green;
 	margin-bottom: 30px;
+}
+#schlag-border {
+	border-style: inset;
+	border-width: 2px;
+	border-color: green;
+	
+}
+
+/*zurück nach oben*/
+a[href^="#top"]::before {
+	content: '➡';
+	display: inline-block;
+	color: #e04c32;
+	font-size: 1.5em;
+	transform: rotate(-90deg);
+	margin:0 0 25px 780px;
+
+
+}
+
+/*ende galarie*/
+
+
+
+
+
+
+
+.textareaStyle{
+    width: 400px;
+    height:80px;
+    background-color:lightgrey;
+    resize: none;
 }
 
 
 
 
-/*ende galarie*/
+
+
+.kommiButton{
+
+background-color:black;
+color:white;
+float:left;
+	display: inline-block;
+    margin-bottom: 60px;
+    font-size: medium;
+	margin-top: -2.6em !important;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+	border-radius: 4px;
+
+}
+
+
+/*kommentarfeld in Galerie*/
+.comment-box{
+    width: 815px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+   position: relative;
+}
+
+.comment-box p{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100,
+}
+
+.edit-form{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.edit-form button{
+   width: 40px;
+   height: 20px;
+    color: #282828;
+    background-color: #fff;
+    opacity:0.7;
+}
+
+.edit-form button:hover{
+    opacity:0.1;
+ }
+
+ .delete-form{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+.delete-form button{
+   width: 40px;
+   height: 20px;
+    color: #282828;
+    background-color: #fff;
+    opacity:0.7;
+}
+
+.delete-form button:hover{
+    opacity:0.1;
+ }
+
+ .commentmessage{
+     float: right;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+ }
+
