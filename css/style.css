@@ -1586,6 +1586,13 @@ hr.strich {
 	border-radius: 0;
 }
 
+.btn-default:focus{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
 	.btn-default:hover{
 		-moz-transition: 0.2s ease-in-out;
 		-webkit-transition: 0.2s ease-in-out;
@@ -1598,6 +1605,8 @@ hr.strich {
 		border-radius: 0;
 	}
 
+	
+
 .dropdown-menu{
 	border-radius: 0;
 	border: none;
@@ -1609,6 +1618,10 @@ hr.strich {
 		text-decoration: none;
 		color: whitesmoke;
 		background-color: #4CAF50;
+	}
+	
+	.dropdown-menu > a > li {
+		height: 28px;
 	}
 
 	/*Profil*/
