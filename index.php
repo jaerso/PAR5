@@ -45,10 +45,10 @@
 
 if (isset($_SESSION['u_id'])) {
 
-	echo "<form action='includes/logout.inc.php' method='POST'>";
+	echo "<form id='form-welcome' action='includes/logout.inc.php' method='POST'>";
 		$username= $_SESSION['u_uid'];
 		$pic=$_SESSION['pic'];
-		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' > <a href='index.php?page=profile'>$username</a>! ";
+		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' > <a class='login-name' href='index.php?page=profile'>$username</a>! ";
 		echo "<button id='button-login' type='submit' name='submit'><span class='glyphicon glyphicon-log-out'></span> Logout</button>
 		</form>";
 }	
@@ -148,7 +148,7 @@ else{
 		}
                    elseif($_GET['page']==''){ $_GET['page'] = 'home';}
             ?>
-            <?php if($_GET['page'] != 'home' && $_GET['page'] != 'editor' && $_GET['page'] != 'profile'|| $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
+            <?php if($_GET['page'] != 'home' && $_GET['page'] != 'editor' && $_GET['page'] != 'profile' && $_GET['page'] != 'gallery' || $_GET['page'] == null){ echo "<div class=\"container\">";} ?>
             <!--getContent()-->
 				<?php
 				if($_GET['page']=='home'){

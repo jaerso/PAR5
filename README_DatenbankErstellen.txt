@@ -18,11 +18,9 @@ id int(11) not null PRIMARY KEY AUTO_INCREMENT,
 CREATE TABLE comments (
     cid int(11) not null AUTO_INCREMENT PRIMARY KEY,
 imgid varchar(256) not null,
-checkID varchar(32) not null,
     uid varchar(256) not null,
     date datetime not null,
-    message TEXT not null,
-UNIQUE KEY `checkID` (`checkID`)
+    message TEXT not null
 );
 
 CREATE TABLE images
@@ -43,6 +41,13 @@ CREATE TABLE frontimages
     bahnnummer varchar(200) not null
 );
 
+
+INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
+INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '1');
+INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '2');
+INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('4.jpg', 'image/jpeg', 'images/gallery/Fotos/4.jpg', '4');
+
+
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '2');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '3');
@@ -61,8 +66,3 @@ INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('15.jpg', 'im
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('16.jpg', 'image/jpeg', 'images/gallery/Fotos/16.jpg', '16');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('17.jpg', 'image/jpeg', 'images/gallery/Fotos/17.jpg', '17');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('18.jpg', 'image/jpeg', 'images/gallery/Fotos/18.jpg', '18');
-
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '1');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '2');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('4.jpg', 'image/jpeg', 'images/gallery/Fotos/4.jpg', '4');
