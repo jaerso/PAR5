@@ -1029,7 +1029,8 @@ transform: translate(-50%, -50%);
 }
 
 .navbar-brand:hover {
-  background-color: transparent !important;
+	background-color: transparent !important;
+	height: 0px !important;
 }
 
 .navbar-default {
@@ -1717,7 +1718,7 @@ background-color:beige;
 	  border-style: inset ;
 	  border-width: 2px;
 	  border-color: green;
-	  margin-bottom: 30px;
+	  margin: 1em 0em 2em 0em;
 }
 
 
