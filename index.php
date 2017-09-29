@@ -1,7 +1,6 @@
 <?php
 	include_once "PHP/Head.php";
-	include_once "includes/dbh.inc.php";
-	include_once "includes/picture.inc.php";
+	
 	/*if($_GET['page']==''){
 		$_GET['page']='home';
 	}*/
