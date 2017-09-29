@@ -1,18 +1,20 @@
 <?php
 
-function setComments($conn){
-if(isset($_POST['commentSubmit'])){
+function setComments($conn,$bildid){
+if(isset($_POST['commentSubmit'])&& $_POST['commentSubmit']==$bildid){//gegen mehrfache ausgabe
 $u_id=$_POST['u_id'];
 $u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
-//$checkID=$_POST['checkID'];
+$bahn=$_SESSION['bahn'];
+//$bahnnummer=$bildid;
+/*$checkID=$_POST['checkID'];
 
-/*if(empty($_POST['checkID'])){
-    $_POST['checkID']=md5(microtime());
+if(empty($checkID)){
+    $checkID=md5(microtime());
 } else{
- if(preg_match('/^[a-f0-9]{32}$/',$_POST['checkID']))
+ if(preg_match('/^[a-f0-9]{32}$/',$checkID))
  {
  
     $sql="SELECT cid FROM comments WHERE checkID = '$checkID'";
@@ -28,9 +30,11 @@ $imgid=$_POST['imgid'];
      {*/
 
                 $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
-                $result= mysqli_query($conn,$sql);/*
+                $result= mysqli_query($conn,$sql);
+              header("Location: index.php?page=gallery&bahn=$bahn");
+             
          
-         if(mysqli_affected_rows($conn) == 1) {
+         /*if(mysqli_affected_rows($conn) == 1) {
              $message = 'Kommentar wurde gesendet!';
          }
          else{

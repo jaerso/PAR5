@@ -687,6 +687,7 @@ form button {
 
 /* Button */
 
+
 #editor-login {
 margin-top: 2em;
 position: absolute;
@@ -1176,7 +1177,13 @@ transform: translate(-50%, -50%);
 				text-align: center;
 			}
 
-			
+			.start-container {
+				width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 2em;
+				padding-bottom: 2em;
+			}
 /* Banner */
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
@@ -1579,6 +1586,13 @@ hr.strich {
 	border-radius: 0;
 }
 
+.btn-default:focus{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 0;
+}
+
 	.btn-default:hover{
 		-moz-transition: 0.2s ease-in-out;
 		-webkit-transition: 0.2s ease-in-out;
@@ -1591,6 +1605,8 @@ hr.strich {
 		border-radius: 0;
 	}
 
+	
+
 .dropdown-menu{
 	border-radius: 0;
 	border: none;
@@ -1602,6 +1618,10 @@ hr.strich {
 		text-decoration: none;
 		color: whitesmoke;
 		background-color: #4CAF50;
+	}
+	
+	.dropdown-menu > a > li {
+		height: 28px;
 	}
 
 	/*Profil*/
