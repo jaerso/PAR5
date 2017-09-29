@@ -687,6 +687,7 @@ form button {
 
 /* Button */
 
+
 #editor-login {
 margin-top: 2em;
 position: absolute;
@@ -1176,7 +1177,13 @@ transform: translate(-50%, -50%);
 				text-align: center;
 			}
 
-			
+			.start-container {
+				width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 2em;
+				padding-bottom: 2em;
+			}
 /* Banner */
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
