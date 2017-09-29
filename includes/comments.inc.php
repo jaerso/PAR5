@@ -2,13 +2,14 @@
 
 function setComments($conn){
 if(isset($_POST['commentSubmit'])){
-$uid=$_POST['uid'];
+$u_id=$_POST['u_id'];
+$u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
-$checkID=$_POST['checkID'];
+//$checkID=$_POST['checkID'];
 
-if(empty($_POST['checkID'])){
+/*if(empty($_POST['checkID'])){
     $_POST['checkID']=md5(microtime());
 } else{
  if(preg_match('/^[a-f0-9]{32}$/',$_POST['checkID']))
@@ -24,14 +25,13 @@ if(empty($_POST['checkID'])){
          print_r("Ihr Kommentar wurde bereits gesendet") ;
      }
      else
-     {
+     {*/
 
-                $sql = "INSERT INTO comments (uid, date, message, imgid, checkID) VALUES('$uid', '$date', '$message', '$imgid', '$checkID')";
-                /*$result=*/ mysqli_query($conn,$sql);
+                $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
+                $result= mysqli_query($conn,$sql);/*
          
          if(mysqli_affected_rows($conn) == 1) {
              $message = 'Kommentar wurde gesendet!';
-             include_once "bilderoutput.inc.php";
          }
          else{
              $message = 'Ihr Kommentar konnte nicht gesendet werden!';}
@@ -40,7 +40,7 @@ if(empty($_POST['checkID'])){
  }
 
 
-}
+}*/
 }
 
 }
@@ -49,8 +49,8 @@ function getComments($conn,$bildid){
     $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC";            //go into the database
     $result = mysqli_query($conn, $sql);        //run the query
     while($row = mysqli_fetch_assoc($result)){  //spit it out
-        $id = $row['uid'];
-        $sql2 = "SELECT * FROM users WHERE user_id='$id'";
+        $u_id = $row['u_id'];
+        $sql2 = "SELECT * FROM users WHERE user_id='$u_id'";
         $result2 = mysqli_query($conn, $sql2);
         if($row2 = mysqli_fetch_assoc($result2)){
                 echo "<div class='comment-box'><p>";
@@ -66,13 +66,13 @@ function getComments($conn,$bildid){
                     $_SESSION['bahn']= $_GET['bahn'];
                     
                     //echo "$bahn";
-                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn)."'>
-                        <input type='hidden' name='uid' value='".$row['cid']."'>
+                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bildid)."'>
+                        <input type='hidden' name='cid' value='".$row['cid']."'>
                         <button type='submit' name='commentDelete'>Löschen</button>
                         </form>
                         <form class='edit-form' method='POST' action='includes/editcomment.inc.php'>
                         <input type='hidden' name='cid' value='".$row['cid']."'>
-                        <input type='hidden' name='uid' value='".$row['uid']."'>
+                        <input type='hidden' name='u_id' value='".$row['u_id']."'>
                         <input type='hidden' name='date' value='".$row['date']."'>
                         <input type='hidden' name='message' value='".$row['message']."'>
                         <button>Bearbeiten</button>
@@ -101,7 +101,7 @@ function getComments($conn,$bildid){
 function editComments($conn){
     if(isset($_POST['commentSubmit'])){
     $cid=$_POST['cid'];
-    $uid=$_POST['uid'];
+    $u_uid=$_POST['u_uid'];
     $date=$_POST['date'];
     $message=$_POST['message'];
     $bahn=$_SESSION['bahn'];
@@ -127,7 +127,7 @@ function editComments($conn){
         }
         }*/
 
-    function deleteComments($conn){
+    function deleteComments($conn,$bildid){
         if(isset($_POST['commentDelete'])){
             $cid=$_POST['cid'];
             
