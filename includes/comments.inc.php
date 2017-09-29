@@ -29,8 +29,10 @@ if(empty($_POST['checkID'])){
                 $sql = "INSERT INTO comments (uid, date, message, imgid, checkID) VALUES('$uid', '$date', '$message', '$imgid', '$checkID')";
                 /*$result=*/ mysqli_query($conn,$sql);
          
-         if(mysqli_affected_rows() == 1) {
-             $message = 'Kommentar wurde gesendet!';}
+         if(mysqli_affected_rows($conn) == 1) {
+             $message = 'Kommentar wurde gesendet!';
+             include_once "bilderoutput.inc.php";
+         }
          else{
              $message = 'Ihr Kommentar konnte nicht gesendet werden!';}
      }
@@ -40,6 +42,7 @@ if(empty($_POST['checkID'])){
 
 }
 }
+
 }
 
 function getComments($conn,$bildid){
@@ -51,6 +54,8 @@ function getComments($conn,$bildid){
         $result2 = mysqli_query($conn, $sql2);
         if($row2 = mysqli_fetch_assoc($result2)){
                 echo "<div class='comment-box'><p>";
+                $pic=$_SESSION['pic'];
+                echo "<img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' >";
                 echo $row2['user_uid']."<br>";
                 echo $row['date']."<br>";
                 echo nl2br($row['message']); //interpretiert Absätze in sql zu php
