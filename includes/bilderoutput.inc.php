@@ -6,7 +6,7 @@ if(isset($_GET['bahn'])){
     $bahnnummer = $_GET['bahn'];
 
     $data_SQL="SELECT * FROM images WHERE bahnnummer=$bahnnummer"; //Übergabe der ID: auch das klappt, da die Textfelder korrekt angezeigt werden
-    $checkID='';
+    //$checkID='';
     $result = mysqli_query($conn, $data_SQL);
     while($data=mysqli_fetch_assoc($result))
     {
@@ -24,11 +24,12 @@ if(isset($_GET['bahn'])){
     
     if(isset($_SESSION['u_id'])){
         echo "<form action='".setComments($conn)."' method='POST'>
-        <input type='hidden' name='uid' value='".$_SESSION['u_id']."'>
+        <input type='hidden' name='u_id' value='".$_SESSION['u_id']."'>
+        <input type='hidden' name='u_uid' value='".$_SESSION['u_uid']."'>
         <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-        <input type='hidden' name='imgid' value='".$data['id']."'>
-        <input type='hidden' name='checkID' value='". $checkID. "'>
-        <textarea name='message'></textarea><br>
+        <input type='hidden' name='imgid' value='".$data['id']."'>";
+        //<input type='hidden' name='checkID' value='". $checkID. "'>
+       echo" <textarea name='message'></textarea><br>
         <button type='submit' name='commentSubmit'>Kommentieren</button>
         </form>
         <br>";
