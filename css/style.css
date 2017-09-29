@@ -229,6 +229,9 @@
 		}
 
 /* Form */
+#form-welcome {
+	padding-left: 0.8em;
+}
 
 form {
 	padding: 0px;
@@ -565,6 +568,7 @@ form button {
 
 		ul li {
 			padding-left: 0.5em;
+			height: 57px;
 		}
 
 		ul.alt {
@@ -695,7 +699,7 @@ transform: translate(-50%, -50%);
 #button-login:hover,
 #button-login:focus
  {
-	padding: 0 2em 0 2em;
+	padding: 0 2em 0 0.8em;
 	margin: 0;
 	line-height: 25px;
 	background-color: Transparent;
@@ -874,7 +878,7 @@ transform: translate(-50%, -50%);
 		cursor: default;
 		font-size: 1.1em;
 		height: auto;
-		line-height: 6em;
+		line-height: 3em;
 		width: 100%;
 		z-index: 10000;
 
@@ -1037,6 +1041,34 @@ transform: translate(-50%, -50%);
 	padding-top: 0 !important;
 }
 
+@media only screen and (max-width: 768px) {
+	.navbar-default .navbar-collapse {
+		border-color: white;
+		background-color: rgba(248,248,248,0.94);
+		margin-top: 2px;
+		
+
+	 } 
+ }
+
+ 
+ .navbar-toggle:focus {
+	background-color: #3AAA35 !important;
+}
+
+ .navbar-toggle:hover {
+	background-color: #58AD4E !important; 
+	border: 1px solid #3AAA35 !important;
+}
+
+ .navbar-toggle {
+	 margin-top: 12px;
+	 background-color: #3AAA35;
+ }
+
+ .icon-bar {
+	 background-color: white !important;
+ }
 /*navi orginal*/
 
 		#header nav {
@@ -1143,6 +1175,7 @@ transform: translate(-50%, -50%);
 				text-align: center;
 			}
 
+			
 /* Banner */
 	#banner {
 		background-image: url(../images/dark_tint.png), url(../images/bokeh_car_lights_bg.jpg);
@@ -1650,10 +1683,24 @@ background-color:beige;
 
 	/*Galarie*/
 
+.gallery-container h2 {
+	text-align: center;
+}
+.bahn-container h2 {
+	margin-top: 0em !important;
+	text-align: center;
+}
+
+	.gallery-container {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	.galerie-Bilder
-	{width:200px; 
-	height: 250px;
+	{width:100%; 
+	height: 100%;
+	padding: 0em 1em 1em 1em;
 }
 
 
