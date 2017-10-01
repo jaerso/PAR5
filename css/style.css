@@ -1346,7 +1346,7 @@ transform: translate(-50%, -50%);
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		padding: 3em 0em 0em;
+		padding: 2em 0em 0em;
 	}
 
 		#footer h2, #footer h3, #footer h4 {
@@ -1368,6 +1368,7 @@ transform: translate(-50%, -50%);
 		#footer .copyright {
 			margin-top: 0.65em;
 			padding: 0;
+			margin-bottom: 0;
 		}
 
 			#footer .copyright li {
@@ -1376,6 +1377,7 @@ transform: translate(-50%, -50%);
 				list-style: none;
 				margin-left: 0.5em;
 				padding-left: 0.5em;
+				height: auto !important;
 			}
 
 				#footer .copyright li:first-child {
@@ -1398,6 +1400,17 @@ transform: translate(-50%, -50%);
 			line-height: 4em;
 			width: 4em;
 			cursor: pointer;
+		}
+
+		.backtotop {
+			font-family:Raleway; 
+			font-weight:bold;
+			margin-top: -10em !important;
+			color: white !important;
+		}
+
+		.glyphicon-arrow-up {
+			color: white;
 		}
 
 /* Grid Demo */
@@ -1749,24 +1762,8 @@ background-color:beige;
 	
 }
 
-/*zurück nach oben*/
-a[href^="#top"]::before {
-	content: '➡';
-	display: inline-block;
-	color: #e04c32;
-	font-size: 1.5em;
-	transform: rotate(-90deg);
-	margin:0 0 25px 780px;
-
-
-}
 
 /*ende galarie*/
-
-
-
-
-
 
 
 .textareaStyle{

@@ -34,6 +34,4 @@ include 'dbh.inc.php';
     <?php } ?>
 
     <div class="clearfix"></div>
-	<a style="font-family:Raleway; font-weight:bold;" href="#top">zurück an den Seitenanfang</a>
-	
     </div>
