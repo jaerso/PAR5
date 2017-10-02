@@ -59,7 +59,7 @@
 							  </footer>
       						<ul class="actions">
       							<li>
-      								<a href="#" class="button big">Mehr Informationen</a>
+      								<a href="index.php?page=function" class="button big">Mehr Informationen</a>
       							</li>
       						</ul>
       					
