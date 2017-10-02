@@ -34,5 +34,4 @@ include 'dbh.inc.php';
     <?php } ?>
 
     <div class="clearfix"></div>
-
     </div>

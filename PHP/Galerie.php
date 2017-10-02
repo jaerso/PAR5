@@ -7,20 +7,23 @@
   <hr style="height: 6px; background: url(http://ibrahimjabbari.com/english/images/hr-12.png); repeat-x 0 0;
     border: 0;">
     
-    
+  
 
 
     
 <?php
+  
 
-$bildOrdner = '';
+
+  $bildOrdner = '';
 $bahnnummer = '0';
 
     if(isset($_GET['bahn']))
     {
      $bildOrdner = $_GET['bahn'];
     }
-
+    
+    
 
     if($bildOrdner == '') 
     {
@@ -30,6 +33,8 @@ $bahnnummer = '0';
     else 
     {
         echo"<h2> Schlagempfehlungen für Bahn ".$bildOrdner. " <h2>";
+
+        echo "<a style='margin:0 868px 0 0; ' href='index.php?page=gallery' class='btn btn-default'>zurück zur Übersicht</a>";
 
         include_once 'includes/bilderoutput.inc.php';
 
