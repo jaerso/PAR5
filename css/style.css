@@ -1637,6 +1637,16 @@ hr.strich {
 		height: 28px;
 	}
 
+	#editor-xs {
+		text-align: center;
+		color:#3AAA35;
+		font-family: "Raleway";
+		font-weight:bold;
+		font-size: 1.5em;
+		margin: 6em 0 5em 0;
+		line-height: 1.5em;
+	}
+
 	/*Profil*/
 
 .profilansicht{
@@ -1713,6 +1723,49 @@ background-color:beige;
 
 	
 	/*Ende Profil*/
+
+	/*Funktion Seite*/
+
+.funktion-container {
+	text-align: center;
+}
+
+.funktion-container p {
+	margin: 0 !important;
+}
+
+#function-img {
+height: 100%;
+width: 100%;
+border-style: inset;
+border-width: 2px;
+border-color: green;
+
+}
+
+#function-hov {
+	background-image: url('../images/zurücksetzten1.jpg');
+	height: 100%;
+	width: 100%;
+	border-style: inset;
+	border-width: 2px;
+	border-color: green;
+
+	background-size: contain;
+	background-size: cover;
+}
+
+#function-hov:hover {
+	background-image: url('../images/zurücksetzten2.jpg');
+	height: 100%;
+	width: 100%;
+	border-style: inset;
+	border-width: 2px;
+	border-color: green;
+
+	background-size: contain;
+	background-size: cover;
+}
 
 
 	/*Galarie*/
