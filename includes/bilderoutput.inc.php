@@ -10,7 +10,7 @@ if(isset($_GET['bahn'])){
     $result = mysqli_query($conn, $data_SQL);
     while($data=mysqli_fetch_assoc($result))
     {
-    echo "<img src='".$data['bildlink']."' alt='Bild'>";
+    echo "<img id='schlag-border' src='".$data['bildlink']."' alt='Bild'>";
     //Comment
       $bildid= $data['id'];
         getComments($conn,$bildid);
@@ -20,14 +20,14 @@ if(isset($_GET['bahn'])){
    
     //comments($conn,$bildid,$data);
     if(isset($_SESSION['u_id'])){
-      echo "<form action='".setComments($conn,$bildid)."' method='POST'>
+      echo "<form style='margin-left:0.7em; action='".setComments($conn,$bildid)."' method='POST'>
       <input type='hidden' name='u_id' value='".$_SESSION['u_id']."'>
       <input type='hidden' name='u_uid' value='".$_SESSION['u_uid']."'>
       <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
       <input type='hidden' name='imgid' value='".$data['id']."'>";
      // <input type='hidden' name='checkID' value='". $checkID. "'>
-      echo "<textarea name='message'></textarea><br>
-      <button type='submit' name='commentSubmit' value='".$data['id']."'>Kommentieren</button>
+      echo "<textarea class='textareaStyle' name='message'></textarea><br>
+      <button class='kommiButton' type='submit' name='commentSubmit' value='".$data['id']."'>Kommentieren</button>
       </form>
       <br>";
      
@@ -39,7 +39,13 @@ if(isset($_GET['bahn'])){
   //  header("Location: ../index.php?page=gallery&bahn=$bahnnummer");
   //unset($_POST);
     }  
+
+
+
+    
 }
+
+?>
 
 
 

@@ -31,7 +31,15 @@ if(empty($checkID)){
 
                 $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
                 $result= mysqli_query($conn,$sql);
-              header("Location: index.php?page=gallery&bahn=$bahn");
+                /*print_r($_POST['commentSubmit']);
+            unset($_POST['commentSubmit']);
+            print_r($_POST['commentSubmit']);*/
+             //header("Location: index.php?page=gallery&bahn=$bahn");
+             //header_remove();
+         // header("Refresh:0");
+       // $_POST['commentSubmit']=$bildid*100;
+       //echo "<script>window.location.reload();</script>";
+
              
          
          /*if(mysqli_affected_rows($conn) == 1) {
@@ -58,8 +66,9 @@ function getComments($conn,$bildid){
         $result2 = mysqli_query($conn, $sql2);
         if($row2 = mysqli_fetch_assoc($result2)){
                 echo "<div class='comment-box'><p>";
-                $pic=$_SESSION['pic'];
-                echo "<img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' >";
+                $profilepic=profilepic($u_id,$conn);
+                //$pic='uploads/profiledefault.jpg';
+                echo "<img id='profileicon' src=$profilepic height='42' width='42' style='border-radius:100%;' > ";
                 echo $row2['user_uid']."<br>";
                 echo $row['date']."<br>";
                 echo nl2br($row['message']); //interpretiert Absätze in sql zu php

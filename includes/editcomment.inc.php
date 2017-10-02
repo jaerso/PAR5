@@ -24,8 +24,8 @@ $message=$_POST['message'];
     <input type='hidden' name='cid' value='".$cid."'>
     <input type='hidden' name='uid' value='".$uid."'>
     <input type='hidden' name='date' value='".$date."'>
-    <textarea name='message'>".$message."</textarea><br>
-    <button type='submit' name='commentSubmit'>Bearbeiten</button>
+    <textarea class='textareaStyle'name='message'>".$message."</textarea><br>
+    <button class='BearbeitenButton' type='submit' name='commentSubmit'>Bearbeiten</button>
     </form>";
 ?>
 </body>

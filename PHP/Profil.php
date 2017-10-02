@@ -11,7 +11,11 @@ include_once 'includes/picture.inc.php';
 <div class='user-container'>
 
 <?php
-echo"<div class='img-responsive'> <img class='zoom'  src= $profilepic></div>";
+$pic=$_SESSION['pic'];
+$username=$_SESSION['u_uid'];
+$firstname=$_SESSION['u_first'];
+$lastname=$_SESSION['u_last'];
+echo"<div class='img-responsive'> <img class='zoom'  src= $pic></div>";
 echo"<p style='color: black; font-weight:bold; margin:3em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
 echo"<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
 ?>
@@ -20,8 +24,8 @@ echo"<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 
 	if (isset($_SESSION['u_id'])) {
 		echo "<form action='includes/upload.inc.php' method='POST' enctype='multipart/form-data' style='margin: 120px 0 0 0;'>
 		
-		<p style='font-family:Raleway; margin:0px;'>Wähle ein neues Profilbild aus <input type='file' name='file'> </p>
-		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 17px 0 0 0;'> 📷 hochladen </button>
+		<p style='font-family:Raleway; margin:0 0 10px 0; padding:13px 0 0 0;'>Wähle ein neues Profilbild aus <input type='file' name='file'> </p>
+		<button type='submit' name='submit'style='border-radius: 8px; padding:0 4px 0 4px; margin: 0 0 0 0;'> 📷 hochladen </button>
 		</form>";
 
 		echo "<form action='includes/deleteprofile.inc.php' method='POST'>

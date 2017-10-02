@@ -1346,7 +1346,7 @@ transform: translate(-50%, -50%);
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		padding: 3em 0em 0em;
+		padding: 2em 0em 0em;
 	}
 
 		#footer h2, #footer h3, #footer h4 {
@@ -1368,6 +1368,7 @@ transform: translate(-50%, -50%);
 		#footer .copyright {
 			margin-top: 0.65em;
 			padding: 0;
+			margin-bottom: 0;
 		}
 
 			#footer .copyright li {
@@ -1376,6 +1377,7 @@ transform: translate(-50%, -50%);
 				list-style: none;
 				margin-left: 0.5em;
 				padding-left: 0.5em;
+				height: auto !important;
 			}
 
 				#footer .copyright li:first-child {
@@ -1398,6 +1400,17 @@ transform: translate(-50%, -50%);
 			line-height: 4em;
 			width: 4em;
 			cursor: pointer;
+		}
+
+		.backtotop {
+			font-family:Raleway; 
+			font-weight:bold;
+			margin-top: -10em !important;
+			color: white !important;
+		}
+
+		.glyphicon-arrow-up {
+			color: white;
 		}
 
 /* Grid Demo */
@@ -1734,14 +1747,122 @@ background-color:beige;
 }
 
 #divBorder{
-	transition: all .2s ease-in-out;
-	  border-style: inset ;
-	  border-width: 2px;
-	  border-color: green;
-	  margin: 1em 0em 2em 0em;
+	transition: all .2s ease-in-out !important;
+	  border-style: inset !important;
+	  border-width: 2px !important;
+	  border-color: green !important;
+	  margin: 1em 0em 2em 0em !important;
+}
+
+
+#schlag-border {
+	border-style: inset;
+	border-width: 2px;
+	border-color: green;
+	
+}
+
+
+/*ende galarie*/
+
+
+.textareaStyle{
+    width: 400px;
+    height:80px;
+    background-color:lightgrey;
+    resize: none;
 }
 
 
 
 
-/*ende galarie*/
+
+
+.kommiButton{
+
+background-color:black;
+color:white;
+float:left;
+	display: inline-block;
+    margin-bottom: 60px;
+    font-size: medium;
+	margin-top: -2.6em !important;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+	border-radius: 4px;
+
+}
+
+
+/*kommentarfeld in Galerie*/
+.comment-box{
+    width: 815px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+   position: relative;
+}
+
+.comment-box p{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100,
+}
+
+.edit-form{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.edit-form button{
+   width: 40px;
+   height: 20px;
+    color: #282828;
+    background-color: #fff;
+    opacity:0.7;
+}
+
+.edit-form button:hover{
+    opacity:0.1;
+ }
+
+ .delete-form{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+.delete-form button{
+   width: 40px;
+   height: 20px;
+    color: #282828;
+    background-color: #fff;
+    opacity:0.7;
+}
+
+.delete-form button:hover{
+    opacity:0.1;
+ }
+
+ .commentmessage{
+     float: right;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+ }
+

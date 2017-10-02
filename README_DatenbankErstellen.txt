@@ -21,8 +21,6 @@ imgid varchar(256) not null,
 u_id varchar(256) not null,
     u_uid varchar(256) not null,
     date datetime not null,
- //checkID varchar(32) not null,
- //UNIQUE KEY `checkID` (`checkID`),
     message TEXT not null
 );
 
