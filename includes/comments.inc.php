@@ -72,10 +72,10 @@ function getComments($conn,$bildid){
                 echo "<div class='comment-box'><p>";
                 $profilepic=profilepic($u_id,$conn);
                 //$pic='uploads/profiledefault.jpg';
-                echo "<img id='profileicon' src=$profilepic height='42' width='42' style='border-radius:100%;' > ";
-                echo $row2['user_uid']."<br>";
-                echo $row['date']."<br>";
-                echo nl2br($row['message']); //interpretiert Absätze in sql zu php
+                echo "<div style='width:200px;'> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='50' width='50' style='border-radius:100%;' >  ";
+                echo $row2['user_uid']."</div>";
+                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: grey; float: left; line-height:1em;'>". $row['date']."</div> </div><br> ";
+                echo "<div style='float:left;'>".nl2br($row['message'])."</div>"; //interpretiert Absätze in sql zu php
                // print_r($row2);
             echo "</p>";
             if(isset($_SESSION['u_id'])){

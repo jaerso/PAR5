@@ -2,6 +2,10 @@
               if(isset($_SESSION['u_id'])){
               ?>
               <div class="container">
+              <div id="editor-xs" class="visible-xs">
+              <p>Der Editor ist auf Smartphones leider nicht verfügbar!</p>
+              </div>
+              <div class="hidden-xs">
               <div class="row">
                         <div class="col-lg-3">
                             <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-cubes" aria-hidden="true"></i></h1>
@@ -46,7 +50,7 @@
 					</div>
 
 					<div class="col-lg-2 col-lg-push-1">
-                        <button id="export" class="btn btn-default">Upload</button>
+                        <button id="export" class="btn btn-default">Speichern</button>
                     </div>
 
                     <form method="post" accept-charset="utf-8" name="form1">
@@ -70,20 +74,21 @@
                         </div>
                         <div class="col-lg-6">
                             <h3>Zeichnen</h3>
-                            <p>Mit der Maus können sie auf die Bahn eine Schlagempfehlung einzeichnen.</p>
+                            <p>Mit der Maus können sie auf die Bahn eine Schlagempfehlung einzeichnen. Drücke die "ESC" Taste um das Zeichnen zu beenden.</p>
                         </div>
                         <div class="col-lg-6">
                             <h3>Speichern</h3>
-                            <p>Über den Upload-Button wird die Schlagempfehlung zu unserer Gallerie hinzugefügt.</p>
+                            <p>Über den "Speichern" Button wird die Schlagempfehlung zu unserer Gallerie hinzugefügt.</p>
                         </div>
                         <div class="col-lg-6">
                             <h3>Zurücksetzten</h3>
-                            <p>Über den Zurücksetzten Button kann ihre Zeichnung wieder rückgängig gemacht werden.</p>
+                            <p>Über den "Zurücksetzten" Button kann ihre Zeichnung wieder rückgängig gemacht werden. Drücke die &#9003 Taste um die Zeichenfläche zu säubern.</p>
                         </div>
                         <div class="col-lg-12">
                             <h4 style="text-align: center">Eine genauere Beschreiben der Funktionen finden Sie auf der <a href=index.php?page=function>Funktionsseite!</a></h4>
                         </div>
                     </div>
+            </div>
             </div>
             </div>
             <?php
