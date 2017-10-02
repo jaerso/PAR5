@@ -62,6 +62,8 @@ function deletePic($conn,$bahn){
     $id=$_POST['id'];
   $sql = "DELETE FROM images WHERE id='$id'";
   $result = mysqli_query($conn,$sql);
+  $sql2="DELETE FROM comments WHERE imgid='$id'";
+  $result2 =mysqli_query($conn,$sql2);
   echo" <script language='javascript'
   type='text/javascript'>
   document.location='index.php?page=gallery&bahn=$bahn';
