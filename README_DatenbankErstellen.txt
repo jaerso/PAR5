@@ -43,12 +43,6 @@ CREATE TABLE frontimages
 );
 
 
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '1');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '2');
-INSERT INTO images (name, type, bildlink, bahnnummer) VALUES ('4.jpg', 'image/jpeg', 'images/gallery/Fotos/4.jpg', '4');
-
-
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('1.jpg', 'image/jpeg', 'images/gallery/Fotos/1.jpg', '1');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('2.jpg', 'image/jpeg', 'images/gallery/Fotos/2.jpg', '2');
 INSERT INTO frontimages (name, type, bildlink, bahnnummer) VALUES ('3.jpg', 'image/jpeg', 'images/gallery/Fotos/3.jpg', '3');
