@@ -10,6 +10,18 @@ if(isset($_GET['bahn'])){
     $result = mysqli_query($conn, $data_SQL);
     while($data=mysqli_fetch_assoc($result))
     {
+      $sql2 = "SELECT * FROM users WHERE user_id='".$data['u_id']."'";
+      $result2 = mysqli_query($conn, $sql2);
+      if($row2 = mysqli_fetch_assoc($result2)){
+      if(isset($_SESSION['u_id'])){
+        if($_SESSION['u_id']== $row2['user_id']){
+          echo "<form action='".deletePic($conn,$bahnnummer)."' method='POST'>
+          <input type='hidden' name='id' value='".$data['id']."'>
+          <button class='kommiButton' type='submit' name='picDeleteSubmit' >Löschen</button>
+          </form>";
+        }
+      }
+    }
     echo "<img id='schlag-border' src='".$data['bildlink']."' alt='Bild'>";
     //Comment
       $bildid= $data['id'];
@@ -43,6 +55,18 @@ if(isset($_GET['bahn'])){
 
 
     
+}
+
+function deletePic($conn,$bahn){
+  if(isset($_POST['picDeleteSubmit'])){
+    $id=$_POST['id'];
+  $sql = "DELETE FROM images WHERE id='$id'";
+  $result = mysqli_query($conn,$sql);
+  echo" <script language='javascript'
+  type='text/javascript'>
+  document.location='index.php?page=gallery&bahn=$bahn';
+  </script>";
+  }
 }
 
 ?>
