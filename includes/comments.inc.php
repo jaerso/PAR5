@@ -7,7 +7,7 @@ $u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
-$bahn=$_SESSION['bahn'];
+$bahn=$_GET['bahn'];
 //$bahnnummer=$bildid;
 /*$checkID=$_POST['checkID'];
 
@@ -31,7 +31,19 @@ if(empty($checkID)){
 
                 $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
                 $result= mysqli_query($conn,$sql);
-              header("Location: index.php?page=gallery&bahn=$bahn");
+               echo" <script language='javascript'
+                type='text/javascript'>
+                document.location='index.php?page=gallery&bahn=$bahn';
+                </script>";
+                /*print_r($_POST['commentSubmit']);
+            unset($_POST['commentSubmit']);
+            print_r($_POST['commentSubmit']);*/
+             //header("Location: index.php?page=gallery&bahn=$bahn");
+             //header_remove();
+          //header("Refresh:0");
+       // $_POST['commentSubmit']=$bildid*100;
+       //echo "<script>window.location.reload();</script>";
+
              
          
          /*if(mysqli_affected_rows($conn) == 1) {
@@ -58,8 +70,9 @@ function getComments($conn,$bildid){
         $result2 = mysqli_query($conn, $sql2);
         if($row2 = mysqli_fetch_assoc($result2)){
                 echo "<div class='comment-box'><p>";
-                $pic=$_SESSION['pic'];
-                echo "<img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' >";
+                $profilepic=profilepic($u_id,$conn);
+                //$pic='uploads/profiledefault.jpg';
+                echo "<img id='profileicon' src=$profilepic height='42' width='42' style='border-radius:100%;' > ";
                 echo $row2['user_uid']."<br>";
                 echo $row['date']."<br>";
                 echo nl2br($row['message']); //interpretiert Absätze in sql zu php
@@ -67,10 +80,10 @@ function getComments($conn,$bildid){
             echo "</p>";
             if(isset($_SESSION['u_id'])){
                 if($_SESSION['u_id']== $row2['user_id']){
-                    $_SESSION['bahn']= $_GET['bahn'];
+                    $bahn= $_GET['bahn'];
                     
                     //echo "$bahn";
-                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bildid)."'>
+                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bahn)."'>
                         <input type='hidden' name='cid' value='".$row['cid']."'>
                         <button type='submit' name='commentDelete'>Löschen</button>
                         </form>
@@ -79,6 +92,7 @@ function getComments($conn,$bildid){
                         <input type='hidden' name='u_id' value='".$row['u_id']."'>
                         <input type='hidden' name='date' value='".$row['date']."'>
                         <input type='hidden' name='message' value='".$row['message']."'>
+                        <input type='hidden' name='bahn' value='".$bahn."'>
                         <button>Bearbeiten</button>
                     
                         </form>";
@@ -91,9 +105,9 @@ function getComments($conn,$bildid){
                     <button>Antworten</button>
                     </form>";
                 }*/
-            }else{
+            }/*else{
             echo "<p class='commentmessage'>Du musst eingeloggt sein um zu antworten</p>";  
-            }
+            }*/
             echo "</div>";
         }
        
@@ -102,17 +116,20 @@ function getComments($conn,$bildid){
 }
 
 
-function editComments($conn){
+function editComments($conn,$bahn){
     if(isset($_POST['commentSubmit'])){
     $cid=$_POST['cid'];
-    $u_uid=$_POST['u_uid'];
+    $u_id=$_POST['u_id'];
     $date=$_POST['date'];
     $message=$_POST['message'];
-    $bahn=$_SESSION['bahn'];
+    $bahn=$_POST['bahn'];
     
-    $sql = "UPDATE comments SET message='$bahn' WHERE cid='$cid'";
+    $sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
     $result = mysqli_query($conn,$sql);
-    header("Location: index.php?page=gallery&bahn=$bahn");
+    echo" <script language='javascript'
+    type='text/javascript'>
+    document.location='../index.php?page=gallery&bahn=$bahn';
+    </script>";
     
     }
     }
@@ -131,13 +148,16 @@ function editComments($conn){
         }
         }*/
 
-    function deleteComments($conn,$bildid){
+    function deleteComments($conn,$bahn){
         if(isset($_POST['commentDelete'])){
             $cid=$_POST['cid'];
             
             $sql = "DELETE FROM comments WHERE cid='$cid'";
             $result = mysqli_query($conn,$sql);
-            header("Location: index.php?page=gallery&bahn=$bildid");
+            echo" <script language='javascript'
+            type='text/javascript'>
+            document.location='index.php?page=gallery&bahn=$bahn';
+            </script>";
             }
     }
 

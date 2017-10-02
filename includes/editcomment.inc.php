@@ -8,7 +8,7 @@ include 'comments.inc.php';
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Bearbeiten</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,15 +16,17 @@ include 'comments.inc.php';
 
 <?php
 $cid=$_POST['cid'];
-$uid=$_POST['uid'];
+$u_id=$_POST['u_id'];
 $date=$_POST['date'];
 $message=$_POST['message'];
+$bahn=$_POST['bahn'];
 
- echo "<form action='".editComments($conn)."' method='POST'>
+ echo "<form action='".editComments($conn,$bahn)."' method='POST'>
     <input type='hidden' name='cid' value='".$cid."'>
-    <input type='hidden' name='uid' value='".$uid."'>
+    <input type='hidden' name='u_id' value='".$u_id."'>
     <input type='hidden' name='date' value='".$date."'>
     <textarea class='textareaStyle'name='message'>".$message."</textarea><br>
+    <input type='hidden' name='bahn' value='".$bahn."'>
     <button class='BearbeitenButton' type='submit' name='commentSubmit'>Bearbeiten</button>
     </form>";
 ?>
