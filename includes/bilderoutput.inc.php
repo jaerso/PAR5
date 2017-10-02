@@ -46,10 +46,3 @@ if(isset($_GET['bahn'])){
 }
 
 ?>
-
-
-
-/*function comments($conn,$bildid,$data){
-  
-}*/
-?>

@@ -100,9 +100,9 @@ function getComments($conn,$bildid){
                     <button>Antworten</button>
                     </form>";
                 }*/
-            }else{
+            }/*else{
             echo "<p class='commentmessage'>Du musst eingeloggt sein um zu antworten</p>";  
-            }
+            }*/
             echo "</div>";
         }
        
