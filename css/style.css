@@ -1368,7 +1368,6 @@ transform: translate(-50%, -50%);
 		#footer .copyright {
 			margin-top: 0.65em;
 			padding: 0;
-			margin-bottom: 0;
 		}
 
 			#footer .copyright li {
@@ -1377,7 +1376,6 @@ transform: translate(-50%, -50%);
 				list-style: none;
 				margin-left: 0.5em;
 				padding-left: 0.5em;
-				height: auto !important;
 			}
 
 				#footer .copyright li:first-child {
@@ -1400,17 +1398,6 @@ transform: translate(-50%, -50%);
 			line-height: 4em;
 			width: 4em;
 			cursor: pointer;
-		}
-
-		.backtotop {
-			font-family:Raleway; 
-			font-weight:bold;
-			margin-top: -10em !important;
-			color: white !important;
-		}
-
-		.glyphicon-arrow-up {
-			color: white;
 		}
 
 /* Grid Demo */
@@ -1766,11 +1753,18 @@ background-color:beige;
 /*ende galarie*/
 
 
+
+
+
+
+
 .textareaStyle{
     width: 400px;
     height:80px;
     background-color:lightgrey;
-    resize: none;
+	resize: none;
+	border-radius:4px;
+	margin: 10px 0 0 5px;
 }
 
 
@@ -1782,7 +1776,7 @@ background-color:beige;
 
 background-color:black;
 color:white;
-float:left;
+   float:left;
 	display: inline-block;
     margin-bottom: 60px;
     font-size: medium;
@@ -1801,18 +1795,21 @@ float:left;
     background-image: none;
     border: 1px solid transparent;
 	border-radius: 4px;
+	margin-left:5px;
 
 }
 
 
 /*kommentarfeld in Galerie*/
 .comment-box{
-    width: 815px;
+	width: 1025px;
+    height: 150px;
     padding: 20px;
     margin-bottom: 4px;
-    background-color: #fff;
     border-radius: 4px;
-   position: relative;
+    position: relative;
+    margin: 20px 0 0 28px;
+    background-color: lightgrey;
 }
 
 .comment-box p{
@@ -1820,21 +1817,24 @@ float:left;
     font-size: 14px;
     line-height: 16px;
     color: #282828;
-    font-weight: 100,
+	font-weight: 100;
+	margin: 0 800px 0 0 !important;
 }
 
 .edit-form{
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
 }
 
 .edit-form button{
-   width: 40px;
-   height: 20px;
+	width: 100px;
+    height: 25px;
     color: #282828;
     background-color: #fff;
-    opacity:0.7;
+	opacity: 0.7;
+	font-size: medium;
+
 }
 
 .edit-form button:hover{
@@ -1843,16 +1843,19 @@ float:left;
 
  .delete-form{
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 60px;
 }
 
 .delete-form button{
-   width: 40px;
-   height: 20px;
+	width: 100px;
+    height: 25px;
     color: #282828;
     background-color: #fff;
-    opacity:0.7;
+    font-size: medium;
+    opacity: 0.7;
+    margin-right: 60px;
+
 }
 
 .delete-form button:hover{
