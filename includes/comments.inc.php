@@ -7,7 +7,7 @@ $u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
-$bahn=$_SESSION['bahn'];
+$bahn=$_GET['bahn'];
 //$bahnnummer=$bildid;
 /*$checkID=$_POST['checkID'];
 
@@ -36,7 +36,7 @@ if(empty($checkID)){
             print_r($_POST['commentSubmit']);*/
              //header("Location: index.php?page=gallery&bahn=$bahn");
              //header_remove();
-         // header("Refresh:0");
+          //header("Refresh:0");
        // $_POST['commentSubmit']=$bildid*100;
        //echo "<script>window.location.reload();</script>";
 

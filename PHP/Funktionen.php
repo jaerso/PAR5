@@ -24,7 +24,7 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At v
 eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
 takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 </p1>
-<h3>Zurückstzten</h3>
+<h3>Zurücksetzen</h3>
 <p1>
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
