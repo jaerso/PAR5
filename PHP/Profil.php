@@ -11,7 +11,11 @@ include_once 'includes/picture.inc.php';
 <div class='user-container'>
 
 <?php
-echo"<div class='img-responsive'> <img class='zoom'  src= $profilepic></div>";
+$pic=$_SESSION['pic'];
+$username=$_SESSION['u_uid'];
+$firstname=$_SESSION['u_first'];
+$lastname=$_SESSION['u_last'];
+echo"<div class='img-responsive'> <img class='zoom'  src= $pic></div>";
 echo"<p style='color: black; font-weight:bold; margin:3em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Benutzername: ".$username."</p>";
 echo"<p style='color: black; font-weight:bold; margin:1em  0 0 11em; padding: 0 2.5em 0 2.5em;'> Dein Name: ".$firstname." ". $lastname."</p>";
 ?>
