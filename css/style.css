@@ -1799,6 +1799,7 @@ border-color: green;
 	border-style: inset;
 	border-width: 2px;
 	border-color: green;
+	float:left;
 	
 }
 
@@ -1817,7 +1818,7 @@ border-color: green;
     background-color:lightgrey;
 	resize: none;
 	border-radius:4px;
-	margin: 10px 0 0 5px;
+	margin: 30px 0 0 5px;
 }
 
 
@@ -1861,8 +1862,9 @@ color:white;
     margin-bottom: 4px;
     border-radius: 4px;
     position: relative;
-    margin: 20px 0 0 28px;
-    background-color: lightgrey;
+    margin: 20px 0 25px 28px;
+	background-color: lightgrey;
+	float:left;
 }
 
 .comment-box p{
@@ -1882,7 +1884,7 @@ color:white;
 
 .edit-form button{
 	width: 100px;
-    height: 25px;
+    height: 50px;
     color: #282828;
     background-color: #fff;
 	opacity: 0.7;
@@ -1902,7 +1904,7 @@ color:white;
 
 .delete-form button{
 	width: 100px;
-    height: 25px;
+    height: 50px;
     color: #282828;
     background-color: #fff;
     font-size: medium;
