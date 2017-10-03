@@ -31,10 +31,6 @@ if(empty($checkID)){
 
                 $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
                 $result= mysqli_query($conn,$sql);
-               echo" <script language='javascript'
-                type='text/javascript'>
-                document.location='index.php?page=gallery&bahn=$bahn';
-                </script>";
                 /*print_r($_POST['commentSubmit']);
             unset($_POST['commentSubmit']);
             print_r($_POST['commentSubmit']);*/
@@ -72,18 +68,18 @@ function getComments($conn,$bildid){
                 echo "<div class='comment-box'><p>";
                 $profilepic=profilepic($u_id,$conn);
                 //$pic='uploads/profiledefault.jpg';
-                echo "<div style='width:200px;'> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='50' width='50' style='border-radius:100%;' >  ";
+                echo "<div> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
                 echo $row2['user_uid']."</div>";
-                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: grey; float: left; line-height:1em;'>". $row['date']."</div> </div><br> ";
-                echo "<div style='float:left;'>".nl2br($row['message'])."</div>"; //interpretiert Absätze in sql zu php
+                echo "<div style='width:200px; font-size:medium; margin-top:6px; color: grey; float: left;'>". $row['date']."</div> </div><br><br> ";
+                echo "<div style='float:left; font-size:small; margin-left:150px; margin-bottom:150px;'>".nl2br($row['message'])."</div>"; //interpretiert Absätze in sql zu php
                // print_r($row2);
             echo "</p>";
             if(isset($_SESSION['u_id'])){
                 if($_SESSION['u_id']== $row2['user_id']){
-                    $bahn= $_GET['bahn'];
+                    $_SESSION['bahn']= $_GET['bahn'];
                     
                     //echo "$bahn";
-                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bahn)."'>
+                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bildid)."'>
                         <input type='hidden' name='cid' value='".$row['cid']."'>
                         <button type='submit' name='commentDelete'>Löschen</button>
                         </form>
@@ -92,7 +88,6 @@ function getComments($conn,$bildid){
                         <input type='hidden' name='u_id' value='".$row['u_id']."'>
                         <input type='hidden' name='date' value='".$row['date']."'>
                         <input type='hidden' name='message' value='".$row['message']."'>
-                        <input type='hidden' name='bahn' value='".$bahn."'>
                         <button>Bearbeiten</button>
                     
                         </form>";
@@ -116,20 +111,17 @@ function getComments($conn,$bildid){
 }
 
 
-function editComments($conn,$bahn){
+function editComments($conn){
     if(isset($_POST['commentSubmit'])){
     $cid=$_POST['cid'];
-    $u_id=$_POST['u_id'];
+    $u_uid=$_POST['u_uid'];
     $date=$_POST['date'];
     $message=$_POST['message'];
-    $bahn=$_POST['bahn'];
+    $bahn=$_SESSION['bahn'];
     
-    $sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
+    $sql = "UPDATE comments SET message='$bahn' WHERE cid='$cid'";
     $result = mysqli_query($conn,$sql);
-    echo" <script language='javascript'
-    type='text/javascript'>
-    document.location='../index.php?page=gallery&bahn=$bahn';
-    </script>";
+    header("Location: index.php?page=gallery&bahn=$bahn");
     
     }
     }
@@ -148,16 +140,13 @@ function editComments($conn,$bahn){
         }
         }*/
 
-    function deleteComments($conn,$bahn){
+    function deleteComments($conn,$bildid){
         if(isset($_POST['commentDelete'])){
             $cid=$_POST['cid'];
             
             $sql = "DELETE FROM comments WHERE cid='$cid'";
             $result = mysqli_query($conn,$sql);
-            echo" <script language='javascript'
-            type='text/javascript'>
-            document.location='index.php?page=gallery&bahn=$bahn';
-            </script>";
+            header("Location: index.php?page=gallery&bahn=$bildid");
             }
     }
 
