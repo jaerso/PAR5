@@ -1364,10 +1364,11 @@ transform: translate(-50%, -50%);
 			padding-bottom: 1em;
 			*/
 		}
-
-		#footer .copyright {
+		
+				#footer .copyright {
 			margin-top: 0.65em;
 			padding: 0;
+			margin-bottom: 0;
 		}
 
 			#footer .copyright li {
@@ -1376,6 +1377,7 @@ transform: translate(-50%, -50%);
 				list-style: none;
 				margin-left: 0.5em;
 				padding-left: 0.5em;
+				height: auto !important;
 			}
 
 				#footer .copyright li:first-child {
@@ -1399,6 +1401,19 @@ transform: translate(-50%, -50%);
 			width: 4em;
 			cursor: pointer;
 		}
+
+		.backtotop {
+			font-family:Raleway; 
+			font-weight:bold;
+			margin-top: -10em !important;
+			color: white !important;
+		}
+
+		.glyphicon-arrow-up {
+			color: white;
+		}
+
+		
 
 /* Grid Demo */
 
@@ -1807,11 +1822,6 @@ border-color: green;
 /*ende galarie*/
 
 
-
-
-
-
-
 .textareaStyle{
     width: 400px;
     height:80px;
@@ -1820,10 +1830,6 @@ border-color: green;
 	border-radius:4px;
 	margin: 30px 0 0 5px;
 }
-
-
-
-
 
 
 .kommiButton{

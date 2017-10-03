@@ -27,6 +27,7 @@ u_id varchar(256) not null,
 CREATE TABLE images
 (
 	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+	u_id varchar(200) not null,
     name varchar(100) not null,
     type varchar(100) not null,
     bildlink varchar(300) not null,
