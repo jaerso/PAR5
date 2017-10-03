@@ -3,7 +3,6 @@
 function setComments($conn,$bildid){
 if(isset($_POST['commentSubmit'])&& $_POST['commentSubmit']==$bildid){//gegen mehrfache ausgabe
 $u_id=$_POST['u_id'];
-$u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
@@ -28,8 +27,7 @@ if(empty($checkID)){
      }
      else
      {*/
-
-                $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
+                $sql = "INSERT INTO comments (u_id, date, message, imgid) VALUES('$u_id', '$date', '$message', '$imgid')";
                 $result= mysqli_query($conn,$sql);
                 echo" <script language='javascript'
                 type='text/javascript'>
