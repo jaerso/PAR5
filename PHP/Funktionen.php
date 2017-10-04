@@ -27,8 +27,8 @@
                             <img id="function-img" src="./images/speichern.jpg" alt="Bild 404 not found">
                         </div>
                         <div class="col-lg-6">
-                            <h3>Zurücksetzten</h3>
-                            <p>Über den "Zurücksetzten" Button kann ihre Zeichnung wieder rückgängig gemacht werden. </p>
+                            <h3>Zurücksetzen</h3>
+                            <p>Über den "Zurücksetzen" Button kann ihre Zeichnung wieder rückgängig gemacht werden. </p>
                        
                             <div id="function-hov">
                             <img id="function-img" src="./images/zurücksetzten1.jpg" alt="Bild 404 not found" style="visibility:hidden;">

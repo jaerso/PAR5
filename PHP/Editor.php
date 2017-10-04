@@ -49,7 +49,7 @@
                     </canvas>
 
                     <div class="col-lg-2 col-lg-push-1">
-					    <button id="clearCanvas" class="btn btn-default">Zurücksetzten</button>
+					    <button id="clearCanvas" class="btn btn-default">Zurücksetzen</button>
 					</div>
 
 					<div class="col-lg-2 col-lg-push-1">
@@ -84,8 +84,8 @@
                             <p>Über den "Speichern" Button wird die Schlagempfehlung zu unserer Gallerie hinzugefügt.</p>
                         </div>
                         <div class="col-lg-6">
-                            <h3>Zurücksetzten</h3>
-                            <p>Über den "Zurücksetzten" Button kann ihre Zeichnung wieder rückgängig gemacht werden. Drücke die &#9003 Taste um die Zeichenfläche zu säubern.</p>
+                            <h3>Zurücksetzen</h3>
+                            <p>Über den "Zurücksetzen" Button kann ihre Zeichnung wieder rückgängig gemacht werden. Drücke die &#9003 Taste um die Zeichenfläche zu säubern.</p>
                         </div>
                         <div class="col-lg-12">
                             <h4 style="text-align: center">Eine genauere Beschreiben der Funktionen finden Sie auf der <a href=index.php?page=function>Funktionsseite!</a></h4>
