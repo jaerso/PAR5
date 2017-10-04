@@ -3,7 +3,6 @@
 function setComments($conn,$bildid){
 if(isset($_POST['commentSubmit'])&& $_POST['commentSubmit']==$bildid){//gegen mehrfache ausgabe
 $u_id=$_POST['u_id'];
-$u_uid=$_POST['u_uid'];
 $date=$_POST['date'];
 $message=$_POST['message'];
 $imgid=$_POST['imgid'];
@@ -28,9 +27,12 @@ if(empty($checkID)){
      }
      else
      {*/
-
-                $sql = "INSERT INTO comments (u_id, u_uid, date, message, imgid) VALUES('$u_id','$u_uid', '$date', '$message', '$imgid')";
+                $sql = "INSERT INTO comments (u_id, date, message, imgid) VALUES('$u_id', '$date', '$message', '$imgid')";
                 $result= mysqli_query($conn,$sql);
+                echo" <script language='javascript'
+                type='text/javascript'>
+                document.location='index.php?page=gallery&bahn=$bahn';
+                </script>";
                 /*print_r($_POST['commentSubmit']);
             unset($_POST['commentSubmit']);
             print_r($_POST['commentSubmit']);*/
@@ -76,10 +78,10 @@ function getComments($conn,$bildid){
             echo "</p>";
             if(isset($_SESSION['u_id'])){
                 if($_SESSION['u_id']== $row2['user_id']){
-                    $_SESSION['bahn']= $_GET['bahn'];
+                    $bahn= $_GET['bahn'];
                     
                     //echo "$bahn";
-                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bildid)."'>
+                        echo "<form class='delete-form' method='POST' action='".deleteComments($conn,$bahn)."'>
                         <input type='hidden' name='cid' value='".$row['cid']."'>
                         <button type='submit' name='commentDelete'>Löschen</button>
                         </form>
@@ -87,6 +89,7 @@ function getComments($conn,$bildid){
                         <input type='hidden' name='cid' value='".$row['cid']."'>
                         <input type='hidden' name='u_id' value='".$row['u_id']."'>
                         <input type='hidden' name='date' value='".$row['date']."'>
+                        <input type='hidden' name='bahn' value='".$bahn."'>
                         <input type='hidden' name='message' value='".$row['message']."'>
                         <button>Bearbeiten</button>
                     
@@ -114,14 +117,17 @@ function getComments($conn,$bildid){
 function editComments($conn){
     if(isset($_POST['commentSubmit'])){
     $cid=$_POST['cid'];
-    $u_uid=$_POST['u_uid'];
+    $u_id=$_POST['u_id'];
     $date=$_POST['date'];
     $message=$_POST['message'];
-    $bahn=$_SESSION['bahn'];
+    $bahn=$_POST['bahn'];
     
-    $sql = "UPDATE comments SET message='$bahn' WHERE cid='$cid'";
+    $sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
     $result = mysqli_query($conn,$sql);
-    header("Location: index.php?page=gallery&bahn=$bahn");
+    echo" <script language='javascript'
+    type='text/javascript'>
+    document.location='../index.php?page=gallery&bahn=$bahn';
+    </script>";
     
     }
     }
@@ -140,13 +146,16 @@ function editComments($conn){
         }
         }*/
 
-    function deleteComments($conn,$bildid){
+    function deleteComments($conn,$bahn){
         if(isset($_POST['commentDelete'])){
             $cid=$_POST['cid'];
             
             $sql = "DELETE FROM comments WHERE cid='$cid'";
             $result = mysqli_query($conn,$sql);
-            header("Location: index.php?page=gallery&bahn=$bildid");
+            echo" <script language='javascript'
+            type='text/javascript'>
+            document.location='index.php?page=gallery&bahn=$bahn';
+            </script>";
             }
     }
 
@@ -186,13 +195,4 @@ function editComments($conn){
         
             }   
         }
-
-            function userLogout(){
-                if(isset($_POST['logoutSubmit'])){
-                    session_start();
-                    session_unset();
-                    session_destroy();
-                    header("Location: index.php");
-                    exit();
-                }
-        }*/
+        */
