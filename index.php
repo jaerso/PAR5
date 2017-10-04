@@ -1,9 +1,5 @@
 <?php
 	include_once "PHP/Head.php";
-	
-	/*if($_GET['page']==''){
-		$_GET['page']='home';
-	}*/
 	$_SESSION['page']=$_GET['page'];
 	?>
 	<body class="landing" onload="init()">

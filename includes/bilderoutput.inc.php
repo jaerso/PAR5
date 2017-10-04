@@ -10,6 +10,7 @@ if(isset($_GET['bahn'])){
     $result = mysqli_query($conn, $data_SQL);
     while($data=mysqli_fetch_assoc($result))
     {
+     echo "<div class='col-lg-12'>"; 
       $sql2 = "SELECT * FROM users WHERE user_id='".$data['u_id']."'";
       $result2 = mysqli_query($conn, $sql2);
       if($row2 = mysqli_fetch_assoc($result2)){
@@ -44,9 +45,10 @@ if(isset($_GET['bahn'])){
       <br>";
      
   } else{
-  echo "Du musst eingeloggt sein, um zu kommentieren
+  echo "<p style='font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
   <br><br>";
   }
+  echo "</div>";
   //  header("Location: ../index.php?page=gallery&bahn=$bahnnummer");
   //unset($_POST);
     }  
