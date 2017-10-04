@@ -72,7 +72,7 @@ function getComments($conn,$bildid){
                 //$pic='uploads/profiledefault.jpg';
                 echo "<div style='width:200px; float:left;'> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
                 echo $row2['user_uid']."</div>";
-                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: lightgrey; float: left; line-height:1em;'>". $row['date']."</div> </div> ";
+                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: grey; float: left; line-height:1em;'>". $row['date']."</div> </div> ";
                 echo "<p id='message-text'>".nl2br($row['message'])."</p>"; //interpretiert Absätze in sql zu php
                // print_r($row2);
             //echo "</p>";
