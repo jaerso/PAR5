@@ -60,22 +60,29 @@ if(empty($checkID)){
 }
 
 function getComments($conn,$bildid){
-    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC";            //go into the database
+    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC"; //go into the database
     $result = mysqli_query($conn, $sql);        //run the query
     while($row = mysqli_fetch_assoc($result)){  //spit it out
         $u_id = $row['u_id'];
         $sql2 = "SELECT * FROM users WHERE user_id='$u_id'";
         $result2 = mysqli_query($conn, $sql2);
         if($row2 = mysqli_fetch_assoc($result2)){
-                echo "<div class='comment-box'><p>";
+                echo "<div class='comment-box'>";
                 $profilepic=profilepic($u_id,$conn);
                 //$pic='uploads/profiledefault.jpg';
+<<<<<<< HEAD
                 echo "<p style='width:200px;'> <p style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
                 echo $row2['user_uid']."</p>";
                 echo "<p style='width:100px; font-size:medium; margin-top:6px; color: lightgrey; float: left; line-height:1em;'>". $row['date']."</p> </p><br><br> ";
                 echo "<p style='float:left; width: 500px;'>".nl2br($row['message'])."</p>"; //interpretiert Absätze in sql zu php
+=======
+                echo "<div style='width:200px; float:left;'> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
+                echo $row2['user_uid']."</div>";
+                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: grey; float: left; line-height:1em;'>". $row['date']."</div> </div> ";
+                echo "<p id='message-text'>".nl2br($row['message'])."</p>"; //interpretiert Absätze in sql zu php
+>>>>>>> b4fcac2f27154a4cc831d0224a01a4af50d69807
                // print_r($row2);
-            echo "</p>";
+            //echo "</p>";
             if(isset($_SESSION['u_id'])){
                 if($_SESSION['u_id']== $row2['user_id']){
                     $bahn= $_GET['bahn'];

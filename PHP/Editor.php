@@ -1,11 +1,14 @@
-              <?php
-              if(isset($_SESSION['u_id'])){
-              ?>
-              <div class="container">
               <div id="editor-xs" class="visible-xs">
               <p>Der Editor ist auf Smartphones leider nicht verfügbar!</p>
               </div>
+              
               <div class="hidden-xs">
+              
+              <?php
+              if(isset($_SESSION['u_id'])){
+              ?>
+              
+              <div class="container">
               <div class="row">
                         <div class="col-lg-3">
                             <h1 id="editor"> Bahneditor&nbsp; <i class="fa fa-cubes" aria-hidden="true"></i></h1>
@@ -90,7 +93,7 @@
                     </div>
             </div>
             </div>
-            </div>
+            
             <?php
               } else{
                   ?>
@@ -105,9 +108,10 @@
                               </button>
                           </div>
                           </div>
+                          
+                          
                     
                   <?php
               }
             ?>
-
-
+            </div>
