@@ -63,14 +63,11 @@ else{
 <?php
 }
 ?>
-					<!--getNavigation()-->
-					
-        
-				
-			</nav>
+
+</nav>
 
 
-        </header>
+</header>
 		<!--</main>-->
 
 

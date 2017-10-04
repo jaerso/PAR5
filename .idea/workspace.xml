@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fed3ee5b-16cb-46e0-ae43-4596e83ff973" name="Default" comment="">
+    <list default="true" id="fed3ee5b-16cb-46e0-ae43-4596e83ff973" name="Default" comment="Upload Fix (nur bei bestätigung)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bahnen.js" afterPath="$PROJECT_DIR$/js/bahnen.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +18,31 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
+            <state relative-caret-position="27">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-                <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+                <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Editor.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Editor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Editor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="92" column="44" lean-forward="true" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+            <state relative-caret-position="2700">
+              <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -40,8 +51,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="1119" column="27" lean-forward="true" selection-start-line="1119" selection-start-column="27" selection-end-line="1119" selection-end-column="27" />
+            <state relative-caret-position="32832">
+              <caret line="1216" column="8" lean-forward="false" selection-start-line="1216" selection-start-column="8" selection-end-line="1216" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -57,22 +68,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bahnen.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bahnen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/bahnen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5022">
-              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="232" column="8" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts.js">
+      <file leaf-file-name="saveCanvasDataUrl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saveCanvasDataUrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="108">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <marker date="1507139691191" expanded="true" signature="542:682" ph="INSERT INTO ${$save_name}... " />
+                <marker date="1507139691191" expanded="true" signature="688:740" ph="INSERT INTO ${$save_name}... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>body</find>
       <find>width</find>
       <find>footer</find>
       <find>skel-layers-wrapper</find>
@@ -118,7 +131,11 @@
       <find>nav-ic</find>
       <find>document</find>
       <find>banner</find>
+      <find>`</find>
     </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,11 +146,11 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/database/data.xml" />
         <option value="$PROJECT_DIR$/includes/databaseHandler.inc.php" />
-        <option value="$PROJECT_DIR$/saveCanvasDataUrl.php" />
-        <option value="$PROJECT_DIR$/js/bahnen.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/PHP/Editor.php" />
+        <option value="$PROJECT_DIR$/saveCanvasDataUrl.php" />
+        <option value="$PROJECT_DIR$/js/bahnen.js" />
       </list>
     </option>
   </component>
@@ -145,10 +162,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+    <option name="x" value="-10" />
     <option name="width" value="1924" />
-    <option name="height" value="1042" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -180,8 +196,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,11 +219,31 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Editor.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Footer.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Funktionen.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Galerie.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Head.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Profil.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/PHP/Startseite.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README_DatenbankErstellen.txt</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/css/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/login.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/bilderoutput.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/bilderoutputfront.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/comments.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/dbh.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/editcomment.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/picture.inc.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/includes/signup.inc.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/bahnen.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/saveCanvasDataUrl.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile1.jpeg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile2.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -215,12 +251,62 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505830883.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505901835.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn3/1505843245.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/header_hf_minigolf.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/minigolf-titelbild.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bahnauswahl.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/10.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/11.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/12.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/13.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/14.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/15.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/16.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/17.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/18.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Fotos/9.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506945621.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506945737.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506945926.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506946017.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506946926.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506947613.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506949848.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506951325.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507025636.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507065533.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507106551.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507107087.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507107109.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507130208.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1507130516.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn10/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn11/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn12/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn13/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn14/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn15/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn16/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn17/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn18/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn2/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn3/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn4/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn5/1507106512.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn5/1507106973.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn5/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn6/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn7/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn8/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn9/platzhalter.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gras.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/speichern.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/zeichnen.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/zurücksetzten1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/zurücksetzten2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/uploads/profile4.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -228,6 +314,43 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/2323.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn 1/7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505391880.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505392589.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505830883.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1505901835.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506514379.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/1506514661.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn1/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn10/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn11/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn12/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn13/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn14/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn15/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn16/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn17/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn18/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn2/1505130726.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn2/1505131030.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn2/1505215914.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn2/1505391836.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn3/1505217419.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn3/1505843245.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn3/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn4/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn5/1505222443.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn5/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn6/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn7/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn8/bahn.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn9/1505740493.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/gallery/Schlagempfehlungen/Bahn9/bahn.txt</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -413,7 +536,8 @@
       <workItem from="1505729307071" duration="1751000" />
       <workItem from="1505749358172" duration="9000" />
       <workItem from="1505809983910" duration="12020000" />
-      <workItem from="1506440656842" duration="2861000" />
+      <workItem from="1506440656842" duration="8335000" />
+      <workItem from="1507139063413" duration="1399000" />
     </task>
     <task id="LOCAL-00001" summary="canvas formatiert">
       <created>1504264377442</created>
@@ -583,28 +707,35 @@
       <option name="project" value="LOCAL" />
       <updated>1506443498802</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Blur Filter unter Text&#10;Text muss noch gecentered werden">
+      <created>1506443526758</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1506443526758</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114082000" />
+    <option name="totallyTimeSpent" value="120955000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1924" height="1042" extended-state="0" />
+    <frame x="-10" y="0" width="1924" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1829653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2020548" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20091324" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2037037" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -648,21 +779,24 @@
     <MESSAGE value="Bahn editor upload dialog button style geändert" />
     <MESSAGE value="Editor Anleitung angepasst" />
     <MESSAGE value="Blur Filter unter Text&#10;Text muss noch gecentered werden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Blur Filter unter Text&#10;Text muss noch gecentered werden" />
+    <MESSAGE value="Upload Fix (nur bei bestätigung)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload Fix (nur bei bestätigung)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontendHandler.php" />
     <entry file="file://$PROJECT_DIR$/databaseHandler.php" />
     <entry file="file://$PROJECT_DIR$/database/data.xml" />
     <entry file="file://$PROJECT_DIR$/saveCanvasDataUrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1507139691191" expanded="true" signature="542:682" ph="INSERT INTO ${$save_name}... " />
+            <marker date="1507139691191" expanded="true" signature="688:740" ph="INSERT INTO ${$save_name}... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,8 +813,18 @@
         <state relative-caret-position="729">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-            <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
           </folding>
         </state>
       </provider>
@@ -700,7 +844,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding />
+          <folding>
+            <marker date="1507139691191" expanded="true" signature="542:682" ph="INSERT INTO ${$save_name}... " />
+            <marker date="1507139691191" expanded="true" signature="688:740" ph="INSERT INTO ${$save_name}... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -717,8 +864,18 @@
         <state relative-caret-position="1728">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
-            <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-            <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
           </folding>
         </state>
       </provider>
@@ -747,8 +904,18 @@
         <state relative-caret-position="594">
           <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
-            <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-            <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
           </folding>
         </state>
       </provider>
@@ -778,8 +945,18 @@
         <state relative-caret-position="1188">
           <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="15" />
           <folding>
-            <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-            <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
           </folding>
         </state>
       </provider>
@@ -797,13 +974,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README_DominikLogin.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README_DominikLogin.txt" />
     <entry file="file://$PROJECT_DIR$/js/init.js" />
     <entry file="file://$PROJECT_DIR$/js/npm.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -858,14 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saveCanvasDataUrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -873,22 +1036,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/bahnen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5022">
-          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts.js" />
     <entry file="file://$PROJECT_DIR$/PHP/Registrierung.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -899,27 +1047,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
+        <state relative-caret-position="27">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1506440694922" expanded="true" signature="1713:1732" ph="..." />
-            <marker date="1506440694922" expanded="true" signature="2929:3167" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:3825" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4466" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3763:4469" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3869:4368" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3900:3945" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="3984:4026" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4066:4111" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4149:4190" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4229:4270" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4314:4362" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4396:4442" ph="..." />
+            <marker date="1507139191606" expanded="true" signature="4475:4510" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="1119" column="27" lean-forward="true" selection-start-line="1119" selection-start-column="27" selection-end-line="1119" selection-end-column="27" />
+        <state relative-caret-position="32832">
+          <caret line="1216" column="8" lean-forward="false" selection-start-line="1216" selection-start-column="8" selection-end-line="1216" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Editor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="92" column="44" lean-forward="true" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+        <state relative-caret-position="2700">
+          <caret line="100" column="44" lean-forward="false" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README_DatenbankErstellen.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saveCanvasDataUrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1507139691191" expanded="true" signature="542:682" ph="INSERT INTO ${$save_name}... " />
+            <marker date="1507139691191" expanded="true" signature="688:740" ph="INSERT INTO ${$save_name}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bahnen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="232" column="8" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
           <folding />
         </state>
       </provider>
