@@ -44,7 +44,7 @@ if(isset($_GET['bahn'])){
       <br>";
      
   } else{
-  echo "Du musst eingeloggt sein, um zu kommentieren
+  echo "<p style='font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
   <br><br>";
   }
   //  header("Location: ../index.php?page=gallery&bahn=$bahnnummer");
