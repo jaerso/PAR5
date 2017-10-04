@@ -45,7 +45,7 @@ if(isset($_GET['bahn'])){
       <br>";
      
   } else{
-  echo "<p style='font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
+  echo "<p style='float: left; margin-left: 28px; font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
   <br><br>";
   }
   echo "</div>";
