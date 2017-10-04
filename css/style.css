@@ -1653,8 +1653,8 @@ hr.strich {
 
 .profilansicht{
 
-height: 1000px;
-background-color:beige;
+height: 700px;
+background-color:white;
 
 }
 
@@ -1878,7 +1878,7 @@ color:white;
     font-family: arial;
     font-size: 14px;
     line-height: 16px;
-    background-color:black;
+    background-color:grey;
 	font-weight: 100;
 	margin: 0 800px 0 0 !important;
 }

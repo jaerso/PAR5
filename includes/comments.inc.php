@@ -70,10 +70,10 @@ function getComments($conn,$bildid){
                 echo "<div class='comment-box'><p>";
                 $profilepic=profilepic($u_id,$conn);
                 //$pic='uploads/profiledefault.jpg';
-                echo "<div style='width:200px;'> <div style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
-                echo $row2['user_uid']."</div>";
-                echo "<div style='width:100px; font-size:medium; margin-top:6px; color: lightgrey; float: left; line-height:1em;'>". $row['date']."</div> </div><br><br> ";
-                echo "<div style='float:left; width: 500px;'>".nl2br($row['message'])."</div>"; //interpretiert Absätze in sql zu php
+                echo "<p style='width:200px;'> <p style='font-size:23px; color:black; float:left; '><img id='profileicon' src=$profilepic height='60' width='60' style='border-radius:100%;' >  ";
+                echo $row2['user_uid']."</p>";
+                echo "<p style='width:100px; font-size:medium; margin-top:6px; color: lightgrey; float: left; line-height:1em;'>". $row['date']."</p> </p><br><br> ";
+                echo "<p style='float:left; width: 500px;'>".nl2br($row['message'])."</p>"; //interpretiert Absätze in sql zu php
                // print_r($row2);
             echo "</p>";
             if(isset($_SESSION['u_id'])){
