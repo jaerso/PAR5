@@ -148,7 +148,7 @@ function exportCanvas(){
 /*
 *   Koordinaten in Array speichern
 *
-*/
+
 function drawLineCoordinates() {
     if (coordinates.length >= 1){
         for (var i = 0; i < coordinates.length; i++) {
@@ -161,6 +161,8 @@ function drawLineCoordinates() {
         }
     }
 }
+*/
+
 
 function init() {
     canvas = document.getElementById("canvas");
