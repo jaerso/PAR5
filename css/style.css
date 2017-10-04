@@ -1645,8 +1645,9 @@ hr.strich {
 		font-family: "Raleway";
 		font-weight:bold;
 		font-size: 1.5em;
-		margin: 6em 0 5em 0;
+		margin: 8em 0 5em 0;
 		line-height: 1.5em;
+		height: 10em;
 	}
 
 	/*Profil*/
@@ -1830,6 +1831,36 @@ border-color: green;
 	resize: none;
 	border-radius:4px;
 	margin: 30px 0 0 5px;
+}
+
+#message-text{
+	color:black;
+	background-color:grey;
+	text-align: left;
+	font-size: large;
+	width:700px;
+	padding-top:20px;
+
+}
+
+.deletePicButton{
+	
+background-color:black;
+color:white;
+   float:left;
+	display: inline-block;
+    font-size: medium;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+	border-radius: 4px;
+	margin-left:27px;
+	line-height: 1.42857143;
+
 }
 
 
