@@ -16,7 +16,7 @@ var canvas,
         {x: 156,y:187},
         {x: 454,y:73},
         {x: 454,y:73},
-        {x: 661,y:139},
+        {x: 661,y:139}
     ],
     bahnNamen = [
         "Freischlag",
@@ -36,7 +36,7 @@ var canvas,
         "Vulkan",
         "Wahlschlag",
         "Winkel",
-        "NULL",
+        "NULL"
     ],
     bahnNummer = null;
 
@@ -137,14 +137,6 @@ function dragStop(event) {
     console.log(coordinates);
     drawLine(position);
 }
-*/
-/*
- *   Exportiert Canvas in den Image-Ordner
- */
-function exportCanvas(){
-
-}
-
 /*
 *   Koordinaten in Array speichern
 *
@@ -166,7 +158,7 @@ function drawLineCoordinates() {
 
 function init() {
     canvas = document.getElementById("canvas");
-    clearCanvas = document.getElementById('clearCanvas'),
+    clearCanvas = document.getElementById('clearCanvas');
     canvas.width = canvas.scrollWidth;
     canvas.height = canvas.scrollHeight;
     ctx = canvas.getContext('2d'); 
@@ -185,9 +177,6 @@ pic.onload = function(){
     */
 
 $(document).ready(function () {
-
-
-
     document.querySelector('#export').onclick = function () {
         var canvas = document.getElementById("canvas");
         var dataURL = canvas.toDataURL("image/png");
@@ -195,53 +184,48 @@ $(document).ready(function () {
         var fd = new FormData(document.forms["form1"]);
         fd.append('bahn', bahnNummer);
 
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'saveCanvasDataUrl.php', true);
+        swal({
+            title: 'Bist du sicher?',
+            text: "Die Schlagempfehlung kann nicht mehr bearbeitet werden!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ja, hochladen!',
+            cancelButtonText: 'Nein, abbrechen!',
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-danger',
+            buttonsStyling: false
+        }).then(function () {
 
-        xhr.upload.onprogress = function(e) {
-            if (e.lengthComputable) {
-                var percentComplete = (e.loaded / e.total) * 100;
-                console.log(percentComplete + '% uploaded');
-                swal({
-                    title: 'Bist du sicher?',
-                    text: "Die Schlagempfehlung kann nicht mehr bearbeitet werden!",
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Ja, hochladen!',
-                    cancelButtonText: 'Nein, abbrechen!',
-                    confirmButtonClass: 'btn btn-success',
-                    cancelButtonClass: 'btn btn-danger',
-                    buttonsStyling: false
-                }).then(function () {
-                    swal(
-                        'Hochgeladen!',
-                        'Die Schlagempfehlung wurde hochgeladen.',
-                        'success'
-                    )
-                }, function (dismiss) {
-                    // dismiss can be 'cancel', 'overlay',
-                    // 'close', and 'timer'
-                    if (dismiss === 'cancel') {
-                        swal(
-                            'Abgebrochen',
-                            'Du kannst weiterarbeiten :)',
-                            'error'
-                        )
-                    }
-                })
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'saveCanvasDataUrl.php', true);
 
+            xhr.upload.onprogress = function(e) {
+                if (e.lengthComputable) {
+                    var percentComplete = (e.loaded / e.total) * 100;
+                    console.log(percentComplete + '% uploaded');
+                }
+            };
+            xhr.onload = function() {
+            };
+            xhr.send(fd);
+            swal(
+                'Hochgeladen!',
+                'Die Schlagempfehlung wurde hochgeladen.',
+                'success'
+            )
+        }, function (dismiss) {
+            // dismiss can be 'cancel', 'overlay',
+            // 'close', and 'timer'
+            if (dismiss === 'cancel') {
+                swal(
+                    'Abgebrochen',
+                    'Du kannst weiterarbeiten :)',
+                    'error'
+                )
             }
-        };
-
-
-        xhr.onload = function() {
-
-        };
-        xhr.send(fd);
-
-
+        })
     };
 
     $(".dropdown-menu").on('click', 'a li', function(){
