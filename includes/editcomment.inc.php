@@ -17,14 +17,14 @@ include 'comments.inc.php';
 <?php
 $cid=$_POST['cid'];
 $u_id=$_POST['u_id'];
-$date=$_POST['date'];
+//$date=$_POST['date'];
 $message=$_POST['message'];
 $bahn=$_POST['bahn'];
 
  echo "<form action='".editComments($conn,$bahn)."' method='POST'>
     <input type='hidden' name='cid' value='".$cid."'>
     <input type='hidden' name='u_id' value='".$u_id."'>
-    <input type='hidden' name='date' value='".$date."'>
+    <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
     <textarea class='textareaStyle'name='message'>".$message."</textarea><br>
     <input type='hidden' name='bahn' value='".$bahn."'>
     <button class='BearbeitenButton' type='submit' name='commentSubmit'>Bearbeiten</button>

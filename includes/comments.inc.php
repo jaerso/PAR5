@@ -94,9 +94,9 @@ function getComments($conn,$bildid){
                         </form>
                         <form class='edit-form' method='POST' action='includes/editcomment.inc.php'>
                         <input type='hidden' name='cid' value='".$row['cid']."'>
-                        <input type='hidden' name='u_id' value='".$row['u_id']."'>
-                        <input type='hidden' name='date' value='".$row['date']."'>
-                        <input type='hidden' name='bahn' value='".$bahn."'>
+                        <input type='hidden' name='u_id' value='".$row['u_id']."'>";
+                       // <input type='hidden' name='date' value='".$row['date']."'>
+                echo  "<input type='hidden' name='bahn' value='".$bahn."'>
                         <input type='hidden' name='message' value='".$row['message']."'>
                         <button>Bearbeiten</button>
                     
@@ -129,7 +129,7 @@ function editComments($conn){
     $message=$_POST['message'];
     $bahn=$_POST['bahn'];
     
-    $sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
+    $sql = "UPDATE comments SET message='$message',date='$date' WHERE cid='$cid'";
     $result = mysqli_query($conn,$sql);
     echo" <script language='javascript'
     type='text/javascript'>
