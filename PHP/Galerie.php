@@ -32,9 +32,9 @@ $bahnnummer = '0';
 
     else 
     {
-        echo"<h2> Schlagempfehlungen für Bahn ".$bildOrdner. " <h2>";
+        echo "<h2> Schlagempfehlungen für Bahn ".$bildOrdner. " <h2><br>";
 
-        echo "<a style='margin:0 868px 0 0; ' href='index.php?page=gallery' class='btn btn-default'>zurück zur Übersicht</a>";
+        //echo "<a style='margin:0 868px 0 0; ' href='index.php?page=gallery' class='btn btn-default'>zurück zur Übersicht</a>";
 
         include_once 'includes/bilderoutput.inc.php';
 

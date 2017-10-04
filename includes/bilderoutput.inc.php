@@ -17,8 +17,8 @@ if(isset($_GET['bahn'])){
         if($_SESSION['u_id']== $row2['user_id']){
           echo "<form action='".deletePic($conn,$bahnnummer)."' method='POST'>
           <input type='hidden' name='id' value='".$data['id']."'>
-          <button class='kommiButton' type='submit' name='picDeleteSubmit' >Löschen</button>
-          </form>";
+          <button class='deletePicButton' type='submit' name='picDeleteSubmit' >Löschen</button>
+          </form><br>";
         }
       }
     }
