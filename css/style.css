@@ -1870,7 +1870,7 @@ color:white;
     border-radius: 4px;
     position: relative;
     margin: 20px 0 25px 28px;
-	background-color: lightgrey;
+	background-color: grey;
 	float:left;
 }
 
@@ -1878,7 +1878,7 @@ color:white;
     font-family: arial;
     font-size: 14px;
     line-height: 16px;
-    color: #282828;
+    background-color:black;
 	font-weight: 100;
 	margin: 0 800px 0 0 !important;
 }
@@ -1891,16 +1891,17 @@ color:white;
 
 .edit-form button{
 	width: 100px;
-    height: 50px;
-    color: #282828;
-    background-color: #fff;
-	opacity: 0.7;
+	height: 50px;
+	background-color:grey;
+    color:lightgrey;
+	opacity: 0.9;
 	font-size: medium;
+	border:none;
 
 }
 
 .edit-form button:hover{
-    opacity:0.1;
+    opacity:0.2;
  }
 
  .delete-form{
@@ -1912,16 +1913,17 @@ color:white;
 .delete-form button{
 	width: 100px;
     height: 50px;
-    color: #282828;
-    background-color: #fff;
+    color: lightgrey;
+    background-color:grey;
     font-size: medium;
-    opacity: 0.7;
-    margin-right: 60px;
+    opacity: 0.9;
+	margin-right: 60px;
+	border:none;
 
 }
 
 .delete-form button:hover{
-    opacity:0.1;
+    opacity:0.2;
  }
 
  .commentmessage{
