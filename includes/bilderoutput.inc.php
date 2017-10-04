@@ -18,8 +18,8 @@ if(isset($_GET['bahn'])){
         if($_SESSION['u_id']== $row2['user_id']){
           echo "<form action='".deletePic($conn,$bahnnummer)."' method='POST'>
           <input type='hidden' name='id' value='".$data['id']."'>
-          <button class='kommiButton' type='submit' name='picDeleteSubmit' >Löschen</button>
-          </form>";
+          <button class='deletePicButton' type='submit' name='picDeleteSubmit' >Löschen</button>
+          </form><br>";
         }
       }
     }
@@ -45,7 +45,7 @@ if(isset($_GET['bahn'])){
       <br>";
      
   } else{
-  echo "<p style='font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
+  echo "<p style='float: left; margin-left: 28px; font-size:15px;'>Du musst eingeloggt sein, um zu kommentieren</p>
   <br><br>";
   }
   echo "</div>";
