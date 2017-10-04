@@ -60,7 +60,7 @@ if(empty($checkID)){
 }
 
 function getComments($conn,$bildid){
-    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC";            //go into the database
+    $sql = "SELECT * FROM comments WHERE imgid=$bildid ORDER BY date DESC"; //go into the database
     $result = mysqli_query($conn, $sql);        //run the query
     while($row = mysqli_fetch_assoc($result)){  //spit it out
         $u_id = $row['u_id'];
