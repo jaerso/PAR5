@@ -11,7 +11,8 @@ include_once 'includes/picture.inc.php';
 <div class='user-container'>
 
 <?php
-$pic=$_SESSION['pic'];
+
+$pic=profilepic($_SESSION['u_id'],$conn);
 $username=$_SESSION['u_uid'];
 $firstname=$_SESSION['u_first'];
 $lastname=$_SESSION['u_last'];

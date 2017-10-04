@@ -42,7 +42,8 @@ if (isset($_SESSION['u_id'])) {
 
 	echo "<form id='form-welcome' action='includes/logout.inc.php' method='POST'>";
 		$username= $_SESSION['u_uid'];
-		$pic=$_SESSION['pic'];
+		//$pic=$_SESSION['pic'];
+		$pic=profilepic($_SESSION['u_id'],$conn);
 		echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' > <a class='login-name' href='index.php?page=profile'>$username</a>! ";
 		echo "<button id='button-login' type='submit' name='submit'><span class='glyphicon glyphicon-log-out'></span> Logout</button>
 		</form>";

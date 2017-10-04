@@ -11,7 +11,7 @@ $fileactualext= $fileext[1];
 
 $file = "../uploads/profile".$sessionid.".".$fileactualext;
 
-if(!unlink($file)){
+if(!unlink($file)){ //löscht datei o.a. filename
     echo "File was not deleted!";
 } else{
     echo "File was deleted!";
