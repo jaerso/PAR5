@@ -1103,14 +1103,9 @@ transform: translate(-50%, -50%);
 					}
 
 
-					
 
 					body.landing #header nav a:hover,
-<<<<<<< HEAD
 					.navbar-default .navbar-nav>.active>a{ 
-=======
-					.navbar-default .navbar-nav>.active>a{
->>>>>>> 3f8055293ad00bdf13346b76960f6defe068f701
 						color: #3AAA35;
 						font-family: "Raleway";
 						font-weight: bold;
