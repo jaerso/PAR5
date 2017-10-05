@@ -36,7 +36,7 @@ while($row = mysqli_fetch_assoc($result)) {
 	//$username=$row['user_uid'];
 	//$firstname=$row['user_first'];
 	//$lastname=$row['user_last'];
-	$_SESSION['pic']= $profilepic;
+	//$_SESSION['pic']= $profilepic;
 	//profilepic($row,$rowImg);
 }
 return $profilepic;

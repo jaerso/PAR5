@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
 
 	$uid = mysqli_real_escape_string($conn, $_POST['uid']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
-	$page=$_POST['value'];
+//	$page=$_POST['value']; //auf Seite bleiben bei log in
 
 	//Error handlers
 	//Check if inputs are empty
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 		} else {
 			if ($row = mysqli_fetch_assoc($result)) {
 				//De-hashing the password
-				$hashedPwdCheck = password_verify($pwd, $row['user_pwd']);
+				$hashedPwdCheck = password_verify($pwd, $row['user_pwd']); //prüft ob passwort gleich dem dehashed passwort ist
 				if ($hashedPwdCheck == false) {
 					header("Location: ../index.php?login=error");
 					exit();

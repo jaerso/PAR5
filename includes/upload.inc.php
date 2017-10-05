@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 	$file = $_FILES['file'];
 
 	$fileName = $file['name'];
-	$fileTmpName = $file['tmp_name'];
+	$fileTmpName = $file['tmp_name']; //temporärer speicherort
 	$fileSize = $file['size'];
 	$fileError = $file['error'];
 	$fileType = $file['type'];

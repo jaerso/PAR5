@@ -23,7 +23,7 @@ if(isset($_GET['bahn'])){
         }
       }
     }
-    echo "<img id='schlag-border' src='".$data['bildlink']."' alt='Bild'>";
+    echo "<img id='schlag-border' src='".$data['bildlink']."' alt='Bild'>"; //bildausgabe
     //Comment
       $bildid= $data['id'];
         getComments($conn,$bildid);
