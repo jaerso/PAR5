@@ -24,6 +24,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+<<<<<<< HEAD
 
 	  				<?php
   $nav = "
@@ -54,6 +55,32 @@ if (isset($_SESSION['u_id'])) {
 }	
 else{
 ?>
+=======
+          <?php
+          $nav = "
+               <li ".(( $_GET['page'] == 'home') ? 'class="active"' : '')."><a href=\"index.php?page=home\">Start</a></li>
+               <li ".(( $_GET['page'] == 'gallery') ? 'class="active"' : '')."><a href=\"index.php?page=gallery\">Galerie</a></li>
+               <li ".(( $_GET['page'] == 'function') ? 'class="active"' : '')."><a href=\"index.php?page=function\">Funktionen</a></li>
+               <li ".(( $_GET['page'] == 'editor') ? 'class="active"' : '')."><a href=\"index.php?page=editor\">Editor</a></li>
+               ";
+          echo $nav;
+          ?>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li>
+            <?php
+                if (isset($_SESSION['u_id'])) {
+
+                echo "<form id='form-welcome' action='includes/logout.inc.php' method='POST'>";
+                    $username= $_SESSION['u_uid'];
+                    $pic=$_SESSION['pic'];
+                    echo " Willkommen <img id='profileicon' src=$pic height='42' width='42' style='border-radius:100%;' > <a class='login-name' href='index.php?page=profile'>$username</a>! ";
+                    echo "<button id='button-login' type='submit' name='submit'><span class='glyphicon glyphicon-log-out'></span> Logout</button>
+                    </form>";
+                }
+                else{
+            ?>
+>>>>>>> 3f8055293ad00bdf13346b76960f6defe068f701
 
 
 
