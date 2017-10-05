@@ -137,6 +137,10 @@ function dragStop(event) {
     console.log(coordinates);
     drawLine(position);
 }
+
+
+
+
 /*
 *   Koordinaten in Array speichern
 *

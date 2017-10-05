@@ -1105,7 +1105,8 @@ transform: translate(-50%, -50%);
 
 					
 
-					body.landing #header nav a:hover {
+					body.landing #header nav a:hover,
+					.navbar-default .navbar-nav>.active>a{ 
 						color: #3AAA35;
 						font-family: "Raleway";
 						font-weight: bold;
