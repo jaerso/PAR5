@@ -5,8 +5,8 @@ include_once 'dbh.inc.php';
 $sessionid= $_SESSION['u_id'];
 
 $filename = "../uploads/profile".$sessionid."*";
-$fileinfo=glob($filename);
-$fileext=explode(".",$fileinfo[0]);
+$fileinfo=glob($filename); //sucht nach namen
+$fileext=explode(".",$fileinfo[0]); //profile11
 $fileactualext= $fileext[1];
 
 $file = "../uploads/profile".$sessionid.".".$fileactualext;
