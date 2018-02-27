@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 					$_SESSION['u_uid'] = $row['user_uid'];
 					$page=$_SESSION['page'];
 				//	header("Location: ../index.php?page=".$page."&login=success");
-				header("Location: ../../index.php?page=$page");
+				header("Location: ../index.php?page=$page");
 					exit();
 				}
 			}
