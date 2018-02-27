@@ -25,12 +25,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-	  				<li><a href="index.php?page=home">Start</a></li>
-					<li><a href="index.php?page=gallery">Galerie</a></li>
-					<li><a href="index.php?page=function">Funktionen</a></li>
-					<li><a href="index.php?page=editor">Editor</a></li>
-					</ul>
-					
+	  				<?php
+  $nav = "
+       <li ".(( $_GET['page'] == 'home') ? 'class="active"' : '')."><a href=\"index.php?page=home\">Start</a></li>
+       <li ".(( $_GET['page'] == 'gallery') ? 'class="active"' : '')."><a href=\"index.php?page=gallery\">Galerie</a></li>
+       <li ".(( $_GET['page'] == 'function') ? 'class="active"' : '')."><a href=\"index.php?page=function\">Funktionen</a></li>
+       <li ".(( $_GET['page'] == 'editor') ? 'class="active"' : '')."><a href=\"index.php?page=editor\">Editor</a></li>
+       ";
+    echo $nav;
+?>
+</ul>					
 
 <ul class="nav navbar-nav navbar-right">
 <li>

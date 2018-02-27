@@ -1103,9 +1103,9 @@ transform: translate(-50%, -50%);
 					}
 
 
-					
 
-					body.landing #header nav a:hover {
+					body.landing #header nav a:hover,
+					.navbar-default .navbar-nav>.active>a{ 
 						color: #3AAA35;
 						font-family: "Raleway";
 						font-weight: bold;
@@ -1119,30 +1119,6 @@ transform: translate(-50%, -50%);
 						background-color: black;
 						height: 57px;
 					}
-
-
-					#header nav > ul > li	a:focus {
-						background-color: red;
-						color: black;
-					}
-					
-					#header nav > ul > li a:hover {
-						background-color: blue;
-						color: white;
-					}
-					
-					#header nav > ul > li a:active {
-						background-color: yellow;
-						color: black;
-					}
-					
-					nav ul li a.active { 
-						background-color: black;
-						height: 66px;
-					}
-
-
-
 
 #header nav > ul > li:first-child {
 						margin-left: 0;
